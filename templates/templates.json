@@ -102,7 +102,7 @@
           "style": {
             "fontSize": 18,
             "color": "#ffffff",
-            "textAlign": "left",
+            "textAlign": "right",
             "fontFamily": "Arial"
           }
         }
