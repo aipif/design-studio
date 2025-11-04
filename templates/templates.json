@@ -39,9 +39,9 @@
     {
       "id": "template-2",
       "name": "Hindi Template",
-      "thumbnail": "templates/thumbnails/medical-camp-1-h1.jpeg",
+      "thumbnail": "templates/thumbnails/medical-camp-1-h1.jpg",
       "background": {
-        "image": "templates/backgrounds/medical-camp-bg-hi.jpeg"
+        "image": "templates/backgrounds/medical-camp-bg-hi.jpg"
       },
       "dimensions": {"width": 720, "height": 1280},
       "textElements": [
@@ -75,9 +75,9 @@
     {
       "id": "template-3",
       "name": "Urdu Template",
-      "thumbnail": "templates/thumbnails/medical-camp-1-ur.jpeg",
+      "thumbnail": "templates/thumbnails/medical-camp-1-ur.jpg",
       "background": {
-        "image": "templates/backgrounds/medical-camp-bg-ur.jpeg"
+        "image": "templates/backgrounds/medical-camp-bg-ur.jpg"
       },
       "dimensions": {"width": 720, "height": 1280},
       "textElements": [
@@ -111,9 +111,9 @@
     {
       "id": "template-4",
       "name": "Telugu Template",
-      "thumbnail": "templates/thumbnails/medical-camp-1-tg.jpeg",
+      "thumbnail": "templates/thumbnails/medical-camp-1-tg.jpg",
       "background": {
-        "image": "templates/backgrounds/medical-camp-bg-tg.jpeg"
+        "image": "templates/backgrounds/medical-camp-bg-tg.jpg"
       },
       "dimensions": {"width": 720, "height": 1280},
       "textElements": [
