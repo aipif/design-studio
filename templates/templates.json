@@ -1,0 +1,40 @@
+{
+  "templates": [
+    {
+      "id": "template-1",
+      "name": "First Template",
+      "thumbnail": "templates/thumbnails/medical-camp-1.jpeg",
+      "background": {
+        "image": "templates/backgrounds/medical-camp-bg.jpeg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "heading",
+          "defaultText": "HEADING",
+          "position": {"x": 60, "y": 120},
+          "size": {"width": 600, "height": 100},
+          "style": {
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "description",
+          "defaultText": "Maulana Syed Abul Hasan Ali Nadvi aka “Ali Miyan” (1914-1999) was an illustrious member of the family of Rae Bareli which is credited for producing intellectuals and writers for generations. Moulana Ali Miya was a great thinker, writer, educationist, social reformer, and an international traveller. He was very humble, modest, soft-spoken, tolerant, moderate and generous. He stood for mutual respect, peaceful coexistence, human values, establishing a social atmosphere based on tolerance and harmony in India and in the world at large. He earned our country good name for his services that were also internationally recognized.",
+          "position": {"x": 90, "y": 700},
+          "size": {"width": 550, "height": 100},
+          "style": {
+            "fontSize": 18,
+            "color": "#ffffff",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    }
+  ]
+}
