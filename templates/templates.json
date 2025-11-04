@@ -2,7 +2,7 @@
   "templates": [
     {
       "id": "template-1",
-      "name": "First Template",
+      "name": "English Template",
       "thumbnail": "templates/thumbnails/medical-camp-1.jpeg",
       "background": {
         "image": "templates/backgrounds/medical-camp-bg.jpeg"
@@ -24,7 +24,115 @@
         },
         {
           "id": "description",
-          "defaultText": "Maulana Syed Abul Hasan Ali Nadvi aka “Ali Miyan” (1914-1999) was an illustrious member of the family of Rae Bareli which is credited for producing intellectuals and writers for generations. Moulana Ali Miya was a great thinker, writer, educationist, social reformer, and an international traveller. He was very humble, modest, soft-spoken, tolerant, moderate and generous. He stood for mutual respect, peaceful coexistence, human values, establishing a social atmosphere based on tolerance and harmony in India and in the world at large. He earned our country good name for his services that were also internationally recognized.",
+          "defaultText": "Maulana Syed Abul Hasan Ali Nadvi aka 'Ali Miyan' (1914-1999) was an illustrious member of the family of Rae Bareli which is credited for producing intellectuals and writers for generations. Moulana Ali Miya was a great thinker, writer, educationist, social reformer, and an international traveller. He was very humble, modest, soft-spoken, tolerant, moderate and generous. He stood for mutual respect, peaceful coexistence, human values, establishing a social atmosphere based on tolerance and harmony in India and in the world at large. He earned our country good name for his services that were also internationally recognized.",
+          "position": {"x": 90, "y": 700},
+          "size": {"width": 550, "height": 100},
+          "style": {
+            "fontSize": 18,
+            "color": "#ffffff",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-2",
+      "name": "Hindi Template",
+      "thumbnail": "templates/thumbnails/medical-camp-1-h1.jpeg",
+      "background": {
+        "image": "templates/backgrounds/medical-camp-bg-hi.jpeg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "heading",
+          "defaultText": "शीर्षक",
+          "position": {"x": 60, "y": 120},
+          "size": {"width": 600, "height": 100},
+          "style": {
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "description",
+          "defaultText": "मौलाना सैयद अबुल हसन अली नदवी उर्फ़ 'अली मियाँ' (1914-1999) रायबरेली के उस परिवार के एक प्रतिष्ठित सदस्य थे, जिसे पीढ़ियों से बुद्धिजीवियों और लेखकों को जन्म देने का श्रेय दिया जाता है। मौलाना अली मियाँ एक महान विचारक, लेखक, शिक्षाविद्, समाज सुधारक और अंतर्राष्ट्रीय यात्री थे। वे अत्यंत विनम्र, विनम्र, मृदुभाषी, सहिष्णु, उदार और उदार थे। वे परस्पर सम्मान, शांतिपूर्ण सह-अस्तित्व और मानवीय मूल्यों के पक्षधर थे, और भारत तथा विश्व में सहिष्णुता और सद्भाव पर आधारित सामाजिक वातावरण की स्थापना करते थे। उन्होंने अपने योगदान से देश का नाम रोशन किया और अंतर्राष्ट्रीय स्तर पर भी उनकी सराहना हुई।",
+          "position": {"x": 90, "y": 700},
+          "size": {"width": 550, "height": 100},
+          "style": {
+            "fontSize": 18,
+            "color": "#ffffff",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-3",
+      "name": "Urdu Template",
+      "thumbnail": "templates/thumbnails/medical-camp-1-ur.jpeg",
+      "background": {
+        "image": "templates/backgrounds/medical-camp-bg-ur.jpeg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "heading",
+          "defaultText": "ہیڈنگ",
+          "position": {"x": 60, "y": 120},
+          "size": {"width": 600, "height": 100},
+          "style": {
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "description",
+          "defaultText": "مولانا سید ابوالحسن علی ندوی عرف 'علی میاں' (1914-1999) رائے بریلی کے خاندان کے ایک نامور رکن تھے جسے نسلوں تک دانشور اور ادیب پیدا کرنے کا سہرا جاتا ہے۔ مولانا علی میاں ایک عظیم مفکر، مصنف، ماہر تعلیم، سماجی مصلح اور بین الاقوامی سیاح تھے۔ وہ بہت ہی عاجز، حلیم، نرم گفتار، بردبار، اعتدال پسند اور فیاض تھے۔ وہ باہمی احترام، پرامن بقائے باہمی، انسانی اقدار، ہندوستان اور پوری دنیا میں رواداری اور ہم آہنگی پر مبنی سماجی ماحول کے قیام کے لیے کھڑے تھے۔ انہوں نے اپنی خدمات کی بدولت ہمارے ملک کا نام کمایا جسے بین الاقوامی سطح پر بھی تسلیم کیا گیا۔",
+          "position": {"x": 90, "y": 700},
+          "size": {"width": 550, "height": 100},
+          "style": {
+            "fontSize": 18,
+            "color": "#ffffff",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-4",
+      "name": "Telugu Template",
+      "thumbnail": "templates/thumbnails/medical-camp-1-tg.jpeg",
+      "background": {
+        "image": "templates/backgrounds/medical-camp-bg-tg.jpeg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "heading",
+          "defaultText": "శీర్షిక",
+          "position": {"x": 60, "y": 120},
+          "size": {"width": 600, "height": 100},
+          "style": {
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "description",
+          "defaultText": "మౌలానా సయ్యద్ అబుల్ హసన్ అలీ నద్వి అకా 'అలీ మియా' (1914-1999) రాయ్‌బరేలి కుటుంబానికి చెందిన ప్రముఖ సభ్యుడు, తరతరాలుగా మేధావులు మరియు రచయితలను తయారు చేసిన ఘనత వీరిది. మౌలానా అలీ మియా గొప్ప ఆలోచనాపరుడు, రచయిత, విద్యావేత్త, సామాజిక సంస్కర్త మరియు అంతర్జాతీయ యాత్రికుడు. ఆయన చాలా వినయపూర్వకమైనవాడు, నిరాడంబరుడు, మృదుభాషి, సహనం, మితవాది మరియు ఉదారవాది. ఆయన పరస్పర గౌరవం, శాంతియుత సహజీవనం, మానవ విలువల కోసం నిలబడ్డారు, భారతదేశంలో మరియు ప్రపంచవ్యాప్తంగా సహనం మరియు సామరస్యం ఆధారంగా సామాజిక వాతావరణాన్ని స్థాపించారు. అంతర్జాతీయంగా గుర్తింపు పొందిన తన సేవలకు ఆయన మన దేశానికి మంచి పేరు తెచ్చిపెట్టారు.",
           "position": {"x": 90, "y": 700},
           "size": {"width": 550, "height": 100},
           "style": {
