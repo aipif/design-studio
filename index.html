@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Design Studio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- Canvas area - fills the whole screen -->
+        <div class="canvas-area">
+            <canvas id="canvas"></canvas>
+        </div>
+        
+        <!-- Bottom toolbar with horizontal scroll -->
+        <div class="bottom-toolbar">
+            <div class="toolbar-scroll">
+
+                <!-- Templates Section -->
+                <button class="icon-btn" id="templates-btn" title="Templates">
+                    <span class="material-symbols-rounded">photo_library</span>
+                </button>
+
+                <!-- Collage Maker -->
+                <button class="icon-btn" id="collage-btn" title="Create Collage">
+                    <span class="material-symbols-rounded">auto_awesome_mosaic</span>
+                </button>
+
+                <!-- Upload Image -->
+                <button class="icon-btn" id="image-upload-btn" title="Upload Image">
+                    <span class="material-symbols-rounded">add_photo_alternate</span>
+                    <input type="file" id="image-upload" accept="image/*" hidden>
+                </button>
+
+                <!-- Add Text -->
+                <button class="icon-btn" id="add-text-btn" title="Add Text">
+                    <span class="material-symbols-rounded">insert_text</span>
+                </button>
+
+                <!-- Increase Font Size -->
+                <button class="icon-btn" id="increase-font-btn" title="Increase Font Size">
+                    <span class="material-symbols-rounded">text_increase</span>
+                </button>
+
+                <!-- Decrease Font Size -->
+                <button class="icon-btn" id="decrease-font-btn" title="Decrease Font Size">
+                    <span class="material-symbols-rounded">text_decrease</span>
+                </button>
+
+                <!-- Font Color Picker (Native) -->
+                <label class="icon-btn" for="font-color" title="Text Color">
+                    <span class="material-symbols-rounded">colors</span>
+                    <input type="color" id="font-color" value="#000000" hidden>
+                </label>
+
+                <!-- Font Family Selector with Icon -->
+                <div class="select-with-icon">
+                    <select id="font-family" class="icon-select">
+                        <option value="Arial">Arial</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Impact">Impact</option>
+                    </select>
+                    <span class="material-symbols-rounded select-icon">brand_family</span>
+                </div>
+
+                <!-- Delete Selected -->
+                <button class="icon-btn btn-danger" id="delete-btn" title="Delete Selected">
+                    <span class="material-symbols-rounded">delete</span>
+                </button>
+
+                <!-- Clear Canvas -->
+                <button class="icon-btn btn-warning" id="clear-canvas-btn" title="Clear All">
+                    <span class="material-symbols-rounded">reset_image</span>
+                </button>
+
+                <!-- Download -->
+                <button class="icon-btn btn-success" id="download-btn" title="Download">
+                    <span class="material-symbols-rounded">download</span>
+                </button>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="template-manager.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Collage Maker Modal -->
+    <div id="collage-modal" class="collage-modal" style="display: none;">
+        <div class="collage-modal-content">
+
+            <!-- Header -->
+            <div class="collage-modal-header">
+                <h2 id="collage-title">Create Collage</h2>
+                <button class="collage-close" id="collage-close-btn">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+            </div>
+
+            <!-- Screen 1: Configuration -->
+            <div id="collage-screen-config" class="collage-screen">
+                <div class="collage-section">
+                    <h3>Choose Size</h3>
+                    <div class="size-options">
+                        <button class="size-btn active" data-size="square">
+                            <span class="material-symbols-rounded">crop_square</span>
+                            <span>Square<br>600×600</span>
+                        </button>
+                        <button class="size-btn" data-size="instagram">
+                            <span class="material-symbols-rounded">crop_square</span>
+                            <span>Instagram<br>1080×1080</span>
+                        </button>
+                        <button class="size-btn" data-size="wide">
+                            <span class="material-symbols-rounded">crop_16_9</span>
+                            <span>Wide<br>1200×628</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="collage-section">
+                    <h3>Number of Images</h3>
+                    <div class="count-options">
+                        <button class="count-btn active" data-count="2">2</button>
+                        <button class="count-btn" data-count="3">3</button>
+                        <button class="count-btn" data-count="4">4</button>
+                        <button class="count-btn" data-count="6">6</button>
+                    </div>
+                </div>
+
+                <div class="collage-section">
+                    <h3>Gap Style</h3>
+                    <div class="gap-options">
+                        <button class="gap-btn active" data-gap="0">No Gap</button>
+                        <button class="gap-btn" data-gap="4">Small</button>
+                        <button class="gap-btn" data-gap="8">Medium</button>
+                    </div>
+                </div>
+
+                <button class="collage-next-btn" id="config-next-btn">
+                    Next Step
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                </button>
+            </div>
+
+            <!-- Screen 2: Layout Selection -->
+            <div id="collage-screen-layouts" class="collage-screen" style="display: none;">
+                <button class="collage-back-btn" id="layouts-back-btn">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                    Back
+                </button>
+
+                <div id="layouts-grid" class="layouts-grid">
+                    <!-- Layouts will be dynamically generated here -->
+                </div>
+
+                <button class="collage-next-btn" id="layouts-next-btn" disabled>
+                    Continue
+                    <span class="material-symbols-rounded">arrow_forward</span>
+                </button>
+            </div>
+
+            <!-- Screen 3: Image Upload -->
+            <div id="collage-screen-upload" class="collage-screen" style="display: none;">
+                <button class="collage-back-btn" id="upload-back-btn">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                    Back
+                </button>
+
+                <div class="collage-preview-container">
+                    <canvas id="collage-preview-canvas"></canvas>
+                </div>
+
+                <div class="collage-actions">
+                    <button class="collage-action-btn secondary" id="upload-all-btn">
+                        <span class="material-symbols-rounded">add_photo_alternate</span>
+                        Upload All Images
+                    </button>
+                    <button class="collage-action-btn primary" id="add-to-canvas-btn" disabled>
+                        <span class="material-symbols-rounded">check</span>
+                        Add to Canvas
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Template Selector Modal -->
+    <div id="template-modal" class="template-modal" style="display: none;">
+        <div class="template-modal-content">
+
+            <!-- Header -->
+            <div class="template-modal-header">
+                <h2>Choose a Template</h2>
+                <button class="template-close" id="template-close-btn">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+            </div>
+
+            <!-- Templates Grid -->
+            <div class="template-modal-body">
+                <div id="template-grid" class="template-grid">
+                    <!-- Templates will be dynamically loaded here -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

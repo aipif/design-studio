@@ -1,0 +1,107 @@
+{
+  "layouts": [
+    {
+      "id": "2-grid-horizontal",
+      "name": "Side by Side",
+      "imageCount": 2,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 0.5, "height": 1 },
+        { "id": "slot-2", "x": 0.5, "y": 0, "width": 0.5, "height": 1 }
+      ]
+    },
+    {
+      "id": "2-grid-vertical",
+      "name": "Top and Bottom",
+      "imageCount": 2,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 1, "height": 0.5 },
+        { "id": "slot-2", "x": 0, "y": 0.5, "width": 1, "height": 0.5 }
+      ]
+    },
+    {
+      "id": "2-asymmetric",
+      "name": "70-30 Split",
+      "imageCount": 2,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 0.7, "height": 1 },
+        { "id": "slot-2", "x": 0.7, "y": 0, "width": 0.3, "height": 1 }
+      ]
+    },
+    {
+      "id": "3-horizontal",
+      "name": "Three Columns",
+      "imageCount": 3,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 0.333, "height": 1 },
+        { "id": "slot-2", "x": 0.333, "y": 0, "width": 0.334, "height": 1 },
+        { "id": "slot-3", "x": 0.667, "y": 0, "width": 0.333, "height": 1 }
+      ]
+    },
+    {
+      "id": "3-big-left",
+      "name": "Big Left",
+      "imageCount": 3,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 0.6, "height": 1 },
+        { "id": "slot-2", "x": 0.6, "y": 0, "width": 0.4, "height": 0.5 },
+        { "id": "slot-3", "x": 0.6, "y": 0.5, "width": 0.4, "height": 0.5 }
+      ]
+    },
+    {
+      "id": "3-big-top",
+      "name": "Big Top",
+      "imageCount": 3,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 1, "height": 0.6 },
+        { "id": "slot-2", "x": 0, "y": 0.6, "width": 0.5, "height": 0.4 },
+        { "id": "slot-3", "x": 0.5, "y": 0.6, "width": 0.5, "height": 0.4 }
+      ]
+    },
+    {
+      "id": "4-grid",
+      "name": "Classic Grid",
+      "imageCount": 4,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 0.5, "height": 0.5 },
+        { "id": "slot-2", "x": 0.5, "y": 0, "width": 0.5, "height": 0.5 },
+        { "id": "slot-3", "x": 0, "y": 0.5, "width": 0.5, "height": 0.5 },
+        { "id": "slot-4", "x": 0.5, "y": 0.5, "width": 0.5, "height": 0.5 }
+      ]
+    },
+    {
+      "id": "4-instagram",
+      "name": "Instagram",
+      "imageCount": 4,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 0.6, "height": 0.6 },
+        { "id": "slot-2", "x": 0.6, "y": 0, "width": 0.4, "height": 0.3 },
+        { "id": "slot-3", "x": 0.6, "y": 0.3, "width": 0.4, "height": 0.3 },
+        { "id": "slot-4", "x": 0, "y": 0.6, "width": 1, "height": 0.4 }
+      ]
+    },
+    {
+      "id": "4-horizontal-strip",
+      "name": "Four Strip",
+      "imageCount": 4,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 0.25, "height": 1 },
+        { "id": "slot-2", "x": 0.25, "y": 0, "width": 0.25, "height": 1 },
+        { "id": "slot-3", "x": 0.5, "y": 0, "width": 0.25, "height": 1 },
+        { "id": "slot-4", "x": 0.75, "y": 0, "width": 0.25, "height": 1 }
+      ]
+    },
+    {
+      "id": "6-grid",
+      "name": "Six Pack",
+      "imageCount": 6,
+      "slots": [
+        { "id": "slot-1", "x": 0, "y": 0, "width": 0.333, "height": 0.5 },
+        { "id": "slot-2", "x": 0.333, "y": 0, "width": 0.334, "height": 0.5 },
+        { "id": "slot-3", "x": 0.667, "y": 0, "width": 0.333, "height": 0.5 },
+        { "id": "slot-4", "x": 0, "y": 0.5, "width": 0.333, "height": 0.5 },
+        { "id": "slot-5", "x": 0.333, "y": 0.5, "width": 0.334, "height": 0.5 },
+        { "id": "slot-6", "x": 0.667, "y": 0.5, "width": 0.333, "height": 0.5 }
+      ]
+    }
+  ]
+}
