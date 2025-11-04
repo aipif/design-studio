@@ -823,8 +823,22 @@ label.icon-btn:has(select:focus) .material-icons {
 
 .template-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(2, 1fr); /* Force 2 columns on mobile */
+    gap: var(--spacing-md);
+}
+
+/* Increase columns on larger screens */
+@media (min-width: 600px) {
+    .template-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (min-width: 900px) {
+    .template-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    }
 }
 
 .template-item {
