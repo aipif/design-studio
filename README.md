@@ -1,1 +1,1 @@
-# design-studio
+# AIPIF Design Studio
