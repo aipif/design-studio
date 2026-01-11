@@ -78,6 +78,38 @@ function setupCanvasEvents() {
         }
         updatePropertiesPanel(e);
     })
+
+    // Log position when object is moved, scaled, or rotated
+    canvas.on('object:modified', function(e) {
+        const obj = e.target || e.selected[0];
+        if (!obj) return;
+        
+        console.log('═══════════════════════════════════');
+        console.log('📍 OBJECT POSITION INFO');
+        console.log('═══════════════════════════════════');
+        console.log('Type:', obj.type);
+        console.log('Position:');
+        console.log('  left:', Math.round(obj.left));
+        console.log('  top:', Math.round(obj.top));
+        console.log('Size:');
+        console.log('  width:', Math.round(obj.width * obj.scaleX));
+        console.log('  height:', Math.round(obj.height * obj.scaleY));
+        
+        // if (obj.type === 'textbox' || obj.type === 'text') {
+        //     console.log('Text Properties:');
+        //     console.log('  fontSize:', obj.fontSize);
+        //     console.log('  fontFamily:', obj.fontFamily);
+        //     console.log('  fill:', obj.fill);
+        //     console.log('  textAlign:', obj.textAlign);
+        //     console.log('  text:', obj.text);
+        // }
+        
+        // console.log('Transform:');
+        // console.log('  angle:', obj.angle);
+        // console.log('  scaleX:', obj.scaleX.toFixed(2));
+        // console.log('  scaleY:', obj.scaleY.toFixed(2));
+        // console.log('═══════════════════════════════════');
+    });
 }
 
 function updatePropertiesPanel(e) {

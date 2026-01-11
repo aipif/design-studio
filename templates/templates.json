@@ -1,7 +1,7 @@
 {
   "templates": [
     {
-      "id": "template-1",
+      "id": "template-en-1",
       "name": "English Template",
       "thumbnail": "templates/thumbnails/medical-camp-1.jpeg",
       "background": {
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "id": "template-2",
+      "id": "template-hi-1",
       "name": "Hindi Template",
       "thumbnail": "templates/thumbnails/medical-camp-1-hi.jpg",
       "background": {
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "id": "template-3",
+      "id": "template-ur-1",
       "name": "Urdu Template",
       "thumbnail": "templates/thumbnails/medical-camp-1-ur.jpg",
       "background": {
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "id": "template-4",
+      "id": "template-tg-1",
       "name": "Telugu Template",
       "thumbnail": "templates/thumbnails/medical-camp-1-tg.jpg",
       "background": {
@@ -138,6 +138,152 @@
           "style": {
             "fontSize": 18,
             "color": "#ffffff",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-en-2",
+      "name": "Event Report Template",
+      "thumbnail": "templates/thumbnails/event-report-thumb.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "date-banner",
+          "defaultText": "JANUARY 01 2026 AIPIF LUCKNOW",
+          "position": {"x": 170, "y": 38},
+          "size": {"width": 380, "height": 30},
+          "style": {
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#2c2c2c",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "main-heading",
+          "defaultText": "AIPIF PRISON\nHUMANITARIAN WORKS",
+          "position": {"x": 90, "y": 100},
+          "size": {"width": 540, "height": 120},
+          "style": {
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-1",
+          "defaultText": "AIPIF gifted blankets to the inmates in District Jail Lakhimpur Kheri. Additionally on the occasion, 5 prisoners who were in the prison for not being able to pay their respective fines were also released after having their fines paid by AIPIF.",
+          "position": {"x": 90, "y": 240},
+          "size": {"width": 540, "height": 100},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "justify-center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-2",
+          "defaultText": "On this occasion Mr. Shafiq Chaudhary, Mr. Awadhesh Kumar Singh President District Advocates Association, Mr. Santosh Mishra Former President District Advocates Association and son of freedom fighter, Maulana Raees Nadvi, Mr. Vishwas Srivastava General Secretary Advocates Association, Mr. DP Slania Jail Superintendent, Mr. Sunil Kumar Deputy Jailer, Mr. DPS Rathore Deputy Jailer, Mr. Saeed Khan Jail Advocate, Mr.Anil Yadav, Jitendra Tripathi, Shia Madhesia Advocates along with all the members of the organization were present.",
+          "position": {"x": 90, "y": 350},
+          "size": {"width": 540, "height": 180},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "justify-center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98765 43210",
+          "position": {"x": 120, "y": 1245},
+          "size": {"width": 168, "height": 21},
+          "style": {
+            "fontSize": 18,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-en-3",
+      "name": "Event Report Template (Blue)",
+      "thumbnail": "templates/thumbnails/event-report-thumb-blue.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-blue.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "date-banner",
+          "defaultText": "JANUARY 01 2026 AIPIF LUCKNOW",
+          "position": {"x": 170, "y": 38},
+          "size": {"width": 380, "height": 30},
+          "style": {
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#2c2c2c",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "main-heading",
+          "defaultText": "AIPIF PRISON\nHUMANITARIAN WORKS",
+          "position": {"x": 90, "y": 100},
+          "size": {"width": 540, "height": 120},
+          "style": {
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "color": "#195A92",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-1",
+          "defaultText": "AIPIF gifted blankets to the inmates in District Jail Lakhimpur Kheri. Additionally on the occasion, 5 prisoners who were in the prison for not being able to pay their respective fines were also released after having their fines paid by AIPIF.",
+          "position": {"x": 90, "y": 240},
+          "size": {"width": 540, "height": 100},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "justify-center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-2",
+          "defaultText": "On this occasion Mr. Shafiq Chaudhary, Mr. Awadhesh Kumar Singh President District Advocates Association, Mr. Santosh Mishra Former President District Advocates Association and son of freedom fighter, Maulana Raees Nadvi, Mr. Vishwas Srivastava General Secretary Advocates Association, Mr. DP Slania Jail Superintendent, Mr. Sunil Kumar Deputy Jailer, Mr. DPS Rathore Deputy Jailer, Mr. Saeed Khan Jail Advocate, Mr.Anil Yadav, Jitendra Tripathi, Shia Madhesia Advocates along with all the members of the organization were present.",
+          "position": {"x": 90, "y": 350},
+          "size": {"width": 540, "height": 180},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "justify-center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98765 43210",
+          "position": {"x": 120, "y": 1245},
+          "size": {"width": 168, "height": 21},
+          "style": {
+            "fontSize": 18,
+            "color": "#000000",
             "textAlign": "left",
             "fontFamily": "Arial"
           }
