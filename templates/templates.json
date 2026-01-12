@@ -289,6 +289,104 @@
           }
         }
       ]
+    },
+    {
+      "id": "template-en-4",
+      "name": "Event Report Template (Purple)",
+      "thumbnail": "templates/thumbnails/event-report-thumb-purple.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-purple.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "fixedElements": [
+        {
+          "type": "rect",
+          "id": "date-box-bg",
+          "position": {"x": 355, "y": 615},
+          "size": {"width": 325, "height": 33},
+          "style": {
+            "fill": "#FFDDBF",
+            "selectable": false,
+            "evented": false
+          }
+        }
+      ],
+      "textElements": [
+        {
+          "id": "main-heading",
+          "defaultText": "AIPIF PRISON HUMANITARIAN WORKS",
+          "position": {"x": 48, "y": 40},
+          "size": {"width": 629, "height": 37},
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-1",
+          "defaultText": "AIPIF gifted blankets to the inmates in District Jail Lakhimpur Kheri. Additionally on the occasion, 5 prisoners who were in the prison for not being able to pay their respective fines were also released after having their fines paid by AIPIF.",
+          "position": {"x": 46, "y": 107},
+          "size": {"width": 628, "height": 80},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-2",
+          "defaultText": "Honorable Justice Mr. Yogesh Yadav, Secretary of District Legal Services Authority, Civil Judge Senior Division was the chief guest, and the special guest was Maulana Abdul Ali Hasani Nadvi. Addressing on this occasion, Jailer Haryansh Pandey said that there is a good and a bad person inside every person, to whom an attempt is made to awaken the good person inside you by providing proper facilities through such social work, If you all resolve to correct your mistakes then this effort will be fruitful. Speaking on the occasion, Maulana Abdul Ali Hasani Nadvi said, the main objective of the organization is to build a compassionate human bonding among people that from humans to humans, and efforts are made to do this work through humanitarian works, the works are carried out in prisons, hospitals and schools like career guidance programs, speech and essay writing competitions in schools, organizing blood donation camps in hospitals, serving fruits to the patients etc., gifting warm clothes to the inmates of the prisons and making arrangements for the release of those who are unable to pay their fines etc.. If we make mistakes knowingly or unknowingly, the mistake should not be repeated, and whenever we get an opportunity to go out of jail, we should try to spend life with humanitarian values.",
+          "position": {"x": 46, "y": 179},
+          "size": {"width": 628, "height": 330},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-3",
+          "defaultText": "On this occasion Mr. Shafiq Chaudhary, Mr. Awadhesh Kumar Singh President District Advocates Association, Mr. Santosh Mishra Former President District Advocates Association and son of freedom fighter, Maulana Raees Nadvi, Mr. Vishwas Srivastava General Secretary Advocates Association, Mr. DP Slania Jail Superintendent, Mr. Sunil Kumar Deputy Jailer, Mr. DPS Rathore Deputy Jailer, Mr. Saeed Khan Jail Advocate, Mr. Anil Yadav, Jitendra Tripathi, Shia Madhesia Advocates along with all the members of the organization were present.",
+          "position": {"x": 46, "y": 485},
+          "size": {"width": 628, "height": 140},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "date-location",
+          "defaultText": "JAN 01 2026, AIPIF LUCKNOW",
+          "position": {"x": 354, "y": 620},
+          "size": {"width": 327, "height": 20},
+          "style": {
+            "fontSize": 21,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98856 61136",
+          "position": {"x": 51, "y": 1241},
+          "size": {"width": 190, "height": 20},
+          "style": {
+            "fontSize": 24,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
     }
   ]
 }

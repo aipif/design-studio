@@ -78,38 +78,6 @@ function setupCanvasEvents() {
         }
         updatePropertiesPanel(e);
     })
-
-    // Log position when object is moved, scaled, or rotated
-    canvas.on('object:modified', function(e) {
-        const obj = e.target || e.selected[0];
-        if (!obj) return;
-        
-        console.log('═══════════════════════════════════');
-        console.log('📍 OBJECT POSITION INFO');
-        console.log('═══════════════════════════════════');
-        console.log('Type:', obj.type);
-        console.log('Position:');
-        console.log('  left:', Math.round(obj.left));
-        console.log('  top:', Math.round(obj.top));
-        console.log('Size:');
-        console.log('  width:', Math.round(obj.width * obj.scaleX));
-        console.log('  height:', Math.round(obj.height * obj.scaleY));
-        
-        // if (obj.type === 'textbox' || obj.type === 'text') {
-        //     console.log('Text Properties:');
-        //     console.log('  fontSize:', obj.fontSize);
-        //     console.log('  fontFamily:', obj.fontFamily);
-        //     console.log('  fill:', obj.fill);
-        //     console.log('  textAlign:', obj.textAlign);
-        //     console.log('  text:', obj.text);
-        // }
-        
-        // console.log('Transform:');
-        // console.log('  angle:', obj.angle);
-        // console.log('  scaleX:', obj.scaleX.toFixed(2));
-        // console.log('  scaleY:', obj.scaleY.toFixed(2));
-        // console.log('═══════════════════════════════════');
-    });
 }
 
 function updatePropertiesPanel(e) {
@@ -292,6 +260,53 @@ function decreaseFontSize() {
     } else {
         alert('Please select a text object first');
     }
+}
+
+// Layer control functions
+function sendBackward() {
+    const activeObject = canvas.getActiveObject();
+    
+    console.log('=== SEND BACKWARD ===');
+    console.log('Active object:', activeObject);
+    console.log('Current index:', canvas.getObjects().indexOf(activeObject));
+    
+    if (!activeObject) {
+        alert('Please select an object first');
+        return;
+    }
+    
+    if (activeObject.selectable === false) {
+        alert('This object cannot be moved');
+        return;
+    }
+    
+    canvas.sendBackwards(activeObject);
+    canvas.renderAll();
+    
+    console.log('New index:', canvas.getObjects().indexOf(activeObject));
+}
+
+function bringForward() {
+    const activeObject = canvas.getActiveObject();
+    
+    console.log('=== BRING FORWARD ===');
+    console.log('Active object:', activeObject);
+    console.log('Current index:', canvas.getObjects().indexOf(activeObject));
+    
+    if (!activeObject) {
+        alert('Please select an object first');
+        return;
+    }
+    
+    if (activeObject.selectable === false) {
+        alert('This object cannot be moved');
+        return;
+    }
+    
+    canvas.bringForward(activeObject);
+    canvas.renderAll();
+    
+    console.log('New index:', canvas.getObjects().indexOf(activeObject));
 }
 
 // Collage configuration handlers
@@ -1136,16 +1151,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Font size buttons
-    const increaseFontBtn = document.getElementById('increase-font-btn');
-    const decreaseFontBtn = document.getElementById('decrease-font-btn');
+    document.getElementById('increase-font-btn')?.addEventListener('click', increaseFontSize);
+    document.getElementById('decrease-font-btn')?.addEventListener('click', decreaseFontSize);
+    
+    // Move layer up-down buttons
+    document.getElementById('btn-send-backward')?.addEventListener('click', sendBackward);
+    document.getElementById('btn-bring-forward')?.addEventListener('click', bringForward);
 
-    if (increaseFontBtn) {
-        increaseFontBtn.addEventListener('click', increaseFontSize);
-    }
-
-    if (decreaseFontBtn) {
-        decreaseFontBtn.addEventListener('click', decreaseFontSize);
-    }
 
     // Native color picker
     const fontColor = document.getElementById('font-color');

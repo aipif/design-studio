@@ -104,6 +104,11 @@ class TemplateManager {
         // Load background image (or color)
         await this.loadBackground(template.background);
 
+        // Add fixed elements if any (overlays like boxes, shapes)
+        if (template.fixedElements && template.fixedElements.length > 0) {
+            this.createFixedElements(template.fixedElements);
+        }
+
         // Add text elements if any
         if (template.textElements && template.textElements.length > 0) {
             this.createTextElements(template.textElements);
@@ -201,6 +206,28 @@ class TemplateManager {
             this.canvas.add(text);
             this.templateElements.set(element.id, text);
         });
+    }
+
+    createFixedElements(fixedElements) {
+        fixedElements.forEach(element => {
+            if (element.type === 'rect') {
+                const rect = new fabric.Rect({
+                    left: element.position.x,
+                    top: element.position.y,
+                    width: element.size.width,
+                    height: element.size.height,
+                    fill: element.style.fill,
+                    rx: element.style.rx || 0,
+                    ry: element.style.ry || 0,
+                    selectable: element.style.selectable !== undefined ? element.style.selectable : false,
+                    evented: element.style.evented !== undefined ? element.style.evented : false,
+                    opacity: element.style.opacity || 1
+                });
+
+                this.canvas.add(rect);
+                this.templateElements.set(`fixed-${element.type}-${Date.now()}`, rect);
+            }
+        })
     }
 }
 
