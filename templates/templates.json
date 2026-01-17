@@ -218,6 +218,79 @@
       ]
     },
     {
+      "id": "template-hi-2",
+      "name": "Event Report Template - Hindi",
+      "thumbnail": "templates/thumbnails/event-report-thumb-hi.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-hi.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "date-banner",
+          "defaultText": "01 जनवरी 2026 AIPIF लखनऊ",
+          "position": {"x": 170, "y": 38},
+          "size": {"width": 380, "height": 30},
+          "style": {
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#2c2c2c",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "main-heading",
+          "defaultText": "AIPIF जेल\nमानवीय कार्य",
+          "position": {"x": 90, "y": 100},
+          "size": {"width": 540, "height": 120},
+          "style": {
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-1",
+          "defaultText": "AIPIF ने जिला जेल लखीमपुर खीरी के कैदियों को कंबल भेंट किए। इसके अतिरिक्त, इस अवसर पर उन 5 कैदियों को भी रिहा किया गया जो अपना जुर्माना न भर पाने के कारण जेल में थे; AIPIF द्वारा उनका जुर्माना भरने के बाद उन्हें रिहा कर दिया गया।",
+          "position": {"x": 90, "y": 240},
+          "size": {"width": 540, "height": 100},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "justify-center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-2",
+          "defaultText": "इस अवसर पर श्री शफीक चौधरी, श्री अवधेश कुमार सिंह (अध्यक्ष, जिला अधिवक्ता संघ), श्री संतोष मिश्रा (पूर्व अध्यक्ष, जिला अधिवक्ता संघ एवं स्वतंत्रता सेनानी के पुत्र), मौलाना रईस नदवी, श्री विश्वास श्रीवास्तव (महासचिव, अधिवक्ता संघ), श्री डी.पी. सलानिया (जेल अधीक्षक), श्री सुनील कुमार (डिप्टी जेलर), श्री डी.पी.एस. राठौर (डिप्टी जेलर), श्री सईद खान (जेल अधिवक्ता), श्री अनिल यादव, जितेंद्र त्रिपाठी, शिया मधेसिया अधिवक्ता और संस्था के सभी सदस्य उपस्थित थे।",
+          "position": {"x": 90, "y": 350},
+          "size": {"width": 540, "height": 180},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "justify-center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98765 43210",
+          "position": {"x": 120, "y": 1245},
+          "size": {"width": 168, "height": 21},
+          "style": {
+            "fontSize": 18,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
       "id": "template-en-3",
       "name": "Event Report Template (Blue)",
       "thumbnail": "templates/thumbnails/event-report-thumb-blue.jpg",
@@ -267,6 +340,79 @@
         {
           "id": "body-paragraph-2",
           "defaultText": "On this occasion Mr. Shafiq Chaudhary, Mr. Awadhesh Kumar Singh President District Advocates Association, Mr. Santosh Mishra Former President District Advocates Association and son of freedom fighter, Maulana Raees Nadvi, Mr. Vishwas Srivastava General Secretary Advocates Association, Mr. DP Slania Jail Superintendent, Mr. Sunil Kumar Deputy Jailer, Mr. DPS Rathore Deputy Jailer, Mr. Saeed Khan Jail Advocate, Mr.Anil Yadav, Jitendra Tripathi, Shia Madhesia Advocates along with all the members of the organization were present.",
+          "position": {"x": 90, "y": 350},
+          "size": {"width": 540, "height": 180},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "justify-center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98765 43210",
+          "position": {"x": 120, "y": 1245},
+          "size": {"width": 168, "height": 21},
+          "style": {
+            "fontSize": 18,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-hi-3",
+      "name": "Event Report Template (Blue) - Hindi",
+      "thumbnail": "templates/thumbnails/event-report-thumb-blue-hi.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-blue-hi.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "date-banner",
+          "defaultText": "01 जनवरी 2026 AIPIF लखनऊ",
+          "position": {"x": 170, "y": 38},
+          "size": {"width": 380, "height": 30},
+          "style": {
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "color": "#2c2c2c",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "main-heading",
+          "defaultText": "AIPIF जेल\nमानवीय कार्य",
+          "position": {"x": 90, "y": 100},
+          "size": {"width": 540, "height": 120},
+          "style": {
+            "fontSize": 36,
+            "fontWeight": "bold",
+            "color": "#195A92",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-1",
+          "defaultText": "AIPIF ने जिला जेल लखीमपुर खीरी के कैदियों को कंबल भेंट किए। इसके अतिरिक्त, इस अवसर पर उन 5 कैदियों को भी रिहा किया गया जो अपना जुर्माना न भर पाने के कारण जेल में थे; AIPIF द्वारा उनका जुर्माना भरने के बाद उन्हें रिहा कर दिया गया।",
+          "position": {"x": 90, "y": 240},
+          "size": {"width": 540, "height": 100},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "justify-center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-2",
+          "defaultText": "इस अवसर पर श्री शफीक चौधरी, श्री अवधेश कुमार सिंह (अध्यक्ष, जिला अधिवक्ता संघ), श्री संतोष मिश्रा (पूर्व अध्यक्ष, जिला अधिवक्ता संघ एवं स्वतंत्रता सेनानी के पुत्र), मौलाना रईस नदवी, श्री विश्वास श्रीवास्तव (महासचिव, अधिवक्ता संघ), श्री डी.पी. सलानिया (जेल अधीक्षक), श्री सुनील कुमार (डिप्टी जेलर), श्री डी.पी.एस. राठौर (डिप्टी जेलर), श्री सईद खान (जेल अधिवक्ता), श्री अनिल यादव, जितेंद्र त्रिपाठी, शिया मधेसिया अधिवक्ता और संस्था के सभी सदस्य उपस्थित थे।",
           "position": {"x": 90, "y": 350},
           "size": {"width": 540, "height": 180},
           "style": {
@@ -364,6 +510,104 @@
         {
           "id": "date-location",
           "defaultText": "JAN 01 2026, AIPIF LUCKNOW",
+          "position": {"x": 354, "y": 620},
+          "size": {"width": 327, "height": 20},
+          "style": {
+            "fontSize": 21,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98856 61136",
+          "position": {"x": 51, "y": 1241},
+          "size": {"width": 190, "height": 20},
+          "style": {
+            "fontSize": 24,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-hi-4",
+      "name": "Event Report Template (Purple) - Hindi",
+      "thumbnail": "templates/thumbnails/event-report-thumb-purple-hi.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-purple-hi.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "fixedElements": [
+        {
+          "type": "rect",
+          "id": "date-box-bg",
+          "position": {"x": 355, "y": 615},
+          "size": {"width": 325, "height": 33},
+          "style": {
+            "fill": "#FFDDBF",
+            "selectable": false,
+            "evented": false
+          }
+        }
+      ],
+      "textElements": [
+        {
+          "id": "main-heading",
+          "defaultText": "AIPIF जेल मानवीय कार्य",
+          "position": {"x": 48, "y": 40},
+          "size": {"width": 629, "height": 37},
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-1",
+          "defaultText": "AIPIF ने जिला जेल लखीमपुर खीरी के कैदियों को कंबल भेंट किए। इसके अतिरिक्त, इस अवसर पर उन 5 कैदियों को भी रिहा किया गया जो अपना संबंधित जुर्माना न भर पाने के कारण जेल में बंद थे; AIPIF द्वारा उनका जुर्माना भरने के बाद उन्हें रिहा कर दिया गया।",
+          "position": {"x": 46, "y": 107},
+          "size": {"width": 628, "height": 80},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-2",
+          "defaultText": "माननीय न्यायमूर्ति श्री योगेश यादव (सचिव, जिला विधिक सेवा प्राधिकरण, सिविल जज सीनियर डिवीजन) मुख्य अतिथि थे और विशिष्ट अतिथि मौलाना अब्दुल अली हसनी नदवी थे। इस अवसर पर संबोधित करते हुए जेलर हरयांश पांडे ने कहा कि हर व्यक्ति के भीतर एक अच्छा और एक बुरा इंसान होता है। इस प्रकार के सामाजिक कार्यों के माध्यम से उचित सुविधाएं प्रदान करके आपके भीतर के अच्छे इंसान को जगाने का प्रयास किया जाता है। यदि आप सभी अपनी गलतियों को सुधारने का संकल्प लें तो यह प्रयास सार्थक होगा। इस अवसर पर बोलते हुए मौलाना अब्दुल अली हसनी नदवी ने कहा कि संस्था का मुख्य उद्देश्य लोगों के बीच एक दयालु मानवीय बंधन बनाना है। मानवीय कार्यों के माध्यम से इस कार्य को पूरा करने के प्रयास किए जाते हैं। ये कार्य जेलों, अस्पतालों और स्कूलों में किए जाते हैं, जैसे स्कूलों में करियर मार्गदर्शन कार्यक्रम, भाषण और निबंध लेखन प्रतियोगिताएं, अस्पतालों में रक्तदान शिविरों का आयोजन, मरीजों को फल वितरण, जेल के कैदियों को गर्म कपड़े भेंट करना और जुर्माना भरने में असमर्थ लोगों की रिहाई की व्यवस्था करना आदि। यदि हम जाने-अनजाने में कोई गलती करते हैं, तो उस गलती को दोहराया नहीं जाना चाहिए। जब भी हमें जेल से बाहर जाने का अवसर मिले, हमें मानवीय मूल्यों के साथ जीवन बिताने का प्रयास करना चाहिए।",
+          "position": {"x": 46, "y": 179},
+          "size": {"width": 628, "height": 330},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-3",
+          "defaultText": "इस अवसर पर श्री शफीक चौधरी, श्री अवधेश कुमार सिंह (अध्यक्ष, जिला अधिवक्ता संघ), श्री संतोष मिश्रा (पूर्व अध्यक्ष, जिला अधिवक्ता संघ एवं स्वतंत्रता सेनानी के पुत्र), मौलाना रईस नदवी, श्री विश्वास श्रीवास्तव (महासचिव, अधिवक्ता संघ), श्री डी.पी. सलानिया (जेल अधीक्षक), श्री सुनील कुमार (डिप्टी जेलर), श्री डी.पी.एस. राठौर (डिप्टी जेलर), श्री सईद खान (जेल अधिवक्ता), श्री अनिल यादव, जितेंद्र त्रिपाठी, शिया मधेसिया अधिवक्ता और संस्था के सभी सदस्य उपस्थित थे।",
+          "position": {"x": 46, "y": 485},
+          "size": {"width": 628, "height": 140},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "date-location",
+          "defaultText": "01 जनवरी 2026, AIPIF लखनऊ",
           "position": {"x": 354, "y": 620},
           "size": {"width": 327, "height": 20},
           "style": {
