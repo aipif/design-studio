@@ -41,6 +41,11 @@
                     <span class="material-symbols-rounded">insert_text</span>
                 </button>
 
+                <!-- Edit Selected Text -->
+                <button class="icon-btn" id="edit-text-btn" title="Edit Text" style="display: none;">
+                    <span class="material-symbols-rounded">edit</span>
+                </button>
+
                 <!-- Increase Font Size -->
                 <button class="icon-btn" id="increase-font-btn" title="Increase Font Size">
                     <span class="material-symbols-rounded">text_increase</span>
@@ -223,6 +228,26 @@
 
         </div>
     </div>
+
+    <!-- Text Edit Modal -->
+    <div id="text-edit-modal" class="text-modal" style="display: none;">
+        <div class="text-modal-content">
+            <div class="text-modal-header">
+                <h2>Edit Text</h2>
+                <button class="text-modal-close" id="text-edit-close-btn">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+            </div>
+            <div class="text-modal-body">
+                <textarea id="text-edit-textarea" placeholder="Enter your text here..." rows="6"></textarea>
+            </div>
+            <div class="text-modal-footer">
+                <button class="text-modal-btn secondary" id="text-edit-cancel-btn">Cancel</button>
+                <button class="text-modal-btn primary" id="text-edit-save-btn">Save</button>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>

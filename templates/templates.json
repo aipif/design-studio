@@ -631,6 +631,92 @@
           }
         }
       ]
+    },
+    {
+      "id": "template-en-5",
+      "name": "Event Report Split Template",
+      "thumbnail": "templates/thumbnails/event-report-thumb-split.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-split.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "main-heading",
+          "defaultText": "AIPIF PRISON\nHUMANITARIAN WORKS",
+          "position": {"x": 70, "y": 78},
+          "size": {"width": 383, "height": 120},
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#FBA01E",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "left-paragraph-1",
+          "defaultText": "AIPIF gifted blankets to the inmates in District Jail Lakhimpur Kheri. Additionally on the occasion, 5 prisoners who were in the prison for not being able to pay their respective fines were also released after having their fines paid by AIPIF.",
+          "position": {"x": 34, "y": 541},
+          "size": {"width": 446, "height": 140},
+          "style": {
+            "fontSize": 20,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "left-paragraph-2",
+          "defaultText": "On this occasion Mr. Shafiq Chaudhary, Mr. Awadhesh Kumar Singh President District Advocates Association, Mr. Santosh Mishra Former President District Advocates Association and son of freedom fighter, Maulana Raees Nadvi, Mr. Vishwas Srivastava General Secretary Advocates Association, Mr. DP Slania Jail Superintendent, Mr. Sunil Kumar Deputy Jailer, Mr. DPS Rathore Deputy Jailer, Mr. Saeed Khan Jail Advocate, Mr. Anil Yadav, Jitendra Tripathi, Shia Madhesia Advocates along with all the members of the organization were present.",
+          "position": {"x": 34, "y": 685},
+          "size": {"width": 446, "height": 160},
+          "style": {
+            "fontSize": 20,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "date",
+          "defaultText": "JANUARY 01, 2026",
+          "position": {"x": 50, "y": 1140},
+          "size": {"width": 320, "height": 80},
+          "style": {
+            "fontSize": 20,
+            "fontWeight": "regular",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "location",
+          "defaultText": "LUCKNOW UNIT",
+          "position": {"x": 50, "y": 1140},
+          "size": {"width": 320, "height": 80},
+          "style": {
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98856 61136",
+          "position": {"x": 50, "y": 1245},
+          "size": {"width": 200, "height": 25},
+          "style": {
+            "fontSize": 16,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
     }
   ]
 }

@@ -68,7 +68,27 @@ function setupCanvasEvents() {
             console.log('Has controls:', obj.hasControls);
         }
         updatePropertiesPanel(e);
+        updateEditButtonVisibility(); // Add this line
     })
+
+    // Show/hide edit button based on selection
+    function updateEditButtonVisibility() {
+        const activeObject = canvas.getActiveObject();
+        const editBtn = document.getElementById('edit-text-btn');
+        
+        if (editBtn) {
+            if (activeObject && (activeObject.type === 'textbox' || activeObject.type === 'text')) {
+                editBtn.style.display = 'block';
+            } else {
+                editBtn.style.display = 'none';
+            }
+        }
+    }
+
+    canvas.on('selection:cleared', function() {
+        clearPropertiesPanel();
+        updateEditButtonVisibility(); // Add this line
+    });
 
     canvas.on('selection:updated', function(e) {
       const obj = e.target || e.selected[0];
@@ -77,6 +97,7 @@ function setupCanvasEvents() {
             canvas.requestRenderAll()
         }
         updatePropertiesPanel(e);
+        updateEditButtonVisibility(); // Add this line
     })
 }
 
@@ -159,7 +180,7 @@ function updateFontFamily(fontFamily) {
 }
 
 function addText() {
-    const text = new fabric.Textbox('Double-click to edit', {
+    const text = new fabric.Textbox('Tap to edit', {
         left: 100,
         top: 100,
         width: 200,
@@ -171,14 +192,60 @@ function addText() {
         cornerSize: 12,
         transparentCorners: false,
         lockUniScaling: false,
-        editable: true
+        editable: false  // Disable inline editing
     });
 
     canvas.add(text);
     canvas.setActiveObject(text);
     canvas.renderAll();
 
-    canvas.requestRenderAll()
+    canvas.requestRenderAll();
+}
+
+// Store reference to text being edited
+let textBeingEdited = null;
+
+// Open text edit modal
+function openTextEditModal(textObject) {
+    if (!textObject || (textObject.type !== 'textbox' && textObject.type !== 'text')) {
+        return;
+    }
+
+    textBeingEdited = textObject;
+    const modal = document.getElementById('text-edit-modal');
+    const textarea = document.getElementById('text-edit-textarea');
+    
+    // Populate textarea with current text
+    textarea.value = textObject.text || '';
+    
+    // Show modal
+    modal.style.display = 'flex';
+    
+    // Focus textarea after a brief delay (for mobile keyboards)
+    setTimeout(() => {
+        textarea.focus();
+        textarea.select();
+    }, 100);
+}
+
+// Close text edit modal
+function closeTextEditModal() {
+    const modal = document.getElementById('text-edit-modal');
+    modal.style.display = 'none';
+    textBeingEdited = null;
+}
+
+// Save edited text
+function saveEditedText() {
+    const textarea = document.getElementById('text-edit-textarea');
+    const newText = textarea.value.trim();
+    
+    if (textBeingEdited && newText) {
+        textBeingEdited.set('text', newText);
+        canvas.renderAll();
+    }
+    
+    closeTextEditModal();
 }
 
 function deleteSelected() {
@@ -1240,5 +1307,42 @@ document.addEventListener('DOMContentLoaded', function() {
     const templatesBtn = document.getElementById('templates-btn');
     if (templatesBtn) {
         templatesBtn.addEventListener('click', openTemplateModal);
+    }
+
+    // Edit text button
+    const editTextBtn = document.getElementById('edit-text-btn');
+    if (editTextBtn) {
+        editTextBtn.addEventListener('click', () => {
+            const activeObject = canvas.getActiveObject();
+            openTextEditModal(activeObject);
+        });
+    }
+
+    // Text edit modal - Save button
+    const textEditSaveBtn = document.getElementById('text-edit-save-btn');
+    if (textEditSaveBtn) {
+        textEditSaveBtn.addEventListener('click', saveEditedText);
+    }
+
+    // Text edit modal - Cancel button
+    const textEditCancelBtn = document.getElementById('text-edit-cancel-btn');
+    if (textEditCancelBtn) {
+        textEditCancelBtn.addEventListener('click', closeTextEditModal);
+    }
+
+    // Text edit modal - Close button
+    const textEditCloseBtn = document.getElementById('text-edit-close-btn');
+    if (textEditCloseBtn) {
+        textEditCloseBtn.addEventListener('click', closeTextEditModal);
+    }
+
+    // Text edit modal - Close on outside click
+    const textEditModal = document.getElementById('text-edit-modal');
+    if (textEditModal) {
+        textEditModal.addEventListener('click', (e) => {
+            if (e.target === textEditModal) {
+                closeTextEditModal();
+            }
+        });
     }
 });
