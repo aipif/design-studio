@@ -910,7 +910,7 @@ label.icon-btn:has(select:focus) .material-icons {
     background: rgba(0, 0, 0, 0.6);
     z-index: 10000;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
 }
 
