@@ -680,12 +680,11 @@
         },
         {
           "id": "date",
-          "defaultText": "JANUARY 01, 2026",
-          "position": {"x": 50, "y": 1140},
+          "defaultText": "January 01, 2025",
+          "position": {"x": 95, "y": 1161},
           "size": {"width": 320, "height": 80},
           "style": {
-            "fontSize": 20,
-            "fontWeight": "regular",
+            "fontSize": 34,
             "color": "#ffffff",
             "textAlign": "center",
             "fontFamily": "Arial"
@@ -694,10 +693,10 @@
         {
           "id": "location",
           "defaultText": "LUCKNOW UNIT",
-          "position": {"x": 50, "y": 1140},
+          "position": {"x": 100, "y": 1208},
           "size": {"width": 320, "height": 80},
           "style": {
-            "fontSize": 20,
+            "fontSize": 28,
             "fontWeight": "bold",
             "color": "#ffffff",
             "textAlign": "center",
@@ -707,11 +706,11 @@
         {
           "id": "phone-number",
           "defaultText": "+91 98856 61136",
-          "position": {"x": 50, "y": 1245},
-          "size": {"width": 200, "height": 25},
+          "position": {"x": 552.7, "y": 1099.1},
+          "size": {"width": 170, "height": 18},
           "style": {
-            "fontSize": 16,
-            "color": "#000000",
+            "fontSize": 20,
+            "color": "#FFFFFF",
             "textAlign": "left",
             "fontFamily": "Arial"
           }
