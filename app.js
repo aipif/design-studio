@@ -236,6 +236,11 @@ function closeTextEditModal() {
     textBeingEdited = null;
 }
 
+function isRTLText(text) {
+    const rtlChars = /[\u0600-\u06FF\u0750-\u077F\u0590-\u05FF\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+    return rtlChars.test(text);
+}
+
 // Save edited text
 function saveEditedText() {
     const textarea = document.getElementById('text-edit-textarea');
