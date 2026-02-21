@@ -217,6 +217,7 @@ function openTextEditModal(textObject) {
     
     // Populate textarea with current text
     textarea.value = textObject.text || '';
+    textarea.dir = isRTLText(textarea.value) ? 'rtl' : 'ltr';
     
     // Show modal
     modal.style.display = 'flex';
@@ -1344,5 +1345,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 closeTextEditModal();
             }
         });
+    }
+
+    const textEditTextarea = document.getElementById('text-edit-textarea');
+    if (textEditTextArea) {
+        textEditTextarea.addEventListener('input', function () {
+            this.dir = isRTLText(this.value) ? 'rtl' : 'ltr';
+        })
     }
 });
