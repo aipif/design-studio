@@ -716,6 +716,91 @@
           }
         }
       ]
+    },
+    {
+      "id": "template-ur-5",
+      "name": "Event Report Split Template - Urdu",
+      "thumbnail": "templates/thumbnails/event-report-thumb-split-ur.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-split-ur.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "main-heading",
+          "defaultText": "اے آئی پی آئی ایف کی جیل میں انسانی ہمدردی کی خدمات",
+          "position": {"x": 70, "y": 78},
+          "size": {"width": 383, "height": 120},
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#FBA01E",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "left-paragraph-1",
+          "defaultText": "اے آئی پی آئی ایف نے ڈسٹرکٹ جیل لکھیم پور کھیری میں قیدیوں کو کمبل تحفے میں دیے۔ مزید برآں، اس موقع پر 5 ایسے قیدی جو جرمانہ ادا نہ کر سکنے کی وجہ سے جیل میں تھے، انہیں اے آئی پی آئی ایف کی جانب سے جرمانہ ادا کرنے کے بعد رہا کرایا گیا۔",
+          "position": {"x": 34, "y": 541},
+          "size": {"width": 446, "height": 140},
+          "style": {
+            "fontSize": 20,
+            "color": "#ffffff",
+            "textAlign": "justify-right",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "left-paragraph-2",
+          "defaultText": "اس موقع پر جناب شفیق چودھری، صدر ڈسٹرکٹ ایڈووکیٹس ایسوسی ایشن جناب اودھیش کمار سنگھ، سابق صدر ڈسٹرکٹ ایڈووکیٹس ایسوسی ایشن و مجاہدِ آزادی کے بیٹے جناب سنتوش مشرا، مولانا رئیس ندوی، جنرل سیکرٹری ایڈووکیٹس ایسوسی ایشن جناب وشواس سریواستو، جیل سپرنٹنڈنٹ جناب ڈی پی سلانیا، ڈپٹی جیلر جناب سنیل کمار، ڈپٹی جیلر جناب ڈی پی ایس راٹھور، جیل ایڈووکیٹ جناب سعید خان، جناب انیل یادو، جتیندر ترپاٹھی، شیا مدھیشیا ایڈووکیٹس سمیت تنظیم کے تمام اراکین موجود تھے۔",
+          "position": {"x": 34, "y": 685},
+          "size": {"width": 446, "height": 160},
+          "style": {
+            "fontSize": 20,
+            "color": "#ffffff",
+            "textAlign": "justify-right",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "date",
+          "defaultText": "١ جنوری، ۲۰۲٦",
+          "position": {"x": 95, "y": 1161},
+          "size": {"width": 320, "height": 80},
+          "style": {
+            "fontSize": 34,
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "location",
+          "defaultText": "لکھنؤ یونٹ",
+          "position": {"x": 100, "y": 1208},
+          "size": {"width": 320, "height": 80},
+          "style": {
+            "fontSize": 28,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98856 61136",
+          "position": {"x": 552.7, "y": 1099.1},
+          "size": {"width": 170, "height": 18},
+          "style": {
+            "fontSize": 20,
+            "color": "#FFFFFF",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
     }
   ]
 }
