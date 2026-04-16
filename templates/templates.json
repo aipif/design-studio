@@ -640,6 +640,34 @@
         "image": "templates/backgrounds/event-report-bg-split.jpg"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "fixedElements": [
+        {
+          "id": "left-panel",
+          "type": "rect",
+          "label": "Left Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 520, "height": 1280 },
+          "style": {
+            "fill": "#0d5c4a",
+            "colorable": true,
+            "selectable": true,
+            "evented": true
+          }
+        },
+        {
+          "id": "right-panel",
+          "label": "Right Panel Color",
+          "type": "rect",
+          "position": { "x": 520, "y": 0 },
+          "size": { "width": 200, "height": 1280 },
+          "style": {
+            "fill": "#f5f0e8",
+            "colorable": true,
+            "selectable": true,
+            "evented": true
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "main-heading",

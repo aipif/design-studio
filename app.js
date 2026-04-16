@@ -68,7 +68,8 @@ function setupCanvasEvents() {
             console.log('Has controls:', obj.hasControls);
         }
         updatePropertiesPanel(e);
-        updateEditButtonVisibility(); // Add this line
+        updateEditButtonVisibility();
+        updateColorRectToolbar(e);
     })
 
     // Show/hide edit button based on selection
@@ -85,9 +86,23 @@ function setupCanvasEvents() {
         }
     }
 
+    function updateColorRectToolbar(e) {
+        const activeObject = canvas.getActiveObject();
+        const rectEditBtn = document.getElementById('edit-rect-color-btn');
+        
+        if (rectEditBtn) {
+            if (activeObject && activeObject.elementType === 'colorRect') {
+                rectEditBtn.style.display = 'block';
+            } else {
+                rectEditBtn.style.display = 'none';
+            }
+        }
+    }
+
     canvas.on('selection:cleared', function() {
         clearPropertiesPanel();
-        updateEditButtonVisibility(); // Add this line
+        updateEditButtonVisibility();
+        document.getElementById('edit-rect-color-btn').style.display = 'none';
     });
 
     canvas.on('selection:updated', function(e) {
@@ -97,7 +112,8 @@ function setupCanvasEvents() {
             canvas.requestRenderAll()
         }
         updatePropertiesPanel(e);
-        updateEditButtonVisibility(); // Add this line
+        updateEditButtonVisibility();
+        updateColorRectToolbar(e);
     })
 }
 
@@ -1237,6 +1253,18 @@ document.addEventListener('DOMContentLoaded', function() {
     if (fontColor) {
         fontColor.addEventListener('input', (e) => {
             updateFontColor(e.target.value);
+        });
+    }
+
+    // Panel color picker (for colorable rects in split templates)
+    const colorRectInput = document.getElementById('rect-color');
+    if (colorRectInput) {
+        colorRectInput.addEventListener('input', (e) => {
+            const activeObj = canvas.getActiveObject();
+            if (activeObj && activeObj.elementType === 'colorRect') {
+                activeObj.set('fill', e.target.value);
+                canvas.renderAll();
+            }
         });
     }
 

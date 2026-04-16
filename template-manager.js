@@ -211,23 +211,41 @@ class TemplateManager {
     createFixedElements(fixedElements) {
         fixedElements.forEach(element => {
             if (element.type === 'rect') {
-                const rect = new fabric.Rect({
-                    left: element.position.x,
-                    top: element.position.y,
-                    width: element.size.width,
-                    height: element.size.height,
-                    fill: element.style.fill,
-                    rx: element.style.rx || 0,
-                    ry: element.style.ry || 0,
-                    selectable: element.style.selectable !== undefined ? element.style.selectable : false,
-                    evented: element.style.evented !== undefined ? element.style.evented : false,
-                    opacity: element.style.opacity || 1
-                });
+            const isColorable = element.style.colorable === true;
 
-                this.canvas.add(rect);
-                this.templateElements.set(`fixed-${element.type}-${Date.now()}`, rect);
+            const rect = new fabric.Rect({
+                left: element.position.x,
+                top: element.position.y,
+                width: element.size.width,
+                height: element.size.height,
+                fill: element.style.fill,
+                rx: element.style.rx || 0,
+                ry: element.style.ry || 0,
+                opacity: element.style.opacity || 1,
+
+                // Colorable rects: selectable but fully locked in place
+                selectable: isColorable,
+                evented: isColorable,
+                hasControls: false,
+                hasBorders: isColorable,
+                lockMovementX: true,
+                lockMovementY: true,
+                lockScalingX: true,
+                lockScalingY: true,
+                lockRotation: true,
+                hoverCursor: isColorable ? 'pointer' : 'default',
+
+                // Custom markers for toolbar detection
+                elementType: isColorable ? 'colorRect' : 'fixed',
+                rectId: element.id,
+                rectLabel: element.label || 'Panel Color',
+            });
+
+            this.canvas.add(rect);
+            this.canvas.sendToBack(rect); // always behind text
+            this.templateElements.set(`fixed-${element.id}-${Date.now()}`, rect);
             }
-        })
+        });
     }
 }
 
