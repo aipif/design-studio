@@ -1015,6 +1015,16 @@ function openTemplateModal() {
     const modal = document.getElementById('template-modal');
     modal.style.display = 'flex';
     loadTemplatesIntoModal();
+
+    // Wire language filter dropdown (modal is now in DOM)
+    const dropdown = document.getElementById('language-filter');
+    if (dropdown && !dropdown._listenerAdded) {
+        dropdown.addEventListener('change', () => {
+            const allTemplates = templateManager.getCachedTemplates?.() || [];
+            renderTemplateGrid(allTemplates, dropdown.value || null);
+        });
+        dropdown._listenerAdded = true;
+    }
 }
 
 function closeTemplateModal() {
@@ -1029,7 +1039,7 @@ async function loadTemplatesIntoModal() {
 
     try {
         const templates = await templateManager.loadTemplatesData();
-        renderTemplateGrid(templates);
+        renderTemplateGrid(templates, 'en');
     } catch (error) {
         console.error('Failed to load templates:', error);
         grid.innerHTML = '<div class="loading-templates">Failed to load templates</div>';
@@ -1041,7 +1051,11 @@ function renderTemplateGrid(templates) {
     const grid = document.getElementById('template-grid');
     grid.innerHTML = '';
 
-    templates.forEach(template => {
+    const filtered = language
+        ? templates.filter(t => !t.language || t.language === language)
+        : templates;
+
+    filtered.forEach(template => {
         const card = createTemplateCard(template);
         grid.appendChild(card);
     });

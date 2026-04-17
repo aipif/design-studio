@@ -292,7 +292,7 @@ class TemplateSelector {
     }
 
     async loadTemplateGrid() {
-        const grid = document.getElementById('template-selector');
+        const grid = document.getElementById('template-grid');
         if (!grid) return;
 
         grid.innerHTML = '<div class="loading-templates">Loading templates...</div>';
@@ -315,7 +315,7 @@ class TemplateSelector {
     }
 
     renderTemplateGrid(templates, language = 'en') {
-        const grid = document.getElementById('template-selector');
+        const grid = document.getElementById('template-grid');
         grid.innerHTML = '';
 
         const filtered = templates.filter(t => (t.language || 'en') === language);
