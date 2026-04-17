@@ -822,7 +822,7 @@ label.icon-btn:has(select:focus) .material-icons {
 }
 
 .template-language-filter {
-    padding: var(--space-3, 12px) var(--space-4, 16px) 0;
+    padding: var(--space-3, 12px) var(--space-4, 16px);
 }
 
 .template-language-filter select {

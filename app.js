@@ -8,6 +8,7 @@ const BASE_HEIGHT = 1280;
 
 // Initialize template system
 const templateManager = new TemplateManager(canvas);
+let cachedTemplates = [];
 
 // Collage state management
 const collageState = {
@@ -1020,8 +1021,7 @@ function openTemplateModal() {
     const dropdown = document.getElementById('language-filter');
     if (dropdown && !dropdown._listenerAdded) {
         dropdown.addEventListener('change', () => {
-            const allTemplates = templateManager.getCachedTemplates?.() || [];
-            renderTemplateGrid(allTemplates, dropdown.value || null);
+            renderTemplateGrid(cachedTemplates, dropdown.value || null);
         });
         dropdown._listenerAdded = true;
     }
@@ -1038,8 +1038,8 @@ async function loadTemplatesIntoModal() {
     grid.innerHTML = '<div class="loading-templates">Loading templates...</div>';
 
     try {
-        const templates = await templateManager.loadTemplatesData();
-        renderTemplateGrid(templates, 'en');
+        cachedTemplates = await templateManager.loadTemplatesData();
+        renderTemplateGrid(cachedTemplates, 'en');
     } catch (error) {
         console.error('Failed to load templates:', error);
         grid.innerHTML = '<div class="loading-templates">Failed to load templates</div>';
@@ -1047,7 +1047,7 @@ async function loadTemplatesIntoModal() {
 }
 
 // Render template cards in grid
-function renderTemplateGrid(templates) {
+function renderTemplateGrid(templates, language) {
     const grid = document.getElementById('template-grid');
     grid.innerHTML = '';
 
