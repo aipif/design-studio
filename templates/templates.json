@@ -453,7 +453,8 @@
           "style": {
             "fill": "#FFDDBF",
             "selectable": false,
-            "evented": false
+            "evented": false,
+            "zIndex": 2
           }
         }
       ],
@@ -551,7 +552,8 @@
           "style": {
             "fill": "#FFDDBF",
             "selectable": false,
-            "evented": false
+            "evented": false,
+            "zIndex": 2
           }
         }
       ],
@@ -637,29 +639,31 @@
       "name": "Event Report Split Template",
       "thumbnail": "templates/thumbnails/event-report-thumb-split.jpg",
       "background": {
-        "image": "templates/backgrounds/event-report-bg-split.jpg"
+        "image": "templates/backgrounds/event-report-bg-split.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
       "fixedElements": [
         {
           "id": "left-panel",
           "type": "rect",
           "label": "Left Panel Color",
           "position": { "x": 0, "y": 0 },
-          "size": { "width": 520, "height": 1280 },
+          "size": { "width": 510, "height": 1280 },
           "style": {
             "fill": "#0d5c4a",
             "colorable": true,
             "selectable": true,
-            "evented": true
+            "evented": true,
+            "zIndex": 0
           }
         },
         {
           "id": "right-panel",
           "label": "Right Panel Color",
           "type": "rect",
-          "position": { "x": 520, "y": 0 },
-          "size": { "width": 200, "height": 1280 },
+          "position": { "x": 510, "y": 0 },
+          "size": { "width": 210, "height": 1280 },
           "style": {
             "fill": "#f5f0e8",
             "colorable": true,

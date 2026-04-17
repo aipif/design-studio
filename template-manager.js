@@ -114,6 +114,7 @@ class TemplateManager {
             this.createTextElements(template.textElements);
         }
 
+        this.applyZOrdering();
         this.canvas.renderAll();
     }
 
@@ -144,10 +145,28 @@ class TemplateManager {
                                 evented: false
                             });
 
-                            this.canvas.setBackgroundImage(img, () => {
+                            const useAsObject = this.currentTemplate.backgroundAsObject === true;
+
+                            if (useAsObject) {
+                                // Add as regular object so colorRects can go behind it
+                                img.set({
+                                    left: 0,
+                                    top: 0,
+                                    scaleX: this.currentTemplate.dimensions.width / img.width,
+                                    scaleY: this.currentTemplate.dimensions.height / img.height,
+                                    selectable: false,
+                                    evented: false,
+                                    elementType: 'backgroundObject',
+                                });
+                                this.canvas.add(img);
                                 this.canvas.renderAll();
                                 resolve();
-                            });
+                            } else {
+                                this.canvas.setBackgroundImage(img, () => {
+                                    this.canvas.renderAll();
+                                    resolve();
+                                });
+                            }
                         } else {
                             // Image failed to load, use fallback color
                             console.warn('Failed to load background image, using fallback color');
@@ -222,8 +241,6 @@ class TemplateManager {
                 rx: element.style.rx || 0,
                 ry: element.style.ry || 0,
                 opacity: element.style.opacity || 1,
-
-                // Colorable rects: selectable but fully locked in place
                 selectable: isColorable,
                 evented: isColorable,
                 hasControls: false,
@@ -233,18 +250,30 @@ class TemplateManager {
                 lockScalingX: true,
                 lockScalingY: true,
                 lockRotation: true,
-                hoverCursor: isColorable ? 'pointer' : 'default',
-
-                // Custom markers for toolbar detection
+                zOrder: element.style.zIndex ?? 1,
                 elementType: isColorable ? 'colorRect' : 'fixed',
                 rectId: element.id,
                 rectLabel: element.label || 'Panel Color',
             });
 
             this.canvas.add(rect);
-            this.canvas.sendToBack(rect); // always behind text
             this.templateElements.set(`fixed-${element.id}-${Date.now()}`, rect);
             }
+        });
+    }
+
+    applyZOrdering() {
+        const objects = this.canvas.getObjects();
+
+        const bgObjs     = objects.filter(o => o.elementType === 'backgroundObject');
+        const fixedObjs  = objects.filter(o => o.elementType === 'colorRect' || o.elementType === 'fixed');
+        const textObjs   = objects.filter(o => !['backgroundObject', 'colorRect', 'fixed'].includes(o.elementType));
+
+        fixedObjs.sort((a, b) => (a.zOrder ?? 1) - (b.zOrder ?? 1));
+
+        // Stack order: colorRects(zIndex 0) → background image → other fixed(zIndex 2+) → text
+        [...fixedObjs, ...bgObjs, ...textObjs].forEach(obj => {
+            this.canvas.bringToFront(obj);
         });
     }
 }
