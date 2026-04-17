@@ -293,28 +293,34 @@ class TemplateSelector {
 
     async loadTemplateGrid() {
         const grid = document.getElementById('template-selector');
-
-        if (!grid) {
-            console.error('Template selector element not found');
-            return;
-        }
+        if (!grid) return;
 
         grid.innerHTML = '<div class="loading-templates">Loading templates...</div>';
 
         try {
-            const templates = await this.templateManager.loadTemplatesData();
-            this.renderTemplateGrid(templates);
+            this.allTemplates = await this.templateManager.loadTemplatesData();
+            this.renderTemplateGrid(this.allTemplates, 'en');
+            
+            // Wire up language dropdown
+            const langFilter = document.getElementById('language-filter');
+            if (langFilter) {
+                langFilter.addEventListener('change', (e) => {
+                    this.renderTemplateGrid(this.allTemplates, e.target.value);
+                });
+            }
         } catch (error) {
             console.error('Failed to load templates:', error);
             grid.innerHTML = '<div class="loading-templates">Failed to load templates</div>';
         }
     }
 
-    renderTemplateGrid(templates) {
+    renderTemplateGrid(templates, language = 'en') {
         const grid = document.getElementById('template-selector');
         grid.innerHTML = '';
 
-        templates.forEach(template => {
+        const filtered = templates.filter(t => (t.language || 'en') === language);
+
+        filtered.forEach(template => {
             const templateCard = document.createElement('div');
             templateCard.className = 'template-card';
             templateCard.dataset.templateId = template.id;

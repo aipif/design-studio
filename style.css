@@ -821,6 +821,20 @@ label.icon-btn:has(select:focus) .material-icons {
     flex: 1;
 }
 
+.template-language-filter {
+    padding: var(--space-3, 12px) var(--space-4, 16px) 0;
+}
+
+.template-language-filter select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
 .template-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Force 2 columns on mobile */
