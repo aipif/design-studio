@@ -92,7 +92,7 @@ function setupCanvasEvents() {
         
         if (rectEditBtn) {
             if (activeObject && activeObject.elementType === 'colorRect') {
-                rectEditBtn.style.display = 'block';
+                rectEditBtn.style.display = 'flex';
             } else {
                 rectEditBtn.style.display = 'none';
             }
