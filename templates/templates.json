@@ -154,9 +154,26 @@
       "language": "en",
       "thumbnail": "templates/thumbnails/event-report-thumb.jpg",
       "background": {
-        "image": "templates/backgrounds/event-report-bg.jpg"
+        "image": "templates/backgrounds/event-report-bg.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "one-panel",
+          "type": "rect",
+          "label": "One Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 720, "height": 1280 },
+          "style": {
+            "fill": "#913219",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "date-banner",
@@ -224,13 +241,30 @@
     },
     {
       "id": "template-hi-2",
-      "name": "Event Report Template - Hindi",
+      "name": "Event Report Template",
       "language": "hi",
-      "thumbnail": "templates/thumbnails/event-report-thumb-hi.jpg",
+      "thumbnail": "templates/thumbnails/event-report-thumb.jpg",
       "background": {
-        "image": "templates/backgrounds/event-report-bg-hi.jpg"
+        "image": "templates/backgrounds/event-report-bg-hi.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "one-panel",
+          "type": "rect",
+          "label": "One Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 720, "height": 1280 },
+          "style": {
+            "fill": "#913219",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "date-banner",
@@ -297,18 +331,35 @@
       ]
     },
     {
-      "id": "template-en-3",
-      "name": "Event Report Template (Blue)",
-      "language": "en",
-      "thumbnail": "templates/thumbnails/event-report-thumb-blue.jpg",
+      "id": "template-ur-2",
+      "name": "Event Report Template",
+      "language": "ur",
+      "thumbnail": "templates/thumbnails/event-report-thumb.jpg",
       "background": {
-        "image": "templates/backgrounds/event-report-bg-blue.jpg"
+        "image": "templates/backgrounds/event-report-bg-ur.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "one-panel",
+          "type": "rect",
+          "label": "One Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 720, "height": 1280 },
+          "style": {
+            "fill": "#913219",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "date-banner",
-          "defaultText": "JANUARY 01 2026 AIPIF LUCKNOW",
+          "defaultText": "01 جنوری 2026 AIPIF لکھنؤ",
           "position": {"x": 170, "y": 38},
           "size": {"width": 380, "height": 30},
           "style": {
@@ -321,20 +372,20 @@
         },
         {
           "id": "main-heading",
-          "defaultText": "AIPIF PRISON\nHUMANITARIAN WORKS",
+          "defaultText": "AIPIF جیل\nانسانی ہمدردی کا کام",
           "position": {"x": 90, "y": 100},
           "size": {"width": 540, "height": 120},
           "style": {
             "fontSize": 36,
             "fontWeight": "bold",
-            "color": "#195A92",
+            "color": "#000000",
             "textAlign": "center",
             "fontFamily": "Arial"
           }
         },
         {
           "id": "body-paragraph-1",
-          "defaultText": "AIPIF gifted blankets to the inmates in District Jail Lakhimpur Kheri. Additionally on the occasion, 5 prisoners who were in the prison for not being able to pay their respective fines were also released after having their fines paid by AIPIF.",
+          "defaultText": "AIPIF نے ضلع جیل لکھیم پور کھیری کے قیدیوں کو کمبل پیش کیے۔ اس کے علاوہ، اس موقع پر ان 5 قیدیوں کو بھی رہا کیا گیا جو اپنا جرمانہ ادا نہ کر پانے کی وجہ سے جیل میں قید تھے؛ AIPIF کی جانب سے ان کا جرمانہ ادا کرنے کے بعد انہیں رہا کر دیا گیا۔",
           "position": {"x": 90, "y": 240},
           "size": {"width": 540, "height": 100},
           "style": {
@@ -346,7 +397,7 @@
         },
         {
           "id": "body-paragraph-2",
-          "defaultText": "On this occasion Mr. Shafiq Chaudhary, Mr. Awadhesh Kumar Singh President District Advocates Association, Mr. Santosh Mishra Former President District Advocates Association and son of freedom fighter, Maulana Raees Nadvi, Mr. Vishwas Srivastava General Secretary Advocates Association, Mr. DP Slania Jail Superintendent, Mr. Sunil Kumar Deputy Jailer, Mr. DPS Rathore Deputy Jailer, Mr. Saeed Khan Jail Advocate, Mr.Anil Yadav, Jitendra Tripathi, Shia Madhesia Advocates along with all the members of the organization were present.",
+          "defaultText": "اس موقع پر جناب شفیق چوہدری، جناب اودھیش کمار سنگھ (صدر، ڈسٹرکٹ بار ایسوسی ایشن)، جناب سنتوش مشرا (سابق صدر، ڈسٹرکٹ بار ایسوسی ایشن اور مجاہدِ آزادی کے فرزند)، مولانا رئیس ندوی، جناب وشواس شریواستو (جنرل سکریٹری، بار ایسوسی ایشن)، جناب ڈی پی سلانیا (جیل سپرنٹنڈنٹ)، جناب سنیل کمار (ڈپٹی جیلر)، جناب ڈی پی ایس راٹھور (ڈپٹی جیلر)، جناب سعید خان (جیل ایڈووکیٹ)، جناب انیل یادو، جتیندر ترپاٹھی، شیا مدھیسیا ایڈووکیٹ اور تنظیم کے تمام اراکین موجود تھے۔",
           "position": {"x": 90, "y": 350},
           "size": {"width": 540, "height": 180},
           "style": {
@@ -371,18 +422,35 @@
       ]
     },
     {
-      "id": "template-hi-3",
-      "name": "Event Report Template (Blue) - Hindi",
-      "language": "hi",
-      "thumbnail": "templates/thumbnails/event-report-thumb-blue-hi.jpg",
+      "id": "template-tg-2",
+      "name": "Event Report Template",
+      "language": "tg",
+      "thumbnail": "templates/thumbnails/event-report-thumb.jpg",
       "background": {
-        "image": "templates/backgrounds/event-report-bg-blue-hi.jpg"
+        "image": "templates/backgrounds/event-report-bg-tg.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "one-panel",
+          "type": "rect",
+          "label": "One Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 720, "height": 1280 },
+          "style": {
+            "fill": "#913219",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "date-banner",
-          "defaultText": "01 जनवरी 2026 AIPIF लखनऊ",
+          "defaultText": "01 జనవరి 2026 AIPIF లక్నో",
           "position": {"x": 170, "y": 38},
           "size": {"width": 380, "height": 30},
           "style": {
@@ -395,20 +463,20 @@
         },
         {
           "id": "main-heading",
-          "defaultText": "AIPIF जेल\nमानवीय कार्य",
+          "defaultText": "AIPIF జైలు\nమానవతా కార్యక్రమం",
           "position": {"x": 90, "y": 100},
           "size": {"width": 540, "height": 120},
           "style": {
             "fontSize": 36,
             "fontWeight": "bold",
-            "color": "#195A92",
+            "color": "#000000",
             "textAlign": "center",
             "fontFamily": "Arial"
           }
         },
         {
           "id": "body-paragraph-1",
-          "defaultText": "AIPIF ने जिला जेल लखीमपुर खीरी के कैदियों को कंबल भेंट किए। इसके अतिरिक्त, इस अवसर पर उन 5 कैदियों को भी रिहा किया गया जो अपना जुर्माना न भर पाने के कारण जेल में थे; AIPIF द्वारा उनका जुर्माना भरने के बाद उन्हें रिहा कर दिया गया।",
+          "defaultText": "AIPIF లఖింపూర్ ఖేరీ జిల్లా జైలులోని ఖైదీలకు దుప్పట్లు అందజేసింది. ఇంతేకాకుండా, జరిమానా చెల్లించలేక జైలులో మగ్గుతున్న 5 గురు ఖైదీలను కూడా ఈ సందర్భంగా విడుదల చేశారు; AIPIF వారి జరిమానా చెల్లించిన తర్వాత వారిని విడుదల చేయడం జరిగింది.",
           "position": {"x": 90, "y": 240},
           "size": {"width": 540, "height": 100},
           "style": {
@@ -420,7 +488,7 @@
         },
         {
           "id": "body-paragraph-2",
-          "defaultText": "इस अवसर पर श्री शफीक चौधरी, श्री अवधेश कुमार सिंह (अध्यक्ष, जिला अधिवक्ता संघ), श्री संतोष मिश्रा (पूर्व अध्यक्ष, जिला अधिवक्ता संघ एवं स्वतंत्रता सेनानी के पुत्र), मौलाना रईस नदवी, श्री विश्वास श्रीवास्तव (महासचिव, अधिवक्ता संघ), श्री डी.पी. सलानिया (जेल अधीक्षक), श्री सुनील कुमार (डिप्टी जेलर), श्री डी.पी.एस. राठौर (डिप्टी जेलर), श्री सईद खान (जेल अधिवक्ता), श्री अनिल यादव, जितेंद्र त्रिपाठी, शिया मधेसिया अधिवक्ता और संस्था के सभी सदस्य उपस्थित थे।",
+          "defaultText": "ఈ కార్యక్రమంలో శ్రీ షఫీక్ చౌదరి, శ్రీ అవధేష్ కుమార్ సింగ్ (అధ్యక్షుడు, జిల్లా బార్ అసోసియేషన్), శ్రీ సంతోష్ మిశ్రా (మాజీ అధ్యక్షుడు, జిల్లా బార్ అసోసియేషన్ మరియు స్వాతంత్ర్య సమరయోధుని కుమారుడు), మౌలానా రయీస్ నద్వీ, శ్రీ విశ్వాస్ శ్రీవాస్తవ (జనరల్ సెక్రటరీ, బార్ అసోసియేషన్), శ్రీ డి.పి. సలానియా (జైలు సూపరింటెండెంట్), శ్రీ సునీల్ కుమార్ (డిప్యూటీ జైలర్), శ్రీ డి.పి.ఎస్. రాథోడ్ (డిప్యూటీ జైలర్), శ్రీ సయీద్ ఖాన్ (జైలు న్యాయవాది), శ్రీ అనిల్ యాదవ్, జితేంద్ర త్రిపాఠి, షియా మధేసియా అడ్వకేట్ మరియు సంస్థ సభ్యులందరూ పాల్గొన్నారు.",
           "position": {"x": 90, "y": 350},
           "size": {"width": 540, "height": 180},
           "style": {
