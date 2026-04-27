@@ -4,11 +4,28 @@
       "id": "template-en-1",
       "name": "English Template",
       "language": "en",
-      "thumbnail": "templates/thumbnails/medical-camp-1.jpeg",
+      "thumbnail": "templates/thumbnails/medical-camp-1.jpg",
       "background": {
-        "image": "templates/backgrounds/medical-camp-bg.jpeg"
+        "image": "templates/backgrounds/medical-camp-bg.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "one-panel",
+          "type": "rect",
+          "label": "One Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 720, "height": 1280 },
+          "style": {
+            "fill": "#f2e6d1",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "heading",
@@ -41,11 +58,28 @@
       "id": "template-hi-1",
       "name": "Hindi Template",
       "language": "hi",
-      "thumbnail": "templates/thumbnails/medical-camp-1-hi.jpg",
+      "thumbnail": "templates/thumbnails/medical-camp-1.jpg",
       "background": {
-        "image": "templates/backgrounds/medical-camp-bg-hi.jpg"
+        "image": "templates/backgrounds/medical-camp-bg-hi.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "one-panel",
+          "type": "rect",
+          "label": "One Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 720, "height": 1280 },
+          "style": {
+            "fill": "#f2e6d1",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "heading",
@@ -78,11 +112,28 @@
       "id": "template-ur-1",
       "name": "Urdu Template",
       "language": "ur",
-      "thumbnail": "templates/thumbnails/medical-camp-1-ur.jpg",
+      "thumbnail": "templates/thumbnails/medical-camp-1.jpg",
       "background": {
-        "image": "templates/backgrounds/medical-camp-bg-ur.jpg"
+        "image": "templates/backgrounds/medical-camp-bg-ur.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "one-panel",
+          "type": "rect",
+          "label": "One Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 720, "height": 1280 },
+          "style": {
+            "fill": "#f2e6d1",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "heading",
@@ -115,11 +166,28 @@
       "id": "template-tg-1",
       "name": "Telugu Template",
       "language": "tg",
-      "thumbnail": "templates/thumbnails/medical-camp-1-tg.jpg",
+      "thumbnail": "templates/thumbnails/medical-camp-1.jpg",
       "background": {
-        "image": "templates/backgrounds/medical-camp-bg-tg.jpg"
+        "image": "templates/backgrounds/medical-camp-bg-tg.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "one-panel",
+          "type": "rect",
+          "label": "One Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 720, "height": 1280 },
+          "style": {
+            "fill": "#f2e6d1",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "heading",
