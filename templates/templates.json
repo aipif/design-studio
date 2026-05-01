@@ -51,6 +51,19 @@
             "textAlign": "left",
             "fontFamily": "Arial"
           }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98765 43210",
+          "position": {"x": 90, "y": 1206},
+          "size": {"width": 168, "height": 21},
+          "style": {
+            "fontSize": 20,
+            "fontWeight":"bold",
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
         }
       ]
     },
@@ -102,6 +115,19 @@
           "style": {
             "fontSize": 18,
             "color": "#ffffff",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98765 43210",
+          "position": {"x": 90, "y": 1206},
+          "size": {"width": 168, "height": 21},
+          "style": {
+            "fontSize": 20,
+            "fontWeight":"bold",
+            "color": "#000000",
             "textAlign": "left",
             "fontFamily": "Arial"
           }
@@ -159,6 +185,19 @@
             "textAlign": "right",
             "fontFamily": "Arial"
           }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98765 43210",
+          "position": {"x": 90, "y": 1206},
+          "size": {"width": 168, "height": 21},
+          "style": {
+            "fontSize": 20,
+            "fontWeight":"bold",
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
         }
       ]
     },
@@ -210,6 +249,19 @@
           "style": {
             "fontSize": 18,
             "color": "#ffffff",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98765 43210",
+          "position": {"x": 90, "y": 1206},
+          "size": {"width": 168, "height": 21},
+          "style": {
+            "fontSize": 20,
+            "fontWeight":"bold",
+            "color": "#000000",
             "textAlign": "left",
             "fontFamily": "Arial"
           }
@@ -681,10 +733,210 @@
       ]
     },
     {
+      "id": "template-ur-4",
+      "name": "Event Report Template (Purple)",
+      "language": "ur",
+      "thumbnail": "templates/thumbnails/event-report-thumb-purple.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-purple-ur.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "fixedElements": [
+        {
+          "type": "rect",
+          "id": "date-box-bg",
+          "position": {"x": 355, "y": 615},
+          "size": {"width": 325, "height": 33},
+          "style": {
+            "fill": "#FFDDBF",
+            "selectable": false,
+            "evented": false,
+            "zIndex": 2
+          }
+        }
+      ],
+      "textElements": [
+        {
+          "id": "main-heading",
+          "defaultText": "اے آئی پی آئی ایف کے جیل میں انسانی ہمدردی کے کام",
+          "position": {"x": 48, "y": 40},
+          "size": {"width": 629, "height": 37},
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-1",
+          "defaultText": "اے آئی پی آئی ایف (AIPIF) نے ڈسٹرکٹ جیل لکھیم پور کھیری میں قیدیوں کو کمبل تحفے میں دیے۔ مزید برآں اس موقع پر، 5 قیدی جو جرمانہ ادا نہ کر پانے کی وجہ سے جیل میں تھے، انہیں بھی اے آئی پی آئی ایف کی جانب سے ان کا جرمانہ ادا کرنے کے بعد رہا کر دیا گیا۔",
+          "position": {"x": 46, "y": 107},
+          "size": {"width": 628, "height": 80},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-2",
+          "defaultText": "معزز جسٹس جناب یوگیش یادو، سیکرٹری ڈسٹرکٹ لیگل سروسز اتھارٹی، سول جج سینئر ڈویژن مہمان خصوصی تھے، اور اعزازی مہمان مولانا عبد العلی حسنی ندوی تھے۔ اس موقع پر خطاب کرتے ہوئے جیلر ہریانش پانڈے نے کہا کہ ہر انسان کے اندر ایک اچھا اور ایک برا انسان ہوتا ہے، اور اس طرح کے سماجی کاموں کے ذریعے مناسب سہولیات فراہم کر کے آپ کے اندر کے اچھے انسان کو بیدار کرنے کی کوشش کی جاتی ہے۔ اگر آپ سب اپنی غلطیوں کو سدھارنے کا عزم کریں تو یہ کوشش کارگر ثابت ہوگی۔ اس موقع پر بات کرتے ہوئے مولانا عبد العلی حسنی ندوی نے کہا کہ تنظیم کا بنیادی مقصد لوگوں کے درمیان انسانوں سے انسانوں کا ایک ہمدردانہ رشتہ قائم کرنا ہے، اور انسانی ہمدردی کے کاموں کے ذریعے اس مقصد کو حاصل کرنے کی کوشش کی جاتی ہے۔ یہ کام جیلوں، ہسپتالوں اور سکولوں میں کیے جاتے ہیں جیسے کیریئر گائیڈنس پروگرام، سکولوں میں تقریری اور مضمون نویسی کے مقابلے، ہسپتالوں میں بلڈ ڈونیشن کیمپ کا انعقاد، مریضوں کو پھل پیش کرنا وغیرہ، جیلوں کے قیدیوں کو گرم کپڑے تحفے میں دینا اور جو لوگ اپنا جرمانہ ادا کرنے سے قاصر ہیں ان کی رہائی کا بندوبست کرنا وغیرہ۔ اگر ہم سے جانے انجانے میں کوئی غلطی ہو جائے تو اس غلطی کو دہرانا نہیں چاہیے، اور جب بھی ہمیں جیل سے باہر جانے کا موقع ملے تو ہمیں انسانی اقدار کے ساتھ زندگی گزارنے کی کوشش کرنی چاہیے۔",
+          "position": {"x": 46, "y": 179},
+          "size": {"width": 628, "height": 330},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-3",
+          "defaultText": "اس موقع پر جناب شفیق چودھری، جناب اودھیش کمار سنگھ صدر ڈسٹرکٹ ایڈووکیٹس ایسوسی ایشن، جناب سنتوش مشرا سابق صدر ڈسٹرکٹ ایڈووکیٹس ایسوسی ایشن اور مجاہد آزادی کے فرزند، مولانا رئیس ندوی، جناب وشواس سریواستو جنرل سیکرٹری ایڈووکیٹس ایسوسی ایشن، جناب ڈی پی سلانیا جیل سپرنٹنڈنٹ، جناب سنیل کمار ڈپٹی جیلر، جناب ڈی پی ایس راٹھور ڈپٹی جیلر، جناب سعید خان جیل ایڈووکیٹ، جناب انیل یادو، جتیندر ترپاٹھی، شیو مدھیشیا ایڈووکیٹس کے ساتھ تنظیم کے تمام ممبران موجود تھے۔",
+          "position": {"x": 46, "y": 485},
+          "size": {"width": 628, "height": 140},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "date-location",
+          "defaultText": "01 جنوری 2026، اے آئی پی آئی ایف لکھنؤ",
+          "position": {"x": 354, "y": 620},
+          "size": {"width": 327, "height": 20},
+          "style": {
+            "fontSize": 21,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98856 61136",
+          "position": {"x": 51, "y": 1241},
+          "size": {"width": 190, "height": 20},
+          "style": {
+            "fontSize": 24,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-tg-4",
+      "name": "Event Report Template (Purple)",
+      "language": "tg",
+      "thumbnail": "templates/thumbnails/event-report-thumb-purple.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-purple-tg.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "fixedElements": [
+        {
+          "type": "rect",
+          "id": "date-box-bg",
+          "position": {"x": 355, "y": 615},
+          "size": {"width": 325, "height": 33},
+          "style": {
+            "fill": "#FFDDBF",
+            "selectable": false,
+            "evented": false,
+            "zIndex": 2
+          }
+        }
+      ],
+      "textElements": [
+        {
+          "id": "main-heading",
+          "defaultText": "ఏఐపీఐఎఫ్ జైలు మానవతా కార్యక్రమాలు",
+          "position": {"x": 48, "y": 40},
+          "size": {"width": 629, "height": 37},
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-1",
+          "defaultText": "ఏఐపీఐఎఫ్ (AIPIF) లఖింపూర్ ఖేరి జిల్లా జైలులోని ఖైదీలకు దుప్పట్లను బహుకరించింది. అంతేకాకుండా ఈ సందర్భంగా, తమ జరిమానాలు చెల్లించలేక జైలులో మగ్గుతున్న 5 గురు ఖైదీల జరిమానాలను ఏఐపీఐఎఫ్ చెల్లించి వారిని విడుదల చేయించింది.",
+          "position": {"x": 46, "y": 107},
+          "size": {"width": 628, "height": 80},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-2",
+          "defaultText": "జిల్లా న్యాయ సేవా అధికార సంస్థ కార్యదర్శి, సివిల్ జడ్జి సీనియర్ డివిజన్ గౌరవనీయ న్యాయమూర్తి శ్రీ యోగేష్ యాదవ్ ముఖ్య అతిథిగా, మౌలానా అబ్దుల్ అలీ హసనీ నద్వీ విశిష్ట అతిథిగా హాజరయ్యారు. ఈ సందర్భంగా జైలర్ హర్యాన్ష్ పాండే మాట్లాడుతూ, ప్రతి మనిషిలోనూ ఒక మంచి, ఒక చెడు వ్యక్తి ఉంటారని, ఇలాంటి సామాజిక కార్యక్రమాల ద్వారా సరైన సదుపాయాలు కల్పించి మీలోని మంచి వ్యక్తిని మేల్కొల్పే ప్రయత్నం జరుగుతోందని అన్నారు. మీరంతా మీ తప్పులను సరిదిద్దుకోవాలని నిశ్చయించుకుంటే ఈ ప్రయత్నం ఫలప్రదమవుతుందని ఆయన తెలిపారు. ఈ సందర్భంగా మౌలానా అబ్దుల్ అలీ హసనీ నద్వీ మాట్లాడుతూ, మనుషుల మధ్య దయతో కూడిన మానవ బంధాన్ని నిర్మించడమే తమ సంస్థ ప్రధాన ఉద్దేశమని అన్నారు. జైళ్లు, ఆసుపత్రులు, పాఠశాలల్లో కెరీర్ గైడెన్స్ ప్రోగ్రామ్‌లు, పాఠశాలల్లో వక్తృత్వ, వ్యాసరచన పోటీలు, ఆసుపత్రులలో రక్తదాన శిబిరాలు, రోగులకు పండ్ల పంపిణీ, ఖైదీలకు వెచ్చని దుస్తుల పంపిణీ, జరిమానాలు చెల్లించలేని వారి విడుదలకు ఏర్పాట్లు చేయడం వంటివి చేస్తున్నామని చెప్పారు. తెలిసి కానీ, తెలియక కానీ మనం తప్పులు చేస్తే, ఆ తప్పు పునరావృతం కాకూడదని, జైలు నుండి బయటకు వెళ్ళే అవకాశం వచ్చినప్పుడల్లా మానవతా విలువల తో జీవితం గడపడానికి ప్రయత్నించాలని ఆయన అన్నారు.",
+          "position": {"x": 46, "y": 179},
+          "size": {"width": 628, "height": 330},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "body-paragraph-3",
+          "defaultText": "ఈ కార్యక్రమంలో శ్రీ షఫీక్ చౌదరి, జిల్లా న్యాయవాదుల సంఘం అధ్యక్షుడు శ్రీ అవధేష్ కుమార్ సింగ్, స్వాతంత్ర్య సమరయోధుని కుమారుడు మరియు జిల్లా న్యాయవాదుల సంఘం మాజీ అధ్యక్షుడు శ్రీ సంతోష్ మిశ్రా, మౌలానా రయీస్ నద్వీ, న్యాయవాదుల సంఘం ప్రధాన కార్యదర్శి శ్రీ విశ్వాస్ శ్రీవాస్తవ, జైలు సూపరింటెండెంట్ శ్రీ డి.పి.స్లానియా, డిప్యూటీ జైలర్లు శ్రీ సునీల్ కుమార్, శ్రీ డి.పి.ఎస్ రాథోడ్, జైలు న్యాయవాది శ్రీ సయీద్ ఖాన్, శ్రీ అనిల్ యాదవ్, జితేంద్ర త్రిపాఠి, శివ మధేసియా తదితర న్యాయవాదులతో పాటు సంస్థ సభ్యులందరూ పాల్గొన్నారు.",
+          "position": {"x": 46, "y": 485},
+          "size": {"width": 628, "height": 140},
+          "style": {
+            "fontSize": 15,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "date-location",
+          "defaultText": "01 జనవరి 2026, ఏఐపీఐఎఫ్ లక్నో",
+          "position": {"x": 354, "y": 620},
+          "size": {"width": 327, "height": 20},
+          "style": {
+            "fontSize": 21,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98856 61136",
+          "position": {"x": 51, "y": 1241},
+          "size": {"width": 190, "height": 20},
+          "style": {
+            "fontSize": 24,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
       "id": "template-hi-4",
-      "name": "Event Report Template (Purple) - Hindi",
+      "name": "Event Report Template (Purple)",
       "language": "hi",
-      "thumbnail": "templates/thumbnails/event-report-thumb-purple-hi.jpg",
+      "thumbnail": "templates/thumbnails/event-report-thumb-purple.jpg",
       "background": {
         "image": "templates/backgrounds/event-report-bg-purple-hi.jpg"
       },
@@ -897,18 +1149,48 @@
       ]
     },
     {
-      "id": "template-ur-5",
-      "name": "Event Report Split Template - Urdu",
-      "language": "ur",
-      "thumbnail": "templates/thumbnails/event-report-thumb-split-ur.jpg",
+      "id": "template-tg-5",
+      "name": "Event Report Split Template",
+      "language": "tg",
+      "thumbnail": "templates/thumbnails/event-report-thumb-split.jpg",
       "background": {
-        "image": "templates/backgrounds/event-report-bg-split-ur.jpg"
+        "image": "templates/backgrounds/event-report-bg-split-tg.png"
       },
       "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "left-panel",
+          "type": "rect",
+          "label": "Left Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 510, "height": 1280 },
+          "style": {
+            "fill": "#0d5c4a",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        },
+        {
+          "id": "right-panel",
+          "label": "Right Panel Color",
+          "type": "rect",
+          "position": { "x": 510, "y": 0 },
+          "size": { "width": 210, "height": 1280 },
+          "style": {
+            "fill": "#f5f0e8",
+            "colorable": true,
+            "selectable": true,
+            "evented": true
+          }
+        }
+      ],
       "textElements": [
         {
           "id": "main-heading",
-          "defaultText": "اے آئی پی آئی ایف کی جیل میں انسانی ہمدردی کی خدمات",
+          "defaultText": "ఏఐపీఐఎఫ్ జైలు\nమానవతా కార్యక్రమాలు",
           "position": {"x": 70, "y": 78},
           "size": {"width": 383, "height": 120},
           "style": {
@@ -921,31 +1203,263 @@
         },
         {
           "id": "left-paragraph-1",
-          "defaultText": "اے آئی پی آئی ایف نے ڈسٹرکٹ جیل لکھیم پور کھیری میں قیدیوں کو کمبل تحفے میں دیے۔ مزید برآں، اس موقع پر 5 ایسے قیدی جو جرمانہ ادا نہ کر سکنے کی وجہ سے جیل میں تھے، انہیں اے آئی پی آئی ایف کی جانب سے جرمانہ ادا کرنے کے بعد رہا کرایا گیا۔",
+          "defaultText": "ఏఐపీఐఎఫ్ లఖింపూర్ ఖేరి జిల్లా జైలులోని ఖైదీలకు దుప్పట్లను బహుకరించింది. అంతేకాకుండా ఈ సందర్భంగా, తమ జరిమానాలు చెల్లించలేక జైలులో ఉన్న 5 గురు ఖైదీల జరిమానాలను ఏఐపీఐఎఫ్ చెల్లించి వారిని విడుదల చేయించింది.",
           "position": {"x": 34, "y": 541},
           "size": {"width": 446, "height": 140},
           "style": {
             "fontSize": 20,
             "color": "#ffffff",
-            "textAlign": "justify-right",
+            "textAlign": "justify-left",
             "fontFamily": "Arial"
           }
         },
         {
           "id": "left-paragraph-2",
-          "defaultText": "اس موقع پر جناب شفیق چودھری، صدر ڈسٹرکٹ ایڈووکیٹس ایسوسی ایشن جناب اودھیش کمار سنگھ، سابق صدر ڈسٹرکٹ ایڈووکیٹس ایسوسی ایشن و مجاہدِ آزادی کے بیٹے جناب سنتوش مشرا، مولانا رئیس ندوی، جنرل سیکرٹری ایڈووکیٹس ایسوسی ایشن جناب وشواس سریواستو، جیل سپرنٹنڈنٹ جناب ڈی پی سلانیا، ڈپٹی جیلر جناب سنیل کمار، ڈپٹی جیلر جناب ڈی پی ایس راٹھور، جیل ایڈووکیٹ جناب سعید خان، جناب انیل یادو، جتیندر ترپاٹھی، شیا مدھیشیا ایڈووکیٹس سمیت تنظیم کے تمام اراکین موجود تھے۔",
+          "defaultText": "ఈ కార్యక్రమంలో శ్రీ షఫీక్ చౌదరి, జిల్లా న్యాయవాదుల సంఘం అధ్యక్షుడు శ్రీ అవధేష్ కుమార్ సింగ్, స్వాతంత్ర్య సమరయోధుని కుమారుడు మరియు జిల్లా న్యాయవాదుల సంఘం మాజీ అధ్యక్షుడు శ్రీ సంతోష్ మిశ్రా, మౌలానా రయీస్ నద్వీ, న్యాయవాదుల సంఘం ప్రధాన కార్యదర్శి శ్రీ విశ్వాస్ శ్రీవాస్తవ, జైలు సూపరింటెండెంట్ శ్రీ డి.పి.స్లానియా, డిప్యూటీ జైలర్లు శ్రీ సునీల్ కుమార్, శ్రీ డి.పి.ఎస్ రాథోడ్, జైలు న్యాయవాది శ్రీ సయీద్ ఖాన్, శ్రీ అనిల్ యాదవ్, జితేంద్ర త్రిపాఠి, షియా మధేసియా తదితర న్యాయవాదులతో పాటు సంస్థ సభ్యులందరూ పాల్గొన్నారు.",
           "position": {"x": 34, "y": 685},
           "size": {"width": 446, "height": 160},
           "style": {
             "fontSize": 20,
             "color": "#ffffff",
-            "textAlign": "justify-right",
+            "textAlign": "justify-left",
             "fontFamily": "Arial"
           }
         },
         {
           "id": "date",
-          "defaultText": "١ جنوری، ۲۰۲٦",
+          "defaultText": "January 01, 2025",
+          "position": {"x": 95, "y": 1161},
+          "size": {"width": 320, "height": 80},
+          "style": {
+            "fontSize": 34,
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "location",
+          "defaultText": "లక్నో యూనిట్",
+          "position": {"x": 100, "y": 1208},
+          "size": {"width": 320, "height": 80},
+          "style": {
+            "fontSize": 28,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98856 61136",
+          "position": {"x": 552.7, "y": 1099.1},
+          "size": {"width": 170, "height": 18},
+          "style": {
+            "fontSize": 20,
+            "color": "#FFFFFF",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-hi-5",
+      "name": "Event Report Split Template",
+      "language": "hi",
+      "thumbnail": "templates/thumbnails/event-report-thumb-split.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-split-hi.png"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "left-panel",
+          "type": "rect",
+          "label": "Left Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 510, "height": 1280 },
+          "style": {
+            "fill": "#0d5c4a",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        },
+        {
+          "id": "right-panel",
+          "label": "Right Panel Color",
+          "type": "rect",
+          "position": { "x": 510, "y": 0 },
+          "size": { "width": 210, "height": 1280 },
+          "style": {
+            "fill": "#f5f0e8",
+            "colorable": true,
+            "selectable": true,
+            "evented": true
+          }
+        }
+      ],
+      "textElements": [
+        {
+          "id": "main-heading",
+          "defaultText": "एआईपीआईएफ जेल\nमानवीय कार्य",
+          "position": {"x": 70, "y": 78},
+          "size": {"width": 383, "height": 120},
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#FBA01E",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "left-paragraph-1",
+          "defaultText": "एआईपीआईएफ ने जिला जेल लखीमपुर खीरी में कैदियों को कंबल भेंट किए। इसके अतिरिक्त इस अवसर पर, अपना जुर्माना अदा न कर पाने के कारण जेल में बंद 5 कैदियों का जुर्माना एआईपीआईएफ द्वारा भरे जाने के बाद उन्हें रिहा भी कराया गया।",
+          "position": {"x": 34, "y": 541},
+          "size": {"width": 446, "height": 140},
+          "style": {
+            "fontSize": 20,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "left-paragraph-2",
+          "defaultText": "इस अवसर पर श्री शफीक चौधरी, जिला अधिवक्ता संघ के अध्यक्ष श्री अवधेश कुमार सिंह, स्वतंत्रता सेनानी के पुत्र और जिला अधिवक्ता संघ के पूर्व अध्यक्ष श्री संतोष मिश्रा, मौलाना रईस नदवी, अधिवक्ता संघ के महासचिव श्री विश्वास श्रीवास्तव, जेल अधीक्षक श्री डी.पी. सलानिया, डिप्टी जेलर श्री सुनील कुमार, डिप्टी जेलर श्री डी.पी.एस. राठौर, जेल अधिवक्ता श्री सईद खान, श्री अनिल यादव, जितेंद्र त्रिपाठी, शिया मद्धेशिया (अधिवक्ता) के साथ-साथ संस्था के सभी सदस्य उपस्थित थे।",
+          "position": {"x": 34, "y": 685},
+          "size": {"width": 446, "height": 160},
+          "style": {
+            "fontSize": 20,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "date",
+          "defaultText": "January 01, 2025",
+          "position": {"x": 95, "y": 1161},
+          "size": {"width": 320, "height": 80},
+          "style": {
+            "fontSize": 34,
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "location",
+          "defaultText": "लखनऊ इकाई",
+          "position": {"x": 100, "y": 1208},
+          "size": {"width": 320, "height": 80},
+          "style": {
+            "fontSize": 28,
+            "fontWeight": "bold",
+            "color": "#ffffff",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "phone-number",
+          "defaultText": "+91 98856 61136",
+          "position": {"x": 552.7, "y": 1099.1},
+          "size": {"width": 170, "height": 18},
+          "style": {
+            "fontSize": 20,
+            "color": "#FFFFFF",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-ur-5",
+      "name": "Event Report Split Template",
+      "language": "ur",
+      "thumbnail": "templates/thumbnails/event-report-thumb-split.jpg",
+      "background": {
+        "image": "templates/backgrounds/event-report-bg-split-ur.png"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "backgroundAsObject": true,
+      "fixedElements": [
+        {
+          "id": "left-panel",
+          "type": "rect",
+          "label": "Left Panel Color",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 510, "height": 1280 },
+          "style": {
+            "fill": "#0d5c4a",
+            "colorable": true,
+            "selectable": true,
+            "evented": true,
+            "zIndex": 0
+          }
+        },
+        {
+          "id": "right-panel",
+          "label": "Right Panel Color",
+          "type": "rect",
+          "position": { "x": 510, "y": 0 },
+          "size": { "width": 210, "height": 1280 },
+          "style": {
+            "fill": "#f5f0e8",
+            "colorable": true,
+            "selectable": true,
+            "evented": true
+          }
+        }
+      ],
+      "textElements": [
+        {
+          "id": "main-heading",
+          "defaultText": "اے آئی پی آئی ایف جیل\nانسانی ہمدردی کے کام",
+          "position": {"x": 70, "y": 78},
+          "size": {"width": 383, "height": 120},
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "color": "#FBA01E",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "left-paragraph-1",
+          "defaultText": "اے آئی پی آئی ایف نے ڈسٹرکٹ جیل لکھیم پور کھیری میں قیدیوں کو کمبل تحفے میں دیے۔ مزید برآں اس موقع پر، 5 قیدی جو اپنا جرمانہ ادا نہ کر پانے کی وجہ سے جیل میں تھے، انہیں بھی اے آئی پی آئی ایف کی جانب سے ان کا جرمانہ ادا کرنے کے بعد رہا کر دیا گیا۔",
+          "position": {"x": 34, "y": 541},
+          "size": {"width": 446, "height": 140},
+          "style": {
+            "fontSize": 20,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "left-paragraph-2",
+          "defaultText": "اس موقع پر جناب شفیق چودھری، ڈسٹرکٹ ایڈووکیٹس ایسوسی ایشن کے صدر جناب اودھیش کمار سنگھ، ڈسٹرکٹ ایڈووکیٹس ایسوسی ایشن کے سابق صدر اور مجاہد آزادی کے فرزند جناب سنتوش مشرا، مولانا رئیس ندوی، ایڈووکیٹس ایسوسی ایشن کے جنرل سیکرٹری جناب وشواس سریواستو، جیل سپرنٹنڈنٹ جناب ڈی پی سلانیا، ڈپٹی جیلر جناب سنیل کمار، ڈپٹی جیلر جناب ڈی پی ایس راٹھور، جیل ایڈووکیٹ جناب سعید خان، جناب انیل یادو، جتیندر ترپاٹھی، شیعہ مدھیشیا (ایڈووکیٹس) کے ساتھ تنظیم کے تمام ممبران موجود تھے۔",
+          "position": {"x": 34, "y": 685},
+          "size": {"width": 446, "height": 160},
+          "style": {
+            "fontSize": 20,
+            "color": "#ffffff",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "date",
+          "defaultText": "January 01, 2025",
           "position": {"x": 95, "y": 1161},
           "size": {"width": 320, "height": 80},
           "style": {
@@ -976,6 +1490,402 @@
           "style": {
             "fontSize": 20,
             "color": "#FFFFFF",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-en-6",
+      "name": "News Report Template",
+      "language": "en",
+      "thumbnail": "templates/thumbnails/news-report-thumb.jpg",
+      "background": {
+        "image": "templates/backgrounds/news-report-bg.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "date",
+          "defaultText": "Thursday, January 01, 2026",
+          "position": {"x": 457, "y": 22},
+          "size": {"width": 217, "height": 14},
+          "style": {
+            "fontSize": 15,
+            "color": "#000000",
+            "fontWeight": "bold",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "highlight-1",
+          "defaultText": "“500 patients were examined and given free medicines.”",
+          "position": {"x": 44, "y": 230},
+          "size": {"width": 315, "height": 90},
+          "style": {
+            "fontSize": 27,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "highlight-2",
+          "defaultText": "‘The event was covered in Dainik Bhaskar, Amar Ujala, and various other newspapers",
+          "position": {"x": 466, "y": 920},
+          "size": {"width": 233, "height": 189},
+          "style": {
+            "fontSize": 27,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "paragraph-1",
+          "defaultText": "Naimisharanya, Sitapur A health camp was organized for the second time by All India Payam-E-Insaniyat Forum in collaboration with the Kalipeeth Sanstha. The chief guest was former Zila Panchayat Vice-Chairman Munindra Awasthi, and the special guests included Kalipeethadhishwar Shri. Gopal Shastri, Municipal Chairman's representative Ajay Bhargav, former Director of Balrampur Hospital Dr. Rajiv Lochan, and Mahant Shri. Bhaskar Shastri. The organization welcomed everyone by garlanding them. The chief guest said that Kalipeeth was established by the head priest, the late Shri. Jagdamba Prasad Shastri, with the aim of social service. Kalipeethadhishwar Shri. Gopal Shastri said that we should help each other without discrimination on caste or religion. 350 needy people were gifted blankets at the event. In the health camp held during the program.",
+          "position": {"x": 261, "y": 362},
+          "size": {"width": 416, "height": 230},
+          "style": {
+            "fontSize": 13,
+            "color": "#000000",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "paragraph-2",
+          "defaultText": "Doctors from Balrampur Hospital and Medical College advised patients on seasonal precautions. Patients were registered for free eye operations. Under this initiative, free cataract surgeries will be performed. Former Director Dr. Rajiv Lochan advised heart patients to take special care during the cold weather. Those present at the program included Kalipeeth operator Shri. Bhaskar Shastri, Maulana Abdul Ali Hasani Nadvi, Mr. Shafiq Chaudhary, Dr. Hari Shankar, Dr. Vinay Mishra, Dr. Rajkumar, Dr. Ankita Singh Tomar, Dr. Mohammad Junaid, Dr. Mohammad Zeeshan, Dr. Shahnaz Ansari, Dr. Mohammad Yaqub Khan, Dr. Ahmed Zeya, and Dr. Firoz Khan. Students from the Madrasa and Islamic University Darul Uloom Nadwatul Ulama were also present on the occasion.",
+          "position": {"x": 32, "y": 920},
+          "size": {"width": 408, "height": 245},
+          "style": {
+            "fontSize": 13,
+            "color": "#000000",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "caption-1",
+          "defaultText": "A short description of the image",
+          "position": {"x": 464, "y": 317.5},
+          "size": {"width": 205, "height": 7},
+          "style": {
+            "fontSize": 8,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "caption-2",
+          "defaultText": "A short description of the image",
+          "position": {"x": 346, "y": 884},
+          "size": {"width": 205, "height": 7},
+          "style": {
+            "fontSize": 8,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-hi-6",
+      "name": "News Report Template",
+      "language": "hi",
+      "thumbnail": "templates/thumbnails/news-report-thumb.jpg",
+      "background": {
+        "image": "templates/backgrounds/news-report-bg-hi.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "date",
+          "defaultText": "गुरुवार, 01 जनवरी, 2026",
+          "position": {"x": 457, "y": 22},
+          "size": {"width": 217, "height": 14},
+          "style": {
+            "fontSize": 15,
+            "color": "#000000",
+            "fontWeight": "bold",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "highlight-1",
+          "defaultText": "“500 मरीजों की जांच की गई और उन्हें मुफ्त दवाएं दी गईं।”",
+          "position": {"x": 44, "y": 230},
+          "size": {"width": 315, "height": 90},
+          "style": {
+            "fontSize": 27,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "highlight-2",
+          "defaultText": "‘इस कार्यक्रम की खबर दैनिक भास्कर, अमर उजाला और अन्य कई समाचार पत्रों में प्रकाशित की गई।",
+          "position": {"x": 466, "y": 920},
+          "size": {"width": 233, "height": 189},
+          "style": {
+            "fontSize": 27,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "paragraph-1",
+          "defaultText": "नैमिषारण्य, सीतापुर: कालीपीठ संस्था के सहयोग से ऑल इंडिया पयाम-ए-इंसानियत फोरम द्वारा दूसरी बार स्वास्थ्य शिविर का आयोजन किया गया। मुख्य अतिथि पूर्व जिला पंचायत उपाध्यक्ष मुनींद्र अवस्थी थे, और विशिष्ट अतिथियों में कालीपीठाधीश्वर श्री गोपाल शास्त्री, नगर पालिका अध्यक्ष के प्रतिनिधि अजय भार्गव, बलरामपुर अस्पताल के पूर्व निदेशक डॉ. राजीव लोचन और महंत श्री भास्कर शास्त्री शामिल थे। संस्था ने माल्यार्पण कर सभी का स्वागत किया। मुख्य अतिथि ने कहा कि कालीपीठ की स्थापना मुख्य पुजारी स्वर्गीय श्री जगदंबा प्रसाद शास्त्री ने समाज सेवा के उद्देश्य से की थी। कालीपीठाधीश्वर श्री गोपाल शास्त्री ने कहा कि हमें जाति या धर्म के भेदभाव के बिना एक-दूसरे की मदद करनी चाहिए। कार्यक्रम में 350 जरूरतमंदों को कंबल बांटे गए। कार्यक्रम के दौरान आयोजित स्वास्थ्य शिविर में।",
+          "position": {"x": 261, "y": 362},
+          "size": {"width": 416, "height": 230},
+          "style": {
+            "fontSize": 13,
+            "color": "#000000",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "paragraph-2",
+          "defaultText": "बलरामपुर अस्पताल और मेडिकल कॉलेज के डॉक्टरों ने मरीजों को मौसमी सावधानियों के बारे में सलाह दी। मुफ्त आंखों के ऑपरेशन के लिए मरीजों का पंजीकरण किया गया। इस पहल के तहत मोतियाबिंद की मुफ्त सर्जरी की जाएगी। पूर्व निदेशक डॉ. राजीव लोचन ने हृदय रोगियों को ठंड के मौसम में अपना विशेष ध्यान रखने की सलाह दी। कार्यक्रम में उपस्थित लोगों में कालीपीठ संचालक श्री भास्कर शास्त्री, मौलाना अब्दुल अली हसनी नदवी, श्री शफीक चौधरी, डॉ. हरि शंकर, डॉ. विनय मिश्रा, डॉ. राजकुमार, डॉ. अंकिता सिंह तोमर, डॉ. मोहम्मद जुनैद, डॉ. मोहम्मद जीशान, डॉ. शाहनाज अंसारी, डॉ. मोहम्मद याकूब खान, डॉ. अहमद ज़ेया और डॉ. फिरोज खान शामिल थे। इस अवसर पर मदरसा और इस्लामिक विश्वविद्यालय दारुल उलूम नदवतुल उलमा के छात्र भी उपस्थित थे।",
+          "position": {"x": 32, "y": 920},
+          "size": {"width": 408, "height": 245},
+          "style": {
+            "fontSize": 13,
+            "color": "#000000",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "caption-1",
+          "defaultText": "चित्र का संक्षिप्त विवरण",
+          "position": {"x": 464, "y": 317.5},
+          "size": {"width": 205, "height": 7},
+          "style": {
+            "fontSize": 8,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "caption-2",
+          "defaultText": "चित्र का संक्षिप्त विवरण",
+          "position": {"x": 346, "y": 884},
+          "size": {"width": 205, "height": 7},
+          "style": {
+            "fontSize": 8,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-ur-6",
+      "name": "News Report Template",
+      "language": "ur",
+      "thumbnail": "templates/thumbnails/news-report-thumb.jpg",
+      "background": {
+        "image": "templates/backgrounds/news-report-bg-ur.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "date",
+          "defaultText": "جمعرات، 01 جنوری، 2026",
+          "position": {"x": 457, "y": 22},
+          "size": {"width": 217, "height": 14},
+          "style": {
+            "fontSize": 15,
+            "color": "#000000",
+            "fontWeight": "bold",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "highlight-1",
+          "defaultText": "“500 مریضوں کا معائنہ کیا گیا اور انہیں مفت دوائیں دی گئیں۔”",
+          "position": {"x": 44, "y": 230},
+          "size": {"width": 315, "height": 90},
+          "style": {
+            "fontSize": 27,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "right",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "highlight-2",
+          "defaultText": "اس تقریب کی کوریج دینک بھاسکر، امر اجالا، اور دیگر کئی اخبارات میں کی گئی۔",
+          "position": {"x": 466, "y": 920},
+          "size": {"width": 233, "height": 189},
+          "style": {
+            "fontSize": 27,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "right",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "paragraph-1",
+          "defaultText": "نیمشارنیہ، سیتا پور: کالی پیٹھ سنستھا کے اشتراک سے آل انڈیا پیامِ انسانیت فورم کی جانب سے دوسری مرتبہ ایک ہیلتھ کیمپ کا انعقاد کیا گیا۔ مہمان خصوصی ضلع پنچایت کے سابق وائس چیئرمین منیندر اوستھی تھے، اور دیگر معزز مہمانوں میں کالی پیٹھ ادھیشور شری گوپال شاستری، میونسپل چیئرمین کے نمائندے اجے بھارگو، بلرام پور اسپتال کے سابق ڈائریکٹر ڈاکٹر راجیو لوچن، اور مہنت شری بھاسکر شاستری شامل تھے۔ تنظیم نے ہار پہنا کر سب کا استقبال کیا۔ مہمان خصوصی نے کہا کہ کالی پیٹھ کا قیام چیف پجاری، آنجہانی شری جگدمبا پرساد شاستری نے سماجی خدمت کے مقصد سے کیا تھا۔ کالی پیٹھ ادھیشور شری گوپال شاستری نے کہا کہ ہمیں ذات پات یا مذہب کی تفریق کے بغیر ایک دوسرے کی مدد کرنی چاہیے۔ اس تقریب میں 350 ضرورت مندوں کو کمبل تحفے میں دیے گئے۔ پروگرام کے دوران منعقدہ ہیلتھ کیمپ میں۔",
+          "position": {"x": 261, "y": 362},
+          "size": {"width": 416, "height": 230},
+          "style": {
+            "fontSize": 13,
+            "color": "#000000",
+            "textAlign": "justify-right",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "paragraph-2",
+          "defaultText": "بلرام پور اسپتال اور میڈیکل کالج کے ڈاکٹروں نے مریضوں کو موسمی احتیاطی تدابیر کے حوالے سے مشورہ دیا۔ آنکھوں کے مفت آپریشن کے لیے مریضوں کا اندراج کیا گیا۔ اس اقدام کے تحت موتیا بند کی مفت سرجری کی جائے گی۔ سابق ڈائریکٹر ڈاکٹر راجیو لوچن نے دل کے مریضوں کو سرد موسم میں خاص خیال رکھنے کا مشورہ دیا۔ پروگرام میں موجود افراد میں کالی پیٹھ کے آپریٹر شری بھاسکر شاستری، مولانا عبد العلی حسنی ندوی، مسٹر شفیق چوہدری، ڈاکٹر ہری شنکر، ڈاکٹر ونے مشرا، ڈاکٹر راجکمار، ڈاکٹر انکیتا سنگھ تومر، ڈاکٹر محمد جنید، ڈاکٹر محمد ذیشان، ڈاکٹر شہناز انصاری، ڈاکٹر محمد یعقوب خان، ڈاکٹر احمد ضیا اور ڈاکٹر فیروز خان شامل تھے۔ اس موقع پر مدرسہ اور اسلامک یونیورسٹی دارالعلوم ندوۃ العلماء کے طلبہ بھی موجود تھے۔",
+          "position": {"x": 32, "y": 920},
+          "size": {"width": 408, "height": 245},
+          "style": {
+            "fontSize": 13,
+            "color": "#000000",
+            "textAlign": "justify-right",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "caption-1",
+          "defaultText": "تصویر کی مختصر تفصیل",
+          "position": {"x": 464, "y": 317.5},
+          "size": {"width": 205, "height": 7},
+          "style": {
+            "fontSize": 8,
+            "color": "#000000",
+            "textAlign": "right",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "caption-2",
+          "defaultText": "تصویر کی مختصر تفصیل",
+          "position": {"x": 346, "y": 884},
+          "size": {"width": 205, "height": 7},
+          "style": {
+            "fontSize": 8,
+            "color": "#000000",
+            "textAlign": "right",
+            "fontFamily": "Arial"
+          }
+        }
+      ]
+    },
+    {
+      "id": "template-tg-6",
+      "name": "News Report Template",
+      "language": "tg",
+      "thumbnail": "templates/thumbnails/news-report-thumb.jpg",
+      "background": {
+        "image": "templates/backgrounds/news-report-bg-tg.jpg"
+      },
+      "dimensions": {"width": 720, "height": 1280},
+      "textElements": [
+        {
+          "id": "date",
+          "defaultText": "గురువారం, జనవరి 01, 2026",
+          "position": {"x": 457, "y": 22},
+          "size": {"width": 217, "height": 14},
+          "style": {
+            "fontSize": 15,
+            "color": "#000000",
+            "fontWeight": "bold",
+            "textAlign": "center",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "highlight-1",
+          "defaultText": "“500 మంది రోగులను పరీక్షించి ఉచితంగా మందులు అందజేశారు.”",
+          "position": {"x": 44, "y": 230},
+          "size": {"width": 315, "height": 90},
+          "style": {
+            "fontSize": 27,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "highlight-2",
+          "defaultText": "‘ఈ కార్యక్రమం దైనిక్ భాస్కర్, అమర్ ఉజాలా మరియు ఇతర అనేక వార్తాపత్రికలలో ప్రచురితమైంది.",
+          "position": {"x": 466, "y": 920},
+          "size": {"width": 233, "height": 189},
+          "style": {
+            "fontSize": 27,
+            "fontWeight": "bold",
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "paragraph-1",
+          "defaultText": "నైమిశారణ్య, సీతాపూర్: కాళీపీఠ్ సంస్థ సహకారంతో ఆల్ ఇండియా పయామ్-ఎ-ఇన్సానియత్ ఫోరమ్ ఆధ్వర్యంలో రెండవసారి ఆరోగ్య శిబిరం నిర్వహించబడింది. ముఖ్య అతిథిగా జిల్లా పంచాయతీ మాజీ వైస్ చైర్మన్ మునీంద్ర అవస్థి విచ్చేయగా, విశిష్ట అతిథులుగా కాళీపీఠాధీశ్వర్ శ్రీ గోపాల్ శాస్త్రి, మున్సిపల్ చైర్మన్ ప్రతినిధి అజయ్ భార్గవ్, బలరాంపూర్ ఆసుపత్రి మాజీ డైరెక్టర్ డాక్టర్ రాజీవ్ లోచన్, మరియు మహంత్ శ్రీ భాస్కర్ శాస్త్రి పాల్గొన్నారు. సంస్థ అందరికీ పూలమాలలు వేసి స్వాగతం పలికింది. సామాజిక సేవ లక్ష్యంగా ప్రధాన అర్చకులు కీర్తిశేషులు శ్రీ జగదాంబ ప్రసాద్ శాస్త్రి కాళీపీఠాన్ని స్థాపించారని ముఖ్య అతిథి అన్నారు. కుల, మత భేదాలు లేకుండా ఒకరికొకరు సాయం చేసుకోవాలని కాళీపీఠాధీశ్వర్ శ్రీ గోపాల్ శాస్త్రి సూచించారు. ఈ కార్యక్రమంలో 350 మంది నిరుపేదలకు దుప్పట్లు పంపిణీ చేశారు. కార్యక్రమం సందర్భంగా నిర్వహించిన ఆరోగ్య శిబిరంలో.",
+          "position": {"x": 261, "y": 362},
+          "size": {"width": 416, "height": 230},
+          "style": {
+            "fontSize": 13,
+            "color": "#000000",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "paragraph-2",
+          "defaultText": "బలరాంపూర్ ఆసుపత్రి మరియు మెడికల్ కాలేజీ వైద్యులు రోగులకు కాలానుగుణ జాగ్రత్తలపై సలహాలు ఇచ్చారు. ఉచిత కంటి ఆపరేషన్ల కోసం రోగులను నమోదు చేశారు. ఈ చొరవ కింద ఉచితంగా క్యాటరాక్ట్ (శుక్లాల) శస్త్రచికిత్సలు నిర్వహించబడతాయి. చలికాలంలో గుండె జబ్బులు ఉన్నవారు ప్రత్యేక జాగ్రత్తలు తీసుకోవాలని మాజీ డైరెక్టర్ డాక్టర్ రాజీవ్ లోచన్ సూచించారు. ఈ కార్యక్రమంలో కాళీపీఠ్ నిర్వాహకులు శ్రీ భాస్కర్ శాస్త్రి, మౌలానా అబ్దుల్ అలీ హసనీ నద్వీ, మిస్టర్ షఫీక్ చౌదరి, డాక్టర్ హరి శంకర్, డాక్టర్ వినయ్ మిశ్రా, డాక్టర్ రాజ్‌కుమార్, డాక్టర్ అంకితా సింగ్ తోమర్, డాక్టర్ మహమ్మద్ జునైద్, డాక్టర్ మహమ్మద్ జీషన్, డాక్టర్ షహనాజ్ అన్సారీ, డాక్టర్ మహమ్మద్ యాకూబ్ ఖాన్, డాక్టర్ అహ్మద్ జేయా, మరియు డాక్టర్ ఫిరోజ్ ఖాన్ పాల్గొన్నారు. మదరసా మరియు ఇస్లామిక్ యూనివర్సిటీ దారుల్ ఉలూమ్ నద్వతుల్ ఉలమా విద్యార్థులు కూడా ఈ కార్యక్రమంలో పాల్గొన్నారు.",
+          "position": {"x": 32, "y": 920},
+          "size": {"width": 408, "height": 245},
+          "style": {
+            "fontSize": 13,
+            "color": "#000000",
+            "textAlign": "justify-left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "caption-1",
+          "defaultText": "చిత్రం యొక్క సంక్షిప్త వివరణ",
+          "position": {"x": 464, "y": 317.5},
+          "size": {"width": 205, "height": 7},
+          "style": {
+            "fontSize": 8,
+            "color": "#000000",
+            "textAlign": "left",
+            "fontFamily": "Arial"
+          }
+        },
+        {
+          "id": "caption-2",
+          "defaultText": "చిత్రం యొక్క సంక్షిప్త వివరణ",
+          "position": {"x": 346, "y": 884},
+          "size": {"width": 205, "height": 7},
+          "style": {
+            "fontSize": 8,
+            "color": "#000000",
             "textAlign": "left",
             "fontFamily": "Arial"
           }
