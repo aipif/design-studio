@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>aipif_story_home_1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.0.0/dist/flowbite.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f6f0e8;--fg:#16120f;--muted:#6b5b52;--card:#fffaf4;--accent:#b85a3c;--accent2:#d9a441;--line:#e7d8ca;}
+    *{box-sizing:border-box} html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif!important;}
+    body{overflow-x:hidden} h1,h2,h3,p,a,button{font-family:Inter,system-ui,sans-serif!important}
+    .grain:before{content:'';position:absolute;inset:0;background-image:url('https://www.transparenttextures.com/patterns/paper-fibers.png');opacity:.24;pointer-events:none;mix-blend-mode:multiply}
+    .soft{background:linear-gradient(180deg,rgba(255,250,244,.92),rgba(255,250,244,.72));backdrop-filter:blur(10px)}
+    .shadow-brutal{box-shadow:8px 8px 0 #16120f}
+    .reveal{opacity:0;transform:translateY(24px);transition:all .8s cubic-bezier(.2,.8,.2,1)}
+    .reveal.in{opacity:1;transform:translateY(0)}
+  </style>
+</head>
+<body>
+  <main class="min-h-screen">
+    <section class="relative isolate min-h-[92vh] overflow-hidden grain">
+      <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg" class="absolute inset-0 h-full w-full object-cover" alt="Community gathering"/>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#16120f]/78 via-[#16120f]/54 to-transparent"></div>
+      <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[var(--bg)] to-transparent"></div>
+      <div class="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-end px-5 pb-10 pt-20 sm:px-8 lg:px-12">
+        <div class="max-w-3xl text-white reveal in">
+          <p class="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm tracking-wide">AIPIF • Human Documentary</p>
+          <h1 class="text-5xl font-black leading-[0.95] sm:text-7xl">All India Payam-E-Insaniyat Forum</h1>
+          <p class="mt-6 max-w-2xl text-base leading-7 text-white/82 sm:text-lg">Message Of Humanity through health camps, education, blood donation, relief work, and anti-addiction support.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#stories" class="rounded-full bg-[var(--accent)] px-5 py-3 font-semibold text-white shadow-brutal transition hover:translate-y-[-2px]">Learn more</a>
+            <a href="#volunteer" class="rounded-full border border-white/25 bg-white/10 px-5 py-3 font-semibold text-white backdrop-blur hover:bg-white/15">Volunteer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-12">
+      <div class="mb-6 flex items-end justify-between gap-4">
+        <div>
+          <p class="text-sm uppercase tracking-[0.28em] text-[var(--muted)]">On the ground</p>
+          <h2 class="mt-2 text-3xl font-extrabold sm:text-4xl">Who We Are</h2>
+        </div>
+        <p class="hidden max-w-sm text-sm text-[var(--muted)] md:block">The current site’s story and image content, kept inside the new structure for a stronger documentary feel.</p>
+      </div>
+      <div class="grid gap-5 md:grid-cols-3">
+        <article class="reveal overflow-hidden rounded-[28px] border-2 border-[var(--line)] bg-[var(--card)] shadow-brutal">
+          <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index1.jpeg" class="h-72 w-full object-cover" alt="Medical camp"/>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-[0.25em] text-[var(--muted)]">Medical camp</p>
+            <h3 class="mt-2 text-2xl font-bold">About The Founders</h3>
+            <p class="mt-3 text-sm leading-6 text-[var(--muted)]">A human-centered snapshot that keeps the original site content while presenting it as a field narrative.</p>
+          </div>
+        </article>
+        <article class="reveal overflow-hidden rounded-[28px] border-2 border-[var(--line)] bg-[var(--card)] shadow-brutal">
+          <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index5.jpeg" class="h-72 w-full object-cover" alt="Volunteer at work"/>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-[0.25em] text-[var(--muted)]">Volunteer profile</p>
+            <h3 class="mt-2 text-2xl font-bold">Food distribution and camps</h3>
+            <p class="mt-3 text-sm leading-6 text-[var(--muted)]">Original program imagery from the existing site, framed with documentary captions.</p>
+          </div>
+        </article>
+        <article class="reveal overflow-hidden rounded-[28px] border-2 border-[var(--line)] bg-[var(--card)] shadow-brutal">
+          <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index2.jpeg" class="h-72 w-full object-cover" alt="Food distribution"/>
+          <div class="p-5">
+            <p class="text-xs uppercase tracking-[0.25em] text-[var(--muted)]">Relief support</p>
+            <h3 class="mt-2 text-2xl font-bold">Gallery and media moments</h3>
+            <p class="mt-3 text-sm leading-6 text-[var(--muted)]">The existing visual archive, re-composed into the new story-led layout.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-12">
+      <div class="grid gap-5 lg:grid-cols-[1.2fr_.8fr]">
+        <div class="reveal overflow-hidden rounded-[32px] border-2 border-[var(--line)] bg-[#fffaf3] shadow-brutal">
+          <div class="grid md:grid-cols-[.9fr_1.1fr]">
+            <img src="https://aipiftsap.org/wp-content/uploads/2021/04/about-img.png" class="h-full min-h-80 w-full object-cover" alt="Founder portrait"/>
+            <div class="p-6 sm:p-8">
+              <p class="text-xs uppercase tracking-[0.3em] text-[var(--muted)]">Founder note</p>
+              <h3 class="mt-3 text-3xl font-black">“We are committed to serving humanity.”</h3>
+              <p class="mt-4 max-w-lg text-sm leading-7 text-[var(--muted)]">A brief founder note derived from the current site, kept intentionally simple and human.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-5">
+          <div class="reveal rounded-[28px] border-2 border-[var(--line)] bg-[var(--card)] p-6 shadow-brutal">
+            <p class="text-xs uppercase tracking-[0.3em] text-[var(--muted)]">Programs</p>
+            <div class="mt-4 grid gap-3 text-sm">
+              <div class="flex items-center justify-between border-b border-[var(--line)] pb-3"><span>Health camps</span><span class="text-[var(--muted)]">Care + screening</span></div>
+              <div class="flex items-center justify-between border-b border-[var(--line)] pb-3"><span>Education</span><span class="text-[var(--muted)]">Learning support</span></div>
+              <div class="flex items-center justify-between border-b border-[var(--line)] pb-3"><span>Blood donation</span><span class="text-[var(--muted)]">Community drives</span></div>
+              <div class="flex items-center justify-between"><span>Relief & anti-addiction</span><span class="text-[var(--muted)]">Field response</span></div>
+            </div>
+          </div>
+          <div id="volunteer" class="reveal rounded-[28px] border-2 border-[var(--fg)] bg-[var(--accent)] p-6 text-white shadow-brutal">
+            <p class="text-xs uppercase tracking-[0.3em] text-white/75">Get involved</p>
+            <h3 class="mt-3 text-3xl font-black">Contact the team</h3>
+            <p class="mt-3 text-sm leading-7 text-white/85">A direct invite to join, support, or get in touch.</p>
+            <div class="mt-5 flex gap-3">
+              <a href="#" class="rounded-full bg-white px-4 py-2.5 text-sm font-bold text-[var(--fg)]">Sign up</a>
+              <a href="#" class="rounded-full border border-white/30 px-4 py-2.5 text-sm font-bold text-white">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    lucide.createIcons();
+    const obs = new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>
