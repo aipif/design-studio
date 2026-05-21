@@ -151,7 +151,6 @@ button { cursor: pointer; border: none; background: none; }
 /* ─── NAVIGATION ─────────────────────────────────────────── */
 #nav {
   position: sticky; top: 0; z-index: 100;
-  padding: var(--space-4) 0;
   transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
 }
 #nav.scrolled {
@@ -902,7 +901,7 @@ footer {
 <a href="#main-content" class="sr-only" style="position:fixed;top:var(--space-4);left:var(--space-4);z-index:999;padding:var(--space-2) var(--space-4);background:var(--color-primary);color:white;border-radius:var(--radius-md);text-decoration:none;">Skip to content</a>
 
 <!-- ── NAVIGATION ──────────────────────────────────────────── -->
-<header>
+<header style="position: fixed; z-index: 999; width: 100%;">
   <nav id="nav" aria-label="Main navigation">
     <div class="container">
       <div class="nav-inner">
