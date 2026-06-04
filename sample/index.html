@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AIPIF — All India Payam-e-Insaniyat Forum</title>
-<meta name="description" content="All India Payam-e-Insaniyat Forum (AIPIF) — a non-political humanitarian organisation spreading the message of humanity since 1974. Food, care, dignity for all.">
-<meta property="og:title" content="AIPIF — All India Payam-e-Insaniyat Forum">
-<meta property="og:description" content="Spreading the message of humanity since 1974. Non-political, non-religious. Committed to food, care, and dignity for every person.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIPIF — All India Payam-E-Insaniyat Forum</title>
+  <meta name="description" content="All India Payam-E-Insaniyat Forum (AIPIF) — a non-political humanitarian organisation spreading the message of humanity since 1974. Food, care, dignity for all.">
+  <meta property="og:title" content="AIPIF — All India Payam-E-Insaniyat Forum">
+  <meta property="og:description" content="A non-political, purely humanitarian organization dedicated to ensure that no one goes hungry, no one feels neglected. Active across India since last 50 years.">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<!-- Lucide Icons -->
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
 <style>
 /* ─── DESIGN TOKENS ─────────────────────────────────────── */
@@ -439,6 +439,16 @@ button { cursor: pointer; border: none; background: none; }
   content: ''; display: block; width: 24px; height: 1.5px;
   background: var(--color-primary);
 }
+.section-eyebrow-1 {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-size: var(--text-xs); font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--color-primary); margin-bottom: var(--space-4);
+}
+.section-eyebrow-1::before {
+  content: ''; display: block; width: 24px; height: 1.5px;
+  background: rgba(255,255,255,0.6);
+}
 .section-title {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 700; line-height: 1.15;
@@ -767,6 +777,75 @@ button { cursor: pointer; border: none; background: none; }
   transform: translateX(4px); color: white;
 }
 
+/* DECADE TIMELINE */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: var(--space-8);
+  margin-top: var(--space-4);
+  gap: 0;
+  list-style: none;
+}
+
+.timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.35) 20%,
+    rgba(255, 255, 255, 0.35) 80%,
+    rgba(255, 255, 255, 0.12)
+  );
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: var(--space-8);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-8) - 4px);
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.9;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+}
+
+.timeline-decade {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: var(--space-1);
+}
+
+.timeline-event {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.45;
+  max-width: 38ch;
+}
+
 /* ─── FOOTER ─────────────────────────────────────────────── */
 footer {
   background: var(--color-dark);
@@ -775,7 +854,7 @@ footer {
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr;
   gap: clamp(var(--space-8), 4vw, var(--space-16));
 }
 .footer-brand-name {
@@ -806,7 +885,7 @@ footer {
 }
 .footer-links a:hover { color: var(--color-dark-text); }
 .footer-contact-item {
-  display: flex; align-items: flex-start; gap: var(--space-3);
+  display: flex; align-items: baseline; gap: var(--space-3);
   font-size: var(--text-sm); color: var(--color-dark-muted);
   margin-bottom: var(--space-3);
 }
@@ -865,7 +944,7 @@ footer {
   .program-card.featured { grid-row: span 1; grid-column: span 2; }
   .story-featured-inner { grid-template-columns: 1fr; }
   .story-featured-image { aspect-ratio: 16/9; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-10); }
+  .footer-grid { grid-template-columns: 0.5fr 1fr; gap: var(--space-10); }
   .btn-join-nav { font-size: var(--text-xs); padding: var(--space-2) var(--space-3); }
   #aipif-logo { width: 70px; }
   .nav-logo { gap: var(--space-1); }
@@ -874,22 +953,26 @@ footer {
   .nav-links a { font-size: var(--text-xs); }
 }
 @media (max-width: 768px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-image-wrap { display: none; }
+  .hero-grid { grid-template-columns: 1fr; grid-template-rows: auto auto;}
+  .hero-image-wrap { display: block; order: -1;}
+  .hero-image-frame { aspect-ratio: 16 / 9; border-radius: var(--radius-lg); }
   .mission-grid { grid-template-columns: 1fr; }
-  .mission-image-wrap { display: none; }
+  .mission-image-wrap { display: block; order: -1;}
   .programs-grid { grid-template-columns: 1fr; }
   .program-card.featured { grid-column: span 1; }
   .stories-sub { grid-template-columns: 1fr; }
   .involve-inner { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid img { width: 150px; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .footer-reg { text-align: center; }
   .nav-links, .nav-actions .btn-join-nav { display: none; }
   .nav-mobile-toggle { display: flex; }
   .nav-drawer { display: block; }
-  .hero-image-badge { display: none; }
+  .hero-image-badge { bottom: calc(-6 * var(--space-1)); left: calc(6 * var(--space-8)) }
   .programs-header { grid-template-columns: 1fr; }
+  .timeline-list { padding-left: var(--space-6); }
+  .timeline-item::before { left: calc(-1 * var(--space-6) - 4px); }
 }
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: 1fr; }
@@ -915,7 +998,7 @@ footer {
         <a href="/" class="nav-logo" aria-label="AIPIF Homepage">
           <img id="aipif-logo" width="100" style="padding: 10px;" src="aipif_color_logo.png" alt="aipif logo">
           <div class="nav-logo-text">
-            <span class="nav-logo-name">All India Payam-e-Insaniyat Forum</span>
+            <span class="nav-logo-name">All India Payam-E-Insaniyat Forum</span>
             <span class="nav-logo-tagline">The Message of Humanity</span>
           </div>
         </a>
@@ -930,9 +1013,9 @@ footer {
           <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           </button>
-          <a href="#join" class="btn-join-nav" aria-label="Join AIPIF">
+          <!-- <a href="#join" class="btn-join-nav" aria-label="Join AIPIF">
             Join Us
-          </a>
+          </a> -->
           <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false" id="menuBtn">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
           </button>
@@ -958,7 +1041,7 @@ footer {
       <li><a href="#stories">Stories</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#join" class="nav-drawer-join">Join Us</a>
+    <!-- <a href="#join" class="nav-drawer-join">Join Us</a> -->
   </div>
 </div>
 
@@ -981,7 +1064,7 @@ footer {
           <p class="hero-sub">
             A non-political, purely humanitarian organization dedicated to ensure that no one goes hungry, no one feels neglected. Active across India since last 50 years.
           </p>
-          <div class="hero-actions">
+          <!-- <div class="hero-actions">
             <a href="#help" class="btn-primary" id="donate">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
               Need Our Help
@@ -990,7 +1073,7 @@ footer {
               Learn About Our Work
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-          </div>
+          </div> -->
           <div class="scroll-hint" aria-hidden="true">
             <span class="scroll-arrow"></span>
             <span>Scroll to explore</span>
@@ -1014,7 +1097,7 @@ footer {
             </div>
             <div>
               <div class="hero-badge-text-label">Active volunteers</div>
-              <div class="hero-badge-text-value">5,000+</div>
+              <div class="hero-badge-text-value">Thousands</div>
             </div>
           </div>
         </div>
@@ -1042,7 +1125,7 @@ footer {
             <span class="stat-count" data-target="210">0</span>
             <span class="stat-unit">+</span>
           </div>
-          <div class="stat-label">Weekly free food distributions conducted in Hyderabad alone</div>
+          <div class="stat-label">Weekly free food served across the nation</div>
         </div>
         <div class="stat-card" role="listitem">
           <div class="stat-number">
@@ -1083,14 +1166,14 @@ footer {
             </blockquote>
 
             <p>
-              He is remembered for promoting love, amity, and understanding among communities across India. He founded the “Payam-e-Insaniyat” (Message of Humanity) movement and travelled with people from different communities to riot-affected areas to comfort victims and promote peace. In today’s troubled climate, his message of humanity, tolerance, and ethical reform remains deeply relevant.
+              He is remembered for promoting love, amity, and understanding among communities across India. He founded the “Payam-E-Insaniyat” (Message of Humanity) movement and travelled with people from different communities to riot-affected areas to comfort victims and promote peace. In today’s troubled climate, his message of humanity, tolerance, and ethical reform remains deeply relevant.
             </p>
           </div>
 
-          <a href="#programs" class="btn-ghost" style="margin-top:var(--space-8);display:inline-flex;">
+          <!-- <a href="#programs" class="btn-ghost" style="margin-top:var(--space-8);display:inline-flex;">
             See our programs
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          </a> -->
         </div>
 
         <!-- Image -->
@@ -1121,17 +1204,16 @@ footer {
           <div class="section-eyebrow">What we do</div>
           <h2 class="section-title" id="programs-heading">Our work, on the ground</h2>
         </div>
-        <a href="#contact" class="btn-ghost" style="white-space:nowrap;">
+        <!-- <a href="#contact" class="btn-ghost" style="white-space:nowrap;">
           All programs →
-        </a>
+        </a> -->
       </div>
 
       <div class="programs-grid">
-        <!-- Featured card -->
-        <article class="program-card featured reveal">
+        <article class="program-card reveal">
           <div class="program-card-image">
             <img
-              src="https://images.bhaskarassets.com/web2images/521/2025/01/05/app_17359960476779328fa6db0_1000538802.jpg"
+              src="meal_serve.jpg"
               alt="Volunteers serving hot meals to patients outside a hospital"
               width="700" height="520"
               loading="lazy"
@@ -1140,20 +1222,19 @@ footer {
           </div>
           <div class="program-card-body">
             <span class="program-tag">Food & Nutrition</span>
-            <h3 class="program-card-title">Free Meal Distribution</h3>
-            <p class="program-card-desc">Every week, our volunteers prepare and distribute thousands of hot meals outside government hospitals, railway stations, and in flood and drought-affected areas. No one who comes to our gates leaves hungry.</p>
-            <a href="#contact" class="program-link">
-              Learn more
+            <h3 class="program-card-title">Hunger Free India</h3>
+            <p class="program-card-desc">Daily and weekly, our volunteers prepare and serve thousands of hot meals outside government hospitals, railway stations, and in flood and drought-affected areas. No one who comes to our gates leaves hungry.</p>
+            <!-- <a href="#contact" class="program-link">
+              Learn more  
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            </a> -->
           </div>
         </article>
 
-        <!-- Card 2 -->
         <article class="program-card reveal">
           <div class="program-card-image">
             <img
-              src="https://media.telanganatoday.com/wp-content/uploads/2022/11/hyd-1.jpg"
+              src="blood_donation_drive.jpg"
               alt="Blood donation camp organised by AIPIF volunteers"
               width="400" height="225"
               loading="lazy"
@@ -1164,18 +1245,17 @@ footer {
             <span class="program-tag">Healthcare</span>
             <h3 class="program-card-title">Blood Donation Drives</h3>
             <p class="program-card-desc">Mobilising voluntary donors to fill critical blood shortages at hospitals — conducted dozens of times a year, across multiple cities.</p>
-            <a href="#contact" class="program-link">
+            <!-- <a href="#contact" class="program-link">
               Learn more
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            </a> -->
           </div>
         </article>
 
-        <!-- Card 3 -->
         <article class="program-card reveal">
           <div class="program-card-image">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Qskhq89TPJ2vAf5v6JR35xSTP8LNwd-VAQ&s"
+              src="flood_relief.jpeg"
               alt="AIPIF relief volunteers during a flood response in India"
               width="400" height="225"
               loading="lazy"
@@ -1186,18 +1266,38 @@ footer {
             <span class="program-tag">Disaster Relief</span>
             <h3 class="program-card-title">Emergency & Flood Relief</h3>
             <p class="program-card-desc">When natural disasters strike, AIPIF volunteers are among the first to mobilise — distributing rations, medicine, and clothing to affected families.</p>
-            <a href="#contact" class="program-link">
+            <!-- <a href="#contact" class="program-link">
               Learn more
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            </a> -->
           </div>
         </article>
 
-        <!-- Card 4 -->
         <article class="program-card reveal">
           <div class="program-card-image">
             <img
-              src="https://scontent.fhyd2-3.fna.fbcdn.net/v/t39.30808-6/585877949_883689867649825_6087266734672873942_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XY9uP0uese0Q7kNvwGkD6l4&_nc_oc=AdrFf0WMgYF5gbGL2Skf-5SUWRtZNGpZ1mpnIpzpJdP7VIA0jU1STlUg-L8SR2rwsEI&_nc_zt=23&_nc_ht=scontent.fhyd2-3.fna&_nc_gid=pkesEPKraNmDBUr2slaEyw&_nc_ss=7b289&oh=00_Af6igUtzs8K7_ZNjkiFrhxmlgiY7N0TP-OiWEJXq49_N2w&oe=6A1485B2"
+              src="community_gather.webp"
+              alt="Community harmony gathering with people of different faiths"
+              width="400" height="225"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="program-card-body">
+            <span class="program-tag">Community Unity</span>
+            <h3 class="program-card-title">Dialogue Programs</h3>
+            <p class="program-card-desc">Rooted in AIPIF's founding mission, community dialogue programs that bring people of all backgrounds together around shared humanity and moral values.</p>
+            <!-- <a href="#contact" class="program-link">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a> -->
+          </div>
+        </article>
+
+        <article class="program-card reveal">
+          <div class="program-card-image">
+            <img
+              src="hospital_visit.jpeg"
               alt="Children receiving fruits distributed by AIPIF volunteers at a hospital"
               width="400" height="225"
               loading="lazy"
@@ -1207,15 +1307,36 @@ footer {
           <div class="program-card-body">
             <span class="program-tag">Patient Welfare</span>
             <h3 class="program-card-title">Hospital Outreach</h3>
-            <p class="program-card-desc">Daily fruit and breakfast distributions for patients and their families at government hospitals — a small act that means everything to those far from home.</p>
-            <a href="#contact" class="program-link">
+            <p class="program-card-desc">Serving daily fruit and breakfast for patients and their families at government hospitals — a small act that means everything to those far from home.</p>
+            <!-- <a href="#contact" class="program-link">
               Learn more
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            </a> -->
+          </div>
+        </article>
+        
+
+        <article class="program-card reveal">
+          <div class="program-card-image">
+            <img
+              src="railway_visit.jpeg"
+              alt="AIPIF volunteers serving food and drinks to passengers at a railway station"
+              width="400" height="225"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="program-card-body">
+            <span class="program-tag">Community Outreach</span>
+            <h3 class="program-card-title">Railway Station Visits</h3>
+            <p class="program-card-desc">With permission from railway and police authorities, our volunteers make regular visits to railway stations — serving passengers hot meals, tea, and during peak summers, water and refreshing buttermilk. We also fulfil staff requests for essentials like wheelchairs, and share our literature on love, brotherhood, and human values with passengers and railway staff alike.</p>
+            <!-- <a href="#contact" class="program-link">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a> -->
           </div>
         </article>
 
-        <!-- Card 5 -->
         <article class="program-card reveal">
           <div class="program-card-image">
             <img
@@ -1227,13 +1348,118 @@ footer {
             >
           </div>
           <div class="program-card-body">
-            <span class="program-tag">Community Unity</span>
-            <h3 class="program-card-title">Interfaith Harmony Programs</h3>
-            <p class="program-card-desc">Rooted in AIPIF's founding mission, community dialogue programs that bring people of all backgrounds together around shared humanity and moral values.</p>
-            <a href="#contact" class="program-link">
+            <span class="program-tag">Community Outreach</span>
+            <h3 class="program-card-title">Bus Stand Visits</h3>
+            <p class="program-card-desc">Our volunteers visit local bus stands and depots to serve travellers in need — especially during scorching summers, where a glass of water or chilled buttermilk brings instant relief and a smile. We also distribute cooked food packets and share our literature on love, brotherhood, morality, and human values to spread a message of shared humanity.</p>
+            <!-- <a href="#contact" class="program-link">
               Learn more
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            </a> -->
+          </div>
+        </article>
+
+        <article class="program-card reveal">
+          <div class="program-card-image">
+            <img
+              src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg"
+              alt="Community harmony gathering with people of different faiths"
+              width="400" height="225"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="program-card-body">
+            <span class="program-tag">Elder Care</span>
+            <h3 class="program-card-title">Old Age Home Visits</h3>
+            <p class="program-card-desc">Our volunteers make consistent visits to old age homes — serving meals, conducting medical camps, and simply sitting with elderly residents as their own children would, bringing warmth to those longing for love. In Hyderabad, we have been serving lunch and dinner weekly at an old age home for over 100 consecutive weeks, and have recently added breakfast too.</p>
+            <!-- <a href="#contact" class="program-link">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a> -->
+          </div>
+        </article>
+
+        <article class="program-card reveal">
+          <div class="program-card-image">
+            <img
+              src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg"
+              alt="Community harmony gathering with people of different faiths"
+              width="400" height="225"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="program-card-body">
+            <span class="program-tag">Child Welfare</span>
+            <h3 class="program-card-title">Orphanage Visits</h3>
+            <p class="program-card-desc">With nearly 30 million orphaned and abandoned children in India, AIPIF volunteers regularly visit orphanages — addressing needs of education, health, clothing, and emotional wellbeing with the management and facilitating support accordingly. We believe every child deserves to be treated with love and dignity, and if our visit brings even one smile to a child's face, that alone is reason enough.</p>
+            <!-- <a href="#contact" class="program-link">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a> -->
+          </div>
+        </article>
+
+        <article class="program-card reveal">
+          <div class="program-card-image">
+            <img
+              src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg"
+              alt="Community harmony gathering with people of different faiths"
+              width="400" height="225"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="program-card-body">
+            <span class="program-tag">Social Reform</span>
+            <h3 class="program-card-title">De-Addiction Campaigns</h3>
+            <p class="program-card-desc">Under our "Our Society, Our Responsibility" theme, AIPIF organises de-addiction programs to pull youth back from the grip of drugs and alcohol — addictions that destroy not just individual lives but entire communities. In Aurangabad alone, our efforts have helped over 1,100 individuals break free from addiction and reclaim their lives.</p>
+            <!-- <a href="#contact" class="program-link">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a> -->
+          </div>
+        </article>
+
+        <article class="program-card reveal">
+          <div class="program-card-image">
+            <img
+              src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg"
+              alt="Community harmony gathering with people of different faiths"
+              width="400" height="225"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="program-card-body">
+            <span class="program-tag">Prison Welfare</span>
+            <h3 class="program-card-title">Prison Outreach & Inmate Relief</h3>
+            <p class="program-card-desc">AIPIF reaches out to those behind bars — paying fines to secure the release of those imprisoned solely for inability to pay, and conducting medical camps including specialised skin treatment drives inside prisons. Beyond physical care, we carry the message of humanity, human values, and hope to those who need it most.</p>
+            <!-- <a href="#contact" class="program-link">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a> -->
+          </div>
+        </article>
+
+        <article class="program-card reveal">
+          <div class="program-card-image">
+            <img
+              src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg"
+              alt="Community harmony gathering with people of different faiths"
+              width="400" height="225"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="program-card-body">
+            <span class="program-tag">Skill Development</span>
+            <h3 class="program-card-title">Skill Development & Job Placement</h3>
+            <p class="program-card-desc">AIPIF organises skill development and job placement programs for school dropouts and unemployed youth, opening doors that circumstance had closed. A standout achievement is our Mobile Phone Chip-Level Repair Training Program, conducted for children at Juvenile and Observation Homes — equipping them with a livelihood skill and a path forward.</p>
+            <!-- <a href="#contact" class="program-link">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a> -->
           </div>
         </article>
       </div>
@@ -1262,7 +1488,7 @@ footer {
           </div>
           <div class="story-featured-content">
             <p class="story-body">
-              Every Thursday morning, before the hospital gates open, the AIPIF volunteers are already there. They have been doing this for years — quietly, without announcement. There are no banners, no cameras. Just warm food, ready and waiting.
+              Every morning, before the hospital gates open, the AIPIF volunteers are already there. They have been doing this for years — quietly, without announcement. Just warm food, ready and waiting.
             </p>
             <blockquote class="story-quote">
               My mother was in the ICU for three weeks. We barely had money for medicines. These people came every morning and made sure we never went hungry.
@@ -1315,45 +1541,38 @@ footer {
     <div class="container">
       <div class="involve-inner">
         <div class="reveal">
-          <div class="section-eyebrow" style="color:rgba(255,255,255,0.6);">Join us</div>
+          <div id="timeline" class="section-eyebrow-1" style="color:rgba(255,255,255,0.6);">Timeline</div>
           <h2 class="involve-heading" id="involve-heading">
-            There are many ways to help.
+            How it all started.
           </h2>
           <p class="involve-sub">
-            Every act counts — whether it's a donation, an afternoon volunteering, or a partnership that helps us reach further. Choose your path.
+            Our aim is to build a compassionate human bonding among people that flows from person to person and heart to heart irrespective of caste, creed, colour, language, region or religion.
           </p>
         </div>
         <div class="involve-paths reveal" role="list">
-          <a href="#donate" class="involve-path donate" role="listitem">
-            <div class="involve-path-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </div>
-            <div>
-              <div class="involve-path-title">Donate</div>
-              <div class="involve-path-desc">Fund a meal, a relief kit, or a blood drive. Every rupee goes directly to the work.</div>
-            </div>
-            <svg class="involve-path-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#contact" class="involve-path" role="listitem">
-            <div class="involve-path-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <div>
-              <div class="involve-path-title">Volunteer</div>
-              <div class="involve-path-desc">Show up on a Thursday morning. That's all it takes to begin.</div>
-            </div>
-            <svg class="involve-path-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#contact" class="involve-path" role="listitem">
-            <div class="involve-path-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            </div>
-            <div>
-              <div class="involve-path-title">Partner with Us</div>
-              <div class="involve-path-desc">Organisations and CSR teams — let's amplify the impact together.</div>
-            </div>
-            <svg class="involve-path-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <ol class="timeline-list" aria-label="Decade timeline">
+
+            <li class="timeline-item">
+              <div class="timeline-decade">1970s</div>
+              <div class="timeline-event">Founding of Payam-E-Insaniyat and early peace initiatives across riot-affected communities.</div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-decade">1980s</div>
+              <div class="timeline-event">Expansion of outreach into education, free meal distribution, and welfare programmes.</div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-decade">1990s</div>
+              <div class="timeline-event">National and international recognition — King Faisal Award, Brunei Award, and broader institutional reach.</div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-decade">2000s – 2020s</div>
+              <div class="timeline-event">Continued service across 28 states, blood donation drives, flood relief, and modern stewardship of the mission.</div>
+            </li>
+
+          </ol>
         </div>
       </div>
     </div>
@@ -1365,10 +1584,11 @@ footer {
 <footer id="contact" aria-label="Site footer">
   <div class="container">
     <div class="footer-grid">
+      <img src="aipif_white_logo.png" alt="aipif logo">
       <!-- Brand -->
       <div>
-        <div class="footer-brand-tagline">Payam-e-Insaniyat</div>
-        <div class="footer-brand-name">All India Payam-e-Insaniyat Forum</div>
+        <div class="footer-brand-tagline">The Message of Humanity</div>
+        <div class="footer-brand-name">All India Payam-E-Insaniyat Forum</div>
         <p class="footer-brand-desc">
           A non-political humanitarian organisation bringing human beings together through the message of humanity — since 1974.
         </p>
@@ -1376,12 +1596,18 @@ footer {
           <a href="https://www.instagram.com/aipif.official/" target="_blank" rel="noopener noreferrer" aria-label="AIPIF on Instagram">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </a>
-          <a href="https://www.facebook.com/aipifeastzonehyd/" target="_blank" rel="noopener noreferrer" aria-label="AIPIF on Facebook">
+          <a href="https://www.facebook.com/official.aipif/" target="_blank" rel="noopener noreferrer" aria-label="AIPIF on Facebook">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
           <a href="https://www.youtube.com/@aipifofficial" target="_blank" rel="noopener noreferrer" aria-label="AIPIF on YouTube">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
           </a>
+          <a href="https://x.com/aipif_official" target="_blank" rel="noopener noreferrer" aria-label="AIPIF on YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 4-5.93 6.93M5 20l5.93-6.93m0 0 5.795 6.587c.19.216.483.343.794.343h1.474c.836 0 1.307-.85.793-1.435L13.07 10.93m-2.14 2.14L4.214 5.435C3.7 4.85 4.17 4 5.007 4h1.474c.31 0 .604.127.794.343l5.795 6.587"/></svg>
+          </a>
+          <!-- <a href="https://x.com/aipif_official" target="_blank" rel="noopener noreferrer" aria-label="AIPIF on YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </a> -->
         </div>
       </div>
 
@@ -1392,13 +1618,13 @@ footer {
           <li><a href="#about">About Us</a></li>
           <li><a href="#programs">Our Programs</a></li>
           <li><a href="#stories">Stories</a></li>
-          <li><a href="#donate">Donate</a></li>
+          <li><a href="#timeline">Timeline</a></li>
           <li><a href="#contact">Volunteer</a></li>
         </ul>
       </nav>
 
       <!-- Programs -->
-      <nav aria-label="Programs">
+      <!-- <nav aria-label="Programs">
         <div class="footer-col-title">Programs</div>
         <ul class="footer-links" role="list">
           <li><a href="#programs">Free Meal Distribution</a></li>
@@ -1407,29 +1633,29 @@ footer {
           <li><a href="#programs">Hospital Outreach</a></li>
           <li><a href="#programs">Community Harmony</a></li>
         </ul>
-      </nav>
+      </nav> -->
 
       <!-- Contact -->
       <div>
         <div class="footer-col-title">Contact</div>
         <div class="footer-contact-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Hyderabad, Telangana, India</span>
+          <span>Lucknow, Uttar Pradesh, India</span>
         </div>
         <div class="footer-contact-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <span>info@aipiftsap.org</span>
+          <span>aipif.messageofhumanity@gmail.com</span>
         </div>
         <div class="footer-contact-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <span>Registered non-profit humanitarian organisation</span>
+          <span>Registered Under Societies Registration Act XXXI of 1980 (Reg. No. S/00113-NE-2010)</span>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-legal">© 2025 All India Payam-e-Insaniyat Forum. All rights reserved.</p>
-      <p class="footer-reg">TSAP Chapter · aipiftsap.org</p>
+      <p class="footer-legal">© 2026 All India Payam-E-Insaniyat Forum. All rights reserved.</p>
+      <p class="footer-reg">India · aipifofficial.org</p>
     </div>
   </div>
 </footer>
