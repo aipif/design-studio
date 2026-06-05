@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اے آئی پی آئی ایف — آل انڈیا پیامِ انسانیت فورم</title>
+  <meta name="description" content="آل انڈیا پیامِ انسانیت فورم (AIPIF) — ایک غیر سیاسی انسانی خدمت کی تنظیم جو 1974 سے پیغامِ انسانیت عام کر رہی ہے۔ سب کے لیے خوراک، نگہداشت اور وقار۔">
+  <meta property="og:title" content="اے آئی پی آئی ایف — آل انڈیا پیامِ انسانیت فورم">
+  <meta property="og:description" content="ایک غیر سیاسی، خالص انسانی خدمت کی تنظیم جو اس عزم کے ساتھ کام کرتی ہے کہ کوئی بھوکا نہ رہے اور کوئی خود کو نظرانداز شدہ محسوس نہ کرے۔ گزشتہ 50 برس سے پورے ہندوستان میں سرگرم۔">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <style>
+    :root, [data-theme="light"] {
+    --color-bg: #F5F0E8;
+    --color-surface: #FAF7F2;
+    --color-surface-2: #FFFEFB;
+    --color-surface-offset: #EDE8DF;
+    --color-surface-deep: #E4DDD1;
+    --color-divider: #D8D2C8;
+    --color-border: #CEC8BC;
+
+    --color-text: #1E1A14;
+    --color-text-muted: #7A7362;
+    --color-text-faint: #B0A898;
+    --color-text-inverse: #FAF7F2;
+
+    --color-primary: #1A5C3A;
+    --color-primary-hover: #154A2F;
+    --color-primary-active: #0F3822;
+    --color-primary-light: #D4E8DC;
+
+    --color-secondary: #C2581B;
+    --color-secondary-hover: #A04515;
+
+    --color-dark: #131A14;
+    --color-dark-surface: #1A2319;
+    --color-dark-text: #E8E3DA;
+    --color-dark-muted: #8A9086;
+
+    --font-display: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', serif;
+    --font-body: 'Noto Sans Arabic', 'Noto Nastaliq Urdu', sans-serif;
+
+    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+    --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+    --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+    --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+    --text-hero: clamp(3rem, 0.5rem + 7vw, 6rem);
+
+    --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+    --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+    --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+    --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+    --space-32: 8rem;
+
+    --radius-sm: 0.25rem; --radius-md: 0.5rem;
+    --radius-lg: 0.75rem; --radius-xl: 1.25rem;
+
+    --shadow-sm: 0 1px 3px rgba(30,26,20,0.07), 0 1px 2px rgba(30,26,20,0.05);
+    --shadow-md: 0 4px 16px rgba(30,26,20,0.08), 0 2px 6px rgba(30,26,20,0.05);
+    --shadow-lg: 0 12px 40px rgba(30,26,20,0.10), 0 4px 12px rgba(30,26,20,0.06);
+
+    --content-width: 1160px;
+    --prose-width: 68ch;
+    --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="dark"] {
+    --color-bg: #131A14;
+    --color-surface: #1A2319;
+    --color-surface-2: #1F2B1E;
+    --color-surface-offset: #162015;
+    --color-surface-deep: #0F160F;
+    --color-divider: #2A342A;
+    --color-border: #344034;
+    --color-text: #E8E3DA;
+    --color-text-muted: #8A9086;
+    --color-text-faint: #4E5A4C;
+    --color-text-inverse: #131A14;
+    --color-primary: #4EA870;
+    --color-primary-hover: #62B880;
+    --color-primary-active: #3A8F58;
+    --color-primary-light: #1A3524;
+    --color-secondary: #E07040;
+    --color-secondary-hover: #F08050;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.35);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.45);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    }
+    body {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.65;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: right;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    ul[role="list"], ol[role="list"] { list-style: none; }
+    input, button, textarea, select { font: inherit; }
+    h1, h2, h3, h4 { text-wrap: balance; line-height: 1.3; font-family: var(--font-display); }
+    p, li { text-wrap: pretty; }
+    button { cursor: pointer; border: none; background: none; }
+    ::selection { background: color-mix(in oklab, var(--color-primary) 20%, transparent); }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    .sr-only:focus {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    }
+    .skip-link {
+    position: fixed;
+    top: var(--space-4);
+    right: var(--space-4);
+    z-index: 999;
+    padding: var(--space-2) var(--space-4);
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    }
+    [dir="ltr"] { direction: ltr; unicode-bidi: embed; display: inline-block; }
+
+    @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    .container {
+    max-width: var(--content-width);
+    margin-inline: auto;
+    padding-inline: clamp(var(--space-4), 5vw, var(--space-12));
+    }
+    .prose { max-width: var(--prose-width); }
+
+    #nav {
+    position: sticky; top: 0; z-index: 100;
+    transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
+    }
+    #nav.scrolled {
+    background: color-mix(in oklab, var(--color-bg) 85%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 1px 0 var(--color-divider);
+    }
+    .nav-inner { display: flex; align-items: center; gap: var(--space-8); }
+    .nav-logo {
+    flex-shrink: 0;
+    display: flex; align-items: center; gap: var(--space-3);
+    text-decoration: none; color: var(--color-text);
+    }
+    .nav-logo-text { display: flex; flex-direction: column; gap: 1px; }
+    .nav-logo-name {
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-text);
+    }
+    .nav-logo-tagline {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    }
+    .nav-links {
+    display: flex; align-items: center; gap: var(--space-6);
+    list-style: none; margin-right: auto;
+    }
+    .nav-links a {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 3px;
+    transition: color var(--transition);
+    }
+    .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1.5px;
+    background: var(--color-primary);
+    transition: width var(--transition);
+    }
+    .nav-links a:hover { color: var(--color-text); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-actions {
+    display: flex; align-items: center; gap: var(--space-3);
+    }
+    .theme-toggle {
+    width: 38px; height: 38px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: var(--radius-md);
+    color: var(--color-text-muted);
+    transition: color var(--transition), background var(--transition);
+    }
+    .theme-toggle:hover { color: var(--color-text); background: var(--color-surface-offset); }
+    .nav-mobile-toggle {
+    display: none; width: 44px; height: 44px;
+    align-items: center; justify-content: center;
+    color: var(--color-text);
+    }
+
+    .nav-drawer {
+    display: none; position: fixed; inset: 0; z-index: 200;
+    pointer-events: none;
+    }
+    .nav-drawer.open { pointer-events: all; }
+    .nav-drawer-backdrop {
+    position: absolute; inset: 0;
+    background: rgba(19,26,20,0.55);
+    opacity: 0; transition: opacity 0.3s ease;
+    backdrop-filter: blur(4px);
+    }
+    .nav-drawer.open .nav-drawer-backdrop { opacity: 1; }
+    .nav-drawer-panel {
+    position: absolute; top: 0; left: 0; bottom: 0;
+    width: min(320px, 85vw);
+    background: var(--color-surface-2);
+    padding: var(--space-6);
+    transform: translateX(-100%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex; flex-direction: column; gap: var(--space-8);
+    }
+    .nav-drawer.open .nav-drawer-panel { transform: translateX(0); }
+    .nav-drawer-header {
+    display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-drawer-links {
+    display: flex; flex-direction: column; gap: var(--space-1);
+    list-style: none;
+    }
+    .nav-drawer-links a {
+    display: block; padding: var(--space-3) var(--space-2);
+    font-size: var(--text-base); font-weight: 500;
+    color: var(--color-text); text-decoration: none;
+    border-bottom: 1px solid var(--color-divider);
+    transition: color var(--transition), padding-right var(--transition);
+    }
+    .nav-drawer-links a:hover { color: var(--color-primary); padding-right: var(--space-4); }
+
+    .hero {
+    padding-block: 125px;
+    background: var(--color-bg);
+    position: relative; overflow: hidden;
+    }
+    .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(var(--space-12), 6vw, var(--space-20));
+    align-items: center;
+    }
+    .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-6);
+    }
+    .hero-eyebrow-line {
+    display: block; width: 32px; height: 1.5px;
+    background: var(--color-primary);
+    }
+    .hero-heading {
+    font-family: var(--font-display);
+    font-size: var(--text-hero);
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--color-text);
+    margin-bottom: var(--space-6);
+    }
+    .hero-heading em { font-style: normal; color: var(--color-primary); }
+    .hero-sub {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    max-width: 44ch;
+    line-height: 1.9;
+    margin-bottom: var(--space-10);
+    font-weight: 400;
+    }
+    .hero-image-wrap { position: relative; }
+    .hero-image-frame {
+    aspect-ratio: 4/5;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    position: relative;
+    }
+    .hero-image-frame img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hero-image-badge {
+    position: absolute; bottom: var(--space-6); right: calc(-1 * var(--space-8));
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4) var(--space-5);
+    display: flex; align-items: center; gap: var(--space-3);
+    box-shadow: var(--shadow-md);
+    }
+    .hero-badge-icon {
+    width: 40px; height: 40px; flex-shrink: 0;
+    background: var(--color-primary-light);
+    border-radius: var(--radius-md);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-primary);
+    }
+    .hero-badge-text-label { font-size: var(--text-xs); color: var(--color-text-muted); font-weight: 500; }
+    .hero-badge-text-value {
+    font-family: var(--font-display);
+    font-size: var(--text-lg); font-weight: 700;
+    color: var(--color-text); line-height: 1.5;
+    }
+    .scroll-hint {
+    display: flex; flex-direction: column; align-items: flex-end;
+    gap: var(--space-2); margin-top: var(--space-12);
+    color: var(--color-text-faint);
+    font-size: var(--text-xs); font-weight: 500;
+    }
+    .scroll-arrow {
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, var(--color-text-faint), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+    0%, 100% { opacity: 0.4; transform: scaleY(1); }
+    50% { opacity: 1; transform: scaleY(1.15); }
+    }
+
+    .stats-section {
+    padding-block: clamp(var(--space-16), 8vw, var(--space-24));
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-divider);
+    border-bottom: 1px solid var(--color-divider);
+    }
+    .stats-header { margin-bottom: clamp(var(--space-10), 4vw, var(--space-16)); }
+    .section-eyebrow,
+    .section-eyebrow-1 {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    font-size: var(--text-xs); font-weight: 600;
+    color: var(--color-primary); margin-bottom: var(--space-4);
+    }
+    .section-eyebrow::before {
+    content: ''; display: block; width: 24px; height: 1.5px;
+    background: var(--color-primary);
+    }
+    .section-eyebrow-1::before {
+    content: ''; display: block; width: 24px; height: 1.5px;
+    background: rgba(255,255,255,0.6);
+    }
+    .section-title {
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 700; line-height: 1.35;
+    color: var(--color-text);
+    }
+    .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-1);
+    }
+    .stat-card {
+    padding: clamp(var(--space-6), 3vw, var(--space-10)) var(--space-6);
+    background: var(--color-bg);
+    border: 1px solid var(--color-divider);
+    position: relative;
+    }
+    .stat-card:first-child { border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
+    .stat-card:last-child { border-radius: var(--radius-lg) 0 0 var(--radius-lg); }
+    .stat-number {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700; line-height: 1.2;
+    color: var(--color-text);
+    display: flex; align-items: baseline; gap: var(--space-1);
+    }
+    .stat-unit { font-size: clamp(1.25rem, 2vw, 1.75rem); color: var(--color-primary); }
+    .stat-label {
+    font-size: var(--text-sm); font-weight: 500;
+    color: var(--color-text-muted);
+    margin-top: var(--space-3);
+    line-height: 1.8;
+    }
+
+    .mission-section { padding-block: clamp(var(--space-20), 10vw, var(--space-32)); }
+    .mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(var(--space-12), 6vw, var(--space-24));
+    align-items: start;
+    }
+    .mission-content { padding-top: var(--space-4); }
+    .mission-body {
+    font-size: var(--text-base);
+    color: var(--color-text);
+    line-height: 2;
+    max-width: var(--prose-width);
+    }
+    .mission-body p + p { margin-top: var(--space-5); }
+    .mission-pullquote {
+    margin-block: var(--space-8);
+    padding-right: var(--space-6);
+    border-right: 3px solid var(--color-primary);
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    line-height: 1.8;
+    color: var(--color-text);
+    max-width: 36ch;
+    }
+    .mission-image-wrap { position: relative; }
+    .mission-image-frame {
+    aspect-ratio: 3/4;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    }
+    .mission-image-frame img { width: 100%; height: 100%; object-fit: cover; }
+    .mission-image-caption {
+    position: absolute; bottom: calc(-1 * var(--space-6));
+    left: 0; right: var(--space-8);
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+    box-shadow: var(--shadow-md);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    }
+    .mission-image-caption strong {
+    display: block; font-weight: 600;
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    margin-bottom: 2px;
+    }
+
+    .programs-section {
+    padding-block: clamp(var(--space-16), 8vw, var(--space-24));
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-divider);
+    }
+    .programs-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: var(--space-8);
+    margin-bottom: clamp(var(--space-10), 4vw, var(--space-16));
+    }
+    .programs-grid {
+    display: grid;
+    grid-template-columns: 1.55fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: var(--space-4);
+    }
+    .program-card {
+    background: var(--color-bg);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), transform var(--transition);
+    display: flex; flex-direction: column;
+    }
+    .program-card:hover { box-shadow: var(--shadow-lg); }
+    .program-card.featured { grid-row: span 2; }
+    .program-card-image { overflow: hidden; flex-shrink: 0; }
+    .program-card.featured .program-card-image { aspect-ratio: 3/2.2; }
+    .program-card:not(.featured) .program-card-image { aspect-ratio: 16/9; }
+    .program-card-image img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    display: block;
+    }
+    .program-card:hover .program-card-image img { transform: scale(1.04); }
+    .program-card-body { padding: var(--space-6); flex: 1; display: flex; flex-direction: column; }
+    .program-tag {
+    display: inline-block;
+    font-size: var(--text-xs); font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-3);
+    }
+    .program-card-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+    font-weight: 700; line-height: 1.7;
+    color: var(--color-text);
+    margin-bottom: var(--space-2);
+    }
+    .program-card.featured .program-card-title { font-size: clamp(1.3rem, 2vw, 1.8rem); }
+    .program-card-desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: 1.9;
+    margin-bottom: var(--space-5);
+    flex: 1;
+    }
+
+    .story-section {
+    padding-block: clamp(var(--space-20), 10vw, var(--space-32));
+    background: var(--color-bg);
+    }
+    .story-featured { margin-bottom: clamp(var(--space-16), 6vw, var(--space-24)); }
+    .story-featured-inner {
+    background: var(--color-surface);
+    border: 1px solid var(--color-divider);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    .story-featured-image {
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    position: relative;
+    }
+    .story-featured-image img { width: 100%; height: 100%; object-fit: cover; }
+    .story-featured-content {
+    padding: clamp(var(--space-10), 4vw, var(--space-16));
+    display: flex; flex-direction: column; justify-content: center; gap: var(--space-6);
+    }
+    .story-quote {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 600;
+    line-height: 1.8;
+    color: var(--color-text);
+    }
+    .story-quote::before { content: '“'; color: var(--color-primary); margin-left: 2px; }
+    .story-quote::after { content: '”'; color: var(--color-primary); margin-right: 2px; }
+    .story-attr {
+    display: flex; align-items: center; gap: var(--space-3);
+    flex-direction: row-reverse;
+    }
+    .story-attr-name { font-weight: 600; font-size: var(--text-sm); color: var(--color-text); }
+    .story-attr-detail { font-size: var(--text-xs); color: var(--color-text-muted); }
+    .story-body {
+    font-size: var(--text-base); line-height: 1.9;
+    color: var(--color-text-muted);
+    max-width: var(--prose-width);
+    }
+    .stories-sub {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    }
+    .story-mini {
+    background: var(--color-surface);
+    border: 1px solid var(--color-divider);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    display: flex; flex-direction: column; gap: var(--space-4);
+    box-shadow: var(--shadow-sm);
+    }
+    .story-mini-quote {
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.9;
+    color: var(--color-text);
+    flex: 1;
+    }
+    .story-mini-quote::before { content: '“'; color: var(--color-primary); }
+    .story-mini-quote::after { content: '”'; color: var(--color-primary); }
+    .story-mini-attr {
+    font-size: var(--text-xs); color: var(--color-text-muted);
+    font-weight: 500; border-top: 1px solid var(--color-divider);
+    padding-top: var(--space-3);
+    }
+    .story-mini-attr strong { color: var(--color-text); }
+
+    .involve-section {
+    padding-block: clamp(var(--space-20), 10vw, var(--space-32));
+    background: var(--color-primary);
+    color: white;
+    }
+    .involve-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(var(--space-12), 6vw, var(--space-24));
+    align-items: center;
+    }
+    .involve-heading {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700; line-height: 1.5;
+    color: white; margin-bottom: var(--space-4);
+    }
+    .involve-sub {
+    font-size: var(--text-base);
+    color: rgba(255,255,255,0.75);
+    line-height: 1.9; max-width: 44ch;
+    }
+    .involve-paths { display: flex; flex-direction: column; gap: var(--space-4); }
+
+    .timeline-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: var(--space-8);
+    margin-top: var(--space-4);
+    gap: 0;
+    list-style: none;
+    }
+    .timeline-list::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.12),
+        rgba(255, 255, 255, 0.35) 20%,
+        rgba(255, 255, 255, 0.35) 80%,
+        rgba(255, 255, 255, 0.12)
+    );
+    }
+    .timeline-item { position: relative; padding-bottom: var(--space-8); }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-item::before {
+    content: '';
+    position: absolute;
+    right: calc(-1 * var(--space-8) - 4px);
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.9;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+    }
+    .timeline-decade {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: var(--space-1);
+    }
+    .timeline-event {
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.8;
+    max-width: 38ch;
+    }
+
+    footer {
+    background: var(--color-dark);
+    padding-block: clamp(var(--space-16), 6vw, var(--space-24));
+    border-top: 1px solid color-mix(in oklab, var(--color-primary) 20%, transparent);
+    }
+    .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    gap: clamp(var(--space-8), 4vw, var(--space-16));
+    }
+    .footer-brand-name {
+    font-family: var(--font-display);
+    font-size: var(--text-lg); font-weight: 700;
+    color: var(--color-dark-text); margin-bottom: var(--space-3);
+    }
+    .footer-brand-tagline {
+    font-size: var(--text-xs); font-weight: 600;
+    color: var(--color-primary); margin-bottom: var(--space-5);
+    }
+    .footer-brand-desc {
+    font-size: var(--text-sm); color: var(--color-dark-muted);
+    line-height: 1.9; max-width: 32ch;
+    }
+    .footer-col-title {
+    font-size: var(--text-xs); font-weight: 600;
+    color: var(--color-dark-muted); margin-bottom: var(--space-5);
+    }
+    .footer-links {
+    list-style: none; display: flex; flex-direction: column; gap: var(--space-3);
+    }
+    .footer-links a {
+    font-size: var(--text-sm); color: var(--color-dark-muted);
+    text-decoration: none; transition: color var(--transition);
+    }
+    .footer-links a:hover { color: var(--color-dark-text); }
+    .footer-contact-item {
+    display: flex; align-items: flex-start; gap: var(--space-3);
+    font-size: var(--text-sm); color: var(--color-dark-muted);
+    margin-bottom: var(--space-3);
+    }
+    .footer-contact-item svg { flex-shrink: 0; margin-top: 6px; color: var(--color-primary); }
+    .footer-social { display: flex; gap: var(--space-3); margin-top: var(--space-5); }
+    .footer-social a {
+    width: 38px; height: 38px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-md);
+    color: var(--color-dark-muted);
+    text-decoration: none;
+    transition: background var(--transition), color var(--transition);
+    }
+    .footer-social a:hover { background: var(--color-primary); color: white; }
+    .footer-bottom {
+    margin-top: var(--space-12);
+    padding-top: var(--space-6);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: var(--space-4);
+    }
+    .footer-legal,
+    .footer-reg { font-size: var(--text-xs); color: var(--color-dark-muted); }
+    .footer-reg { text-align: left; }
+
+    .reveal { opacity: 1; }
+    @supports (animation-timeline: scroll()) {
+    .reveal {
+        opacity: 0;
+        animation: revealFade linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 60%;
+    }
+    @keyframes revealFade { to { opacity: 1; } }
+    }
+
+    @media (max-width: 1024px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-card:first-child { border-radius: 0 var(--radius-lg) 0 0; }
+    .stat-card:nth-child(2) { border-radius: var(--radius-lg) 0 0 0; }
+    .stat-card:nth-child(3) { border-radius: 0 0 0 var(--radius-lg); }
+    .stat-card:last-child { border-radius: 0 0 var(--radius-lg) 0; }
+    .programs-grid { grid-template-columns: 1fr 1fr; }
+    .program-card.featured { grid-row: span 1; grid-column: span 2; }
+    .story-featured-inner { grid-template-columns: 1fr; }
+    .story-featured-image { aspect-ratio: 16/9; }
+    .footer-grid { grid-template-columns: 0.5fr 1fr; gap: var(--space-10); }
+    #aipif-logo { width: 70px; }
+    .nav-logo { gap: var(--space-1); }
+    .nav-logo-name { font-size: var(--text-xs); }
+    .nav-inner, .nav-links { gap: var(--space-3); }
+    .nav-links a { font-size: var(--text-xs); }
+    }
+    @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; grid-template-rows: auto auto; }
+    .hero-image-wrap { display: block; order: -1; }
+    .hero-image-frame { aspect-ratio: 16 / 9; border-radius: var(--radius-lg); }
+    .mission-grid { grid-template-columns: 1fr; }
+    .mission-image-wrap { display: block; order: -1; }
+    .programs-grid { grid-template-columns: 1fr; }
+    .program-card.featured { grid-column: span 1; }
+    .stories-sub { grid-template-columns: 1fr; }
+    .involve-inner { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-grid img { width: 150px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .footer-reg { text-align: center; }
+    .nav-links, .nav-actions .btn-join-nav { display: none; }
+    .nav-mobile-toggle { display: flex; }
+    .nav-drawer { display: block; }
+    .hero-image-badge { bottom: calc(-6 * var(--space-1)); right: calc(4 * var(--space-8)); }
+    .programs-header { grid-template-columns: 1fr; }
+    .timeline-list { padding-right: var(--space-6); }
+    .timeline-item::before { right: calc(-1 * var(--space-6) - 4px); }
+    }
+    @media (max-width: 480px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .stat-card { border-radius: 0 !important; }
+    .stat-card:first-child { border-radius: var(--radius-lg) var(--radius-lg) 0 0 !important; }
+    .stat-card:last-child { border-radius: 0 0 var(--radius-lg) var(--radius-lg) !important; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="sr-only skip-link">مواد پر جائیں</a>
+
+  <header style="position: fixed; z-index: 999; width: 100%;">
+    <nav id="nav" aria-label="مرکزی نیویگیشن">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="/" class="nav-logo" aria-label="اے آئی پی آئی ایف ہوم پیج">
+            <img id="aipif-logo" width="100" style="padding: 10px;" src="aipif_color_logo.png" alt="اے آئی پی آئی ایف لوگو">
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">آل انڈیا پیامِ انسانیت فورم</span>
+              <span class="nav-logo-tagline">پیامِ انسانیت</span>
+            </div>
+          </a>
+
+          <ul class="nav-links" role="list">
+            <li><a href="#about">تعارف</a></li>
+            <li><a href="#programs">سرگرمیاں</a></li>
+            <li><a href="#stories">کہانیاں</a></li>
+            <li><a href="#contact">رابطہ</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button class="theme-toggle" data-theme-toggle aria-label="تھیم تبدیل کریں">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+
+            <button class="nav-mobile-toggle" aria-label="مینو کھولیں" aria-expanded="false" id="menuBtn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav-drawer" id="navDrawer" aria-hidden="true" role="dialog" aria-label="نیویگیشن مینو">
+    <div class="nav-drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="nav-drawer-panel">
+      <div class="nav-drawer-header">
+        <span style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);">مینو</span>
+        <button id="closeDrawer" aria-label="مینو بند کریں" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:var(--color-text-muted);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <ul class="nav-drawer-links" role="list">
+        <li><a href="#about">ہمارے بارے میں</a></li>
+        <li><a href="#programs">ہماری سرگرمیاں</a></li>
+        <li><a href="#stories">کہانیاں</a></li>
+        <li><a href="#contact">رابطہ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="hero" aria-label="مرکزی حصہ">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="hero-eyebrow" aria-hidden="true">
+              <span class="hero-eyebrow-line"></span>
+              1974 سے پیغامِ انسانیت کو عام کرتے ہوئے
+            </div>
+            <h1 class="hero-heading">
+              محبت کے ساتھ<br><em>جینا</em><br>سیکھیں
+            </h1>
+            <p class="hero-sub">
+              ایک غیر سیاسی، خالص انسانی خدمت کی تنظیم جو اس عزم کے ساتھ کام کرتی ہے کہ کوئی بھوکا نہ رہے اور کوئی خود کو نظرانداز شدہ محسوس نہ کرے۔ گزشتہ 50 برس سے پورے ہندوستان میں سرگرم۔
+            </p>
+            <div class="scroll-hint" aria-hidden="true">
+              <span class="scroll-arrow"></span>
+              <span>مزید دیکھنے کے لیے اسکرول کریں</span>
+            </div>
+          </div>
+
+          <div class="hero-image-wrap">
+            <div class="hero-image-frame">
+              <img
+                src="https://aipiftsap.org/wp-content/uploads/2021/06/AboutAIPIF.jpeg"
+                alt="اجتماع"
+                width="600" height="750"
+                loading="eager"
+                decoding="async"
+              >
+            </div>
+            <div class="hero-image-badge" aria-hidden="true">
+              <div class="hero-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <div class="hero-badge-text-label">سرگرم رضاکار</div>
+                <div class="hero-badge-text-value">ہزاروں</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section reveal" aria-labelledby="stats-heading">
+      <div class="container">
+        <div class="stats-header">
+          <div class="section-eyebrow">ہماری رسائی</div>
+          <h2 class="section-title" id="stats-heading">نصف صدی پر مشتمل مسلسل خدمت</h2>
+        </div>
+        <div class="stats-grid" role="list">
+          <div class="stat-card" role="listitem">
+            <div class="stat-number">
+              <span class="stat-count" data-target="50">0</span>
+              <span class="stat-unit">+</span>
+            </div>
+            <div class="stat-label">پورے ہندوستان میں بلا تعطل انسانی خدمت کے سال</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-number">
+              <span class="stat-count" data-target="210">0</span>
+              <span class="stat-unit">+</span>
+            </div>
+            <div class="stat-label">ہر ہفتے ملک بھر میں پیش کیے جانے والے مفت کھانے</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-number">
+              <span class="stat-count" data-target="202">0</span>
+              <span class="stat-unit">+</span>
+            </div>
+            <div class="stat-label">ایک خون عطیہ کیمپ میں رضاکارانہ خون عطیہ کرنے والے افراد</div>
+          </div>
+          <div class="stat-card" role="listitem">
+            <div class="stat-number">
+              <span class="stat-count" data-target="28">0</span>
+              <span class="stat-unit">+</span>
+            </div>
+            <div class="stat-label">وہ ریاستیں اور مرکز کے زیر انتظام علاقے جہاں اے آئی پی آئی ایف سرگرم ہے</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission-section" id="about" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="mission-grid">
+          <div class="mission-content reveal">
+            <div class="section-eyebrow">بانی</div>
+            <h2 class="section-title" id="mission-heading" style="margin-bottom:var(--space-8);">
+              شفقت کی ایک زندہ میراث
+            </h2>
+
+            <div class="mission-body">
+              <p>
+                مولانا سید ابوالحسن علی ندوی، جو “علی میاں” کے نام سے معروف تھے، رائے بریلی کے معزز خاندان سے تعلق رکھتے تھے۔ آپ اپنی عاجزی، اعتدال اور سخاوت کے لیے جانے جاتے تھے، اور باہمی احترام، پُرامن بقائے باہمی اور انسانی اقدار کے علمبردار تھے۔ آپ کی خدمات کو قومی اور بین الاقوامی سطح پر سراہا گیا، جن میں 1980 کا کنگ فیصل انٹرنیشنل ایوارڈ، 1999 میں برونائی اور یو اے ای ایوارڈز، اور 1981 میں کشمیر یونیورسٹی کی اعزازی ڈاکٹریٹ شامل ہیں۔
+              </p>
+
+              <blockquote class="mission-pullquote">
+                “پُرامن بقائے باہمی کا راستہ انسانیت کے پیغام کو نمایاں کرنے میں ہے۔”
+              </blockquote>
+
+              <p>
+                آپ کو پورے ہندوستان میں مختلف برادریوں کے درمیان محبت، اخوت اور باہمی فہم کو فروغ دینے کے لیے یاد کیا جاتا ہے۔ آپ نے “پیامِ انسانیت” تحریک کی بنیاد رکھی اور مختلف طبقات کے لوگوں کے ساتھ فساد زدہ علاقوں کا سفر کیا تاکہ متاثرین کو تسلی دے سکیں اور امن کو فروغ دیں۔ آج کے پُرآشوب ماحول میں بھی انسانیت، رواداری اور اخلاقی اصلاح کا آپ کا پیغام نہایت بامعنی اور زندہ حقیقت ہے۔
+              </p>
+            </div>
+          </div>
+
+          <div class="mission-image-wrap reveal">
+            <div class="mission-image-frame">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/3/31/Abul_Hasan_Ali_Hasani_Al-Nadwi.jpg"
+                alt="مولانا سید ابوالحسن علی ندوی"
+                width="500" height="666"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="mission-image-caption">
+              <strong>مولانا سید ابوالحسن علی ندوی المعروف “علی میاں” (1914-1999)</strong>
+              ایک عظیم مفکر، مصنف، ماہرِ تعلیم، سماجی مصلح اور عالمی مسافر۔
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs-section" id="programs" aria-labelledby="programs-heading">
+      <div class="container">
+        <div class="programs-header reveal">
+          <div>
+            <div class="section-eyebrow">ہم کیا کرتے ہیں</div>
+            <h2 class="section-title" id="programs-heading">میدانِ عمل میں ہماری خدمات</h2>
+          </div>
+        </div>
+
+        <div class="programs-grid">
+          <article class="program-card reveal featured">
+            <div class="program-card-image">
+              <img src="meal_serve.jpg" alt="رضاکار اسپتال کے باہر مریضوں کو گرم کھانا پیش کرتے ہوئے" width="700" height="520" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">خوراک و غذائیت</span>
+              <h3 class="program-card-title">بھوک سے پاک ہندوستان</h3>
+              <p class="program-card-desc">روزانہ اور ہفتہ وار، ہمارے رضاکار سرکاری اسپتالوں کے باہر، ریلوے اسٹیشنوں پر، اور سیلاب و قحط سے متاثرہ علاقوں میں ہزاروں گرم کھانے تیار کرکے پیش کرتے ہیں۔ جو بھی ہماری دہلیز تک آتا ہے، بھوکا واپس نہیں جاتا۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="blood_donation_drive.jpg" alt="اے آئی پی آئی ایف کے رضاکاروں کے زیرِ اہتمام خون عطیہ کیمپ" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">صحت</span>
+              <h3 class="program-card-title">خون عطیہ مہمات</h3>
+              <p class="program-card-desc">اسپتالوں میں خون کی شدید کمی پوری کرنے کے لیے رضاکارانہ عطیہ دہندگان کو متحرک کرنا — سال بھر میں متعدد شہروں میں بارہا منعقد کیا جاتا ہے۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="flood_relief.jpeg" alt="ہندوستان میں سیلابی صورتحال کے دوران اے آئی پی آئی ایف کے امدادی رضاکار" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">آفات میں امداد</span>
+              <h3 class="program-card-title">ہنگامی اور سیلابی امداد</h3>
+              <p class="program-card-desc">جب قدرتی آفات آتی ہیں تو اے آئی پی آئی ایف کے رضاکار سب سے پہلے متحرک ہونے والوں میں شامل ہوتے ہیں — متاثرہ خاندانوں تک راشن، ادویات اور کپڑے پہنچاتے ہیں۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="community_gather.webp" alt="مختلف مذاہب کے افراد پر مشتمل سماجی ہم آہنگی کا اجتماع" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">سماجی ہم آہنگی</span>
+              <h3 class="program-card-title">مکالماتی پروگرام</h3>
+              <p class="program-card-desc">اے آئی پی آئی ایف کے بنیادی مشن سے جڑے ہوئے یہ مکالماتی پروگرام مختلف پس منظر کے لوگوں کو مشترک انسانیت اور اخلاقی اقدار کے گرد جمع کرتے ہیں۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="hospital_visit.jpeg" alt="اسپتال میں اے آئی پی آئی ایف کے رضاکاروں کی تقسیم کردہ پھل وصول کرتے ہوئے بچے" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">مریضوں کی فلاح</span>
+              <h3 class="program-card-title">اسپتال خدمت پروگرام</h3>
+              <p class="program-card-desc">سرکاری اسپتالوں میں مریضوں اور ان کے اہلِ خانہ کے لیے روزانہ پھل اور ناشتے کا انتظام — ایک چھوٹا سا عمل جو گھر سے دور لوگوں کے لیے بہت معنی رکھتا ہے۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="railway_visit.jpeg" alt="اے آئی پی آئی ایف کے رضاکار ریلوے اسٹیشن پر مسافروں کو کھانا اور مشروبات پیش کرتے ہوئے" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">عوامی خدمت</span>
+              <h3 class="program-card-title">ریلوے اسٹیشن دورے</h3>
+              <p class="program-card-desc">ریلوے اور پولیس حکام کی اجازت سے ہمارے رضاکار باقاعدگی سے ریلوے اسٹیشنوں کے دورے کرتے ہیں — مسافروں کو گرم کھانا، چائے، اور گرمیوں کے عروج میں پانی اور ٹھنڈی لسی فراہم کرتے ہیں۔ ہم عملے کی ضروریات، جیسے وہیل چیئر، بھی پوری کرتے ہیں اور مسافروں اور ریلوے عملے دونوں میں محبت، بھائی چارے اور انسانی اقدار پر مبنی لٹریچر تقسیم کرتے ہیں۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg" alt="ضرورت مند مسافروں کے لیے عوامی خدمت کا منظر" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">عوامی خدمت</span>
+              <h3 class="program-card-title">بس اڈہ دورے</h3>
+              <p class="program-card-desc">ہمارے رضاکار مقامی بس اڈوں اور ڈپوؤں کا دورہ کرکے ضرورت مند مسافروں کی خدمت کرتے ہیں — خصوصاً سخت گرمیوں میں، جب ایک گلاس پانی یا ٹھنڈی لسی فوری راحت اور مسکراہٹ کا سبب بنتی ہے۔ ہم پکا ہوا کھانا بھی تقسیم کرتے ہیں اور محبت، بھائی چارے، اخلاقیات اور انسانی اقدار سے متعلق اپنا لٹریچر بانٹتے ہیں تاکہ مشترک انسانیت کا پیغام عام ہو۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="old_age_visit.jpeg" alt="اے آئی پی آئی ایف کے رضاکار اولڈ ایج ہوم میں بزرگوں کے ساتھ وقت گزارتے ہوئے" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">بزرگوں کی نگہداشت</span>
+              <h3 class="program-card-title">اولڈ ایج ہوم دورے</h3>
+              <p class="program-card-desc">ہمارے رضاکار باقاعدگی سے اولڈ ایج ہومز کے دورے کرتے ہیں — کھانا پیش کرتے ہیں، طبی کیمپ منعقد کرتے ہیں، اور بزرگ مکینوں کے پاس اسی اپنائیت سے بیٹھتے ہیں جیسے ان کے اپنے بچے بیٹھتے۔ اس طرح وہ محبت کے متلاشی دلوں تک گرمی اور شفقت پہنچاتے ہیں۔ حیدرآباد میں ہم ایک اولڈ ایج ہوم میں 100 سے زائد مسلسل ہفتوں سے ہر ہفتے دوپہر اور رات کا کھانا فراہم کر رہے ہیں، اور حال ہی میں ناشتے کا بھی اضافہ کیا گیا ہے۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg" alt="یتیم بچوں کی فلاح کے لیے خدمت کا منظر" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">بچوں کی فلاح</span>
+              <h3 class="program-card-title">یتیم خانہ دورے</h3>
+              <p class="program-card-desc">ہندوستان میں تقریباً 30 ملین یتیم اور بے سہارا بچوں کے پیشِ نظر، اے آئی پی آئی ایف کے رضاکار باقاعدگی سے یتیم خانوں کا دورہ کرتے ہیں — تعلیم، صحت، لباس اور جذباتی بہبود کی ضروریات کو انتظامیہ کے ساتھ مل کر سمجھتے ہیں اور مناسب تعاون فراہم کرتے ہیں۔ ہمارا یقین ہے کہ ہر بچہ محبت اور وقار کے ساتھ برتاؤ کا مستحق ہے، اور اگر ہماری آمد سے کسی ایک بچے کے چہرے پر بھی مسکراہٹ آ جائے تو یہی ہمارے لیے کافی وجہ ہے۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg" alt="انسدادِ نشہ مہم کا منظر" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">سماجی اصلاح</span>
+              <h3 class="program-card-title">انسدادِ نشہ مہمات</h3>
+              <p class="program-card-desc">اپنے “ہماری سوسائٹی، ہماری ذمہ داری” عنوان کے تحت اے آئی پی آئی ایف نوجوانوں کو منشیات اور شراب کی گرفت سے نکالنے کے لیے انسدادِ نشہ پروگرام منعقد کرتا ہے — ایسی لتیں جو صرف فرد نہیں بلکہ پوری برادریوں کو تباہ کرتی ہیں۔ صرف اورنگ آباد میں ہماری کوششوں سے 1,100 سے زائد افراد نشے سے نجات پا کر اپنی زندگیاں دوبارہ سنوار چکے ہیں۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg" alt="جیل فلاحی خدمت کا منظر" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">قیدی فلاح</span>
+              <h3 class="program-card-title">جیل خدمت اور قیدی امداد</h3>
+              <p class="program-card-desc">اے آئی پی آئی ایف جیل کی سلاخوں کے پیچھے موجود لوگوں تک بھی پہنچتا ہے — ان افراد کی رہائی کے لیے جرمانے ادا کرتا ہے جو صرف ادائیگی نہ کر سکنے کی وجہ سے قید ہیں، اور جیلوں کے اندر خصوصی جلدی علاج سمیت طبی کیمپ منعقد کرتا ہے۔ جسمانی نگہداشت سے آگے بڑھ کر ہم ان لوگوں تک انسانیت، اخلاقی اقدار اور امید کا پیغام بھی پہنچاتے ہیں جنہیں اس کی سب سے زیادہ ضرورت ہوتی ہے۔</p>
+            </div>
+          </article>
+
+          <article class="program-card reveal">
+            <div class="program-card-image">
+              <img src="https://aipiftsap.org/wp-content/uploads/2021/04/index4.jpeg" alt="مہارت کی تربیت کے پروگرام کا منظر" width="400" height="225" loading="lazy" decoding="async">
+            </div>
+            <div class="program-card-body">
+              <span class="program-tag">مہارت کی ترقی</span>
+              <h3 class="program-card-title">مہارت کی تربیت اور روزگار فراہمی</h3>
+              <p class="program-card-desc">اے آئی پی آئی ایف اسکول چھوڑ دینے والے اور بے روزگار نوجوانوں کے لیے مہارت کی تربیت اور روزگار فراہمی کے پروگرام منعقد کرتا ہے، اور وہ دروازے کھولتا ہے جو حالات نے بند کر دیے تھے۔ ہماری نمایاں کامیابیوں میں موبائل فون چِپ لیول ریپیئر تربیتی پروگرام شامل ہے، جو جووینائل اور آبزرویشن ہومز کے بچوں کے لیے منعقد کیا گیا اور انہیں باعزت روزگار کی ایک مہارت اور آگے بڑھنے کا راستہ فراہم کیا۔</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="stories" aria-labelledby="stories-heading">
+      <div class="container">
+        <div class="section-eyebrow reveal">لوگ، صرف اعداد نہیں</div>
+        <h2 class="section-title reveal" id="stories-heading" style="margin-bottom:clamp(var(--space-10),4vw,var(--space-16));">
+          خدمت، انہی کی زبانی
+        </h2>
+
+        <div class="story-featured reveal">
+          <div class="story-featured-inner">
+            <div class="story-featured-image">
+              <img
+                src="https://gsayurvedamedicalcollege.com/img/ipd-bg.webp"
+                alt="ایک رضاکار اسپتال وارڈ کے باہر مریض کے اہلِ خانہ سے گفتگو کرتے ہوئے"
+                width="500" height="625"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="story-featured-content">
+              <p class="story-body">
+                ہر صبح، اسپتال کے دروازے کھلنے سے پہلے، اے آئی پی آئی ایف کے رضاکار وہاں موجود ہوتے ہیں۔ وہ برسوں سے یہ خدمت خاموشی اور بغیر کسی اعلان کے انجام دے رہے ہیں۔ بس گرم کھانا، تیار اور منتظر۔
+              </p>
+              <blockquote class="story-quote">
+                میری والدہ تین ہفتے تک آئی سی یو میں رہیں۔ ہمارے پاس ادویات کے لیے ہی بمشکل پیسے تھے۔ یہ لوگ ہر صبح آتے اور یہ یقینی بناتے کہ ہم کبھی بھوکے نہ رہیں۔
+              </blockquote>
+              <div class="story-attr">
+                <div>
+                  <div class="story-attr-name">راوی کمار</div>
+                  <div class="story-attr-detail">مستفید، گاندھی اسپتال — حیدرآباد</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stories-sub">
+          <div class="story-mini reveal">
+            <p class="story-mini-quote">
+              میں چار برس سے ہر اتوار رضاکارانہ خدمت انجام دے رہا ہوں۔ یہ خیرات نہیں — یہ بس ایک انسان کا دوسرے انسان کے لیے حاضر ہو جانا ہے۔
+            </p>
+            <div class="story-mini-attr">
+              <strong>محمد عرفان</strong><br>
+              اے آئی پی آئی ایف رضاکار، حیدرآباد مشرقی زون
+            </div>
+          </div>
+          <div class="story-mini reveal">
+            <p class="story-mini-quote">
+              سیلاب کے دنوں میں ہمارے دروازے پر سب سے پہلے یہی لوگ پہنچے۔ ان کے پاس خشک کپڑے تھے، کھانا تھا، اور ایک سوال تھا: “آپ کو اور کیا چاہیے؟”
+            </p>
+            <div class="story-mini-attr">
+              <strong>لکشمی ریڈی</strong><br>
+              امدادی مستفید، ورنگل
+            </div>
+          </div>
+          <div class="story-mini reveal">
+            <p class="story-mini-quote">
+              میں نے پہلی بار انہی کے ایک کیمپ میں خون عطیہ کیا۔ انہوں نے اسے دنیا کی سب سے فطری اور معمول کی بات بنا دیا — اور ایسا ہی ہونا چاہیے۔
+            </p>
+            <div class="story-mini-attr">
+              <strong>پریا شرما</strong><br>
+              پہلی بار خون عطیہ کرنے والی، حیدرآباد بلڈ ڈرائیو
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="involve-section" aria-labelledby="involve-heading">
+      <div class="container">
+        <div class="involve-inner">
+          <div class="reveal">
+            <div id="timeline" class="section-eyebrow-1" style="color:rgba(255,255,255,0.6);">ٹائم لائن</div>
+            <h2 class="involve-heading" id="involve-heading">
+              یہ سب کیسے شروع ہوا۔
+            </h2>
+            <p class="involve-sub">
+              ہمارا مقصد لوگوں کے درمیان ایسی مشفقانہ انسانی وابستگی پیدا کرنا ہے جو ذات، عقیدہ، رنگ، زبان، خطہ یا مذہب سے بالاتر ہو کر ایک شخص سے دوسرے شخص اور ایک دل سے دوسرے دل تک پہنچے۔
+            </p>
+          </div>
+          <div class="involve-paths reveal" role="list">
+            <ol class="timeline-list" aria-label="دہائی وار ٹائم لائن">
+              <li class="timeline-item">
+                <div class="timeline-decade">1970 کی دہائی</div>
+                <div class="timeline-event">پیامِ انسانیت کی بنیاد اور فساد زدہ برادریوں میں ابتدائی امن کوششوں کا آغاز۔</div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-decade">1980 کی دہائی</div>
+                <div class="timeline-event">تعلیم، مفت کھانے کی تقسیم، اور فلاحی پروگراموں تک خدمات کا دائرہ وسیع ہوا۔</div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-decade">1990 کی دہائی</div>
+                <div class="timeline-event">قومی اور بین الاقوامی سطح پر پذیرائی — کنگ فیصل ایوارڈ، برونائی ایوارڈ، اور ادارہ جاتی رسائی میں وسعت۔</div>
+              </li>
+              <li class="timeline-item">
+                <div class="timeline-decade">2000 تا 2020 کی دہائیاں</div>
+                <div class="timeline-event">28 ریاستوں میں مسلسل خدمت، خون عطیہ مہمات، سیلابی امداد، اور مشن کی جدید ذمہ دارانہ پیش رفت۔</div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" aria-label="سائٹ فوٹر">
+    <div class="container">
+      <div class="footer-grid">
+        <img src="aipif_white_logo.png" alt="اے آئی پی آئی ایف لوگو">
+
+        <div>
+          <div class="footer-brand-tagline">پیامِ انسانیت</div>
+          <div class="footer-brand-name">آل انڈیا پیامِ انسانیت فورم</div>
+          <p class="footer-brand-desc">
+            ایک غیر سیاسی انسانی خدمت کی تنظیم جو 1974 سے پیغامِ انسانیت کے ذریعے انسانوں کو ایک دوسرے سے جوڑ رہی ہے۔
+          </p>
+          <div class="footer-social" aria-label="سوشل میڈیا روابط">
+            <a href="https://www.instagram.com/aipif.official/" target="_blank" rel="noopener noreferrer" aria-label="انسٹاگرام پر اے آئی پی آئی ایف">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/official.aipif/" target="_blank" rel="noopener noreferrer" aria-label="فیس بک پر اے آئی پی آئی ایف">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@aipifofficial" target="_blank" rel="noopener noreferrer" aria-label="یوٹیوب پر اے آئی پی آئی ایف">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+            <a href="https://x.com/aipif_official" target="_blank" rel="noopener noreferrer" aria-label="ایکس پر اے آئی پی آئی ایف">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 4-5.93 6.93M5 20l5.93-6.93m0 0 5.795 6.587c.19.216.483.343.794.343h1.474c.836 0 1.307-.85.793-1.435L13.07 10.93m-2.14 2.14L4.214 5.435C3.7 4.85 4.17 4 5.007 4h1.474c.31 0 .604.127.794.343l5.795 6.587"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="فوری روابط">
+          <div class="footer-col-title">فوری روابط</div>
+          <ul class="footer-links" role="list">
+            <li><a href="#about">ہمارے بارے میں</a></li>
+            <li><a href="#programs">ہماری سرگرمیاں</a></li>
+            <li><a href="#stories">کہانیاں</a></li>
+            <li><a href="#timeline">ٹائم لائن</a></li>
+            <li><a href="#contact">رضاکار بنیں</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <div class="footer-col-title">رابطہ</div>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>لکھنؤ، اتر پردیش، بھارت</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span dir="ltr">aipif.messageofhumanity@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>سوسائٹیز رجسٹریشن ایکٹ XXXI of 1980 کے تحت رجسٹرڈ (رجسٹریشن نمبر: <span dir="ltr">S/00113-NE-2010</span>)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">© 2026 آل انڈیا پیامِ انسانیت فورم۔ جملہ حقوق محفوظ ہیں۔</p>
+        <p class="footer-reg">بھارت · <span dir="ltr">aipifofficial.org</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+  const toggle = document.querySelector('[data-theme-toggle]');
+  const html = document.documentElement;
+  const logo = document.getElementById('aipif-logo');
+  let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+  html.setAttribute('data-theme', theme);
+  updateToggleIcon();
+
+  toggle && toggle.addEventListener('click', () => {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', theme);
+    theme === 'dark'
+      ? logo.setAttribute('src', 'aipif_white_logo.png')
+      : logo.setAttribute('src', 'aipif_color_logo.png');
+    updateToggleIcon();
+  });
+
+  function updateToggleIcon() {
+    if (!toggle) return;
+    toggle.setAttribute('aria-label', theme === 'dark' ? 'روشن تھیم پر جائیں' : 'تاریک تھیم پر جائیں');
+    toggle.innerHTML = theme === 'dark'
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  const drawer = document.getElementById('navDrawer');
+  const menuBtn = document.getElementById('menuBtn');
+  const closeBtn = document.getElementById('closeDrawer');
+  const backdrop = document.getElementById('drawerBackdrop');
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    drawer.setAttribute('aria-hidden', 'false');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  menuBtn && menuBtn.addEventListener('click', openDrawer);
+  closeBtn && closeBtn.addEventListener('click', closeDrawer);
+  backdrop && backdrop.addEventListener('click', closeDrawer);
+  drawer && drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+
+  function easeOutExpo(t) {
+    return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+  }
+
+  function animateCount(el, target, duration) {
+    const start = performance.now();
+    function step(ts) {
+      const elapsed = ts - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = easeOutExpo(progress);
+      const current = Math.round(eased * target);
+      el.textContent = current.toLocaleString('ur-PK');
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  const counted = new Set();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const stats = entry.target.querySelectorAll('.stat-count[data-target]');
+        stats.forEach(el => {
+          if (!counted.has(el)) {
+            counted.add(el);
+            const target = parseInt(el.dataset.target, 10);
+            animateCount(el, target, 1800);
+          }
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const statsSection = document.querySelector('.stats-section');
+  if (statsSection) observer.observe(statsSection);
+})();
+  </script>
+</body>
+</html>
