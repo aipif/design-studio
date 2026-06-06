@@ -15,6 +15,11 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
   <style>
+    @font-face {
+        font-family: jameel-noori-k;
+        src: url('jameel-noori-k.ttf');
+    }
+    
     :root, [data-theme="light"] {
     --color-bg: #F5F0E8;
     --color-surface: #FAF7F2;
@@ -42,8 +47,8 @@
     --color-dark-text: #E8E3DA;
     --color-dark-muted: #8A9086;
 
-    --font-display: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', serif;
-    --font-body: 'Noto Sans Arabic', 'Noto Nastaliq Urdu', sans-serif;
+    --font-display: jameel-noori-k, 'Noto Nastaliq Urdu', 'Noto Sans Arabic', serif;
+    --font-body:  jameel-noori-r, 'Noto Sans Arabic', 'Noto Nastaliq Urdu', sans-serif;
 
     --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
     --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
@@ -548,8 +553,8 @@
     line-height: 1.8;
     color: var(--color-text);
     }
-    .story-quote::before { content: '“'; color: var(--color-primary); margin-left: 2px; }
-    .story-quote::after { content: '”'; color: var(--color-primary); margin-right: 2px; }
+    .story-quote::before { content: '”'; color: var(--color-primary); margin-left: 2px; }
+    .story-quote::after { content: '“'; color: var(--color-primary); margin-right: 2px; }
     .story-attr {
     display: flex; align-items: center; gap: var(--space-3);
     flex-direction: row-reverse;
@@ -582,8 +587,8 @@
     color: var(--color-text);
     flex: 1;
     }
-    .story-mini-quote::before { content: '“'; color: var(--color-primary); }
-    .story-mini-quote::after { content: '”'; color: var(--color-primary); }
+    .story-mini-quote::before { content: '”'; color: var(--color-primary); }
+    .story-mini-quote::after { content: '“'; color: var(--color-primary); }
     .story-mini-attr {
     font-size: var(--text-xs); color: var(--color-text-muted);
     font-weight: 500; border-top: 1px solid var(--color-divider);
@@ -855,7 +860,7 @@
               1974 سے پیغامِ انسانیت کو عام کرتے ہوئے
             </div>
             <h1 class="hero-heading">
-              محبت کے ساتھ<br><em>جینا</em><br>سیکھیں
+              محبت <br><em>  کے ساتھ</em><br> جینا سیکھیں 
             </h1>
             <p class="hero-sub">
               ایک غیر سیاسی، خالص انسانی خدمت کی تنظیم جو اس عزم کے ساتھ کام کرتی ہے کہ کوئی بھوکا نہ رہے اور کوئی خود کو نظرانداز شدہ محسوس نہ کرے۔ گزشتہ 50 برس سے پورے ہندوستان میں سرگرم۔
@@ -940,11 +945,11 @@
 
             <div class="mission-body">
               <p>
-                مولانا سید ابوالحسن علی ندوی، جو “علی میاں” کے نام سے معروف تھے، رائے بریلی کے معزز خاندان سے تعلق رکھتے تھے۔ آپ اپنی عاجزی، اعتدال اور سخاوت کے لیے جانے جاتے تھے، اور باہمی احترام، پُرامن بقائے باہمی اور انسانی اقدار کے علمبردار تھے۔ آپ کی خدمات کو قومی اور بین الاقوامی سطح پر سراہا گیا، جن میں 1980 کا کنگ فیصل انٹرنیشنل ایوارڈ، 1999 میں برونائی اور یو اے ای ایوارڈز، اور 1981 میں کشمیر یونیورسٹی کی اعزازی ڈاکٹریٹ شامل ہیں۔
+                مولانا سید ابوالحسن علی ندوی، جو ”علی میاں“ کے نام سے معروف تھے، رائے بریلی کے معزز خاندان سے تعلق رکھتے تھے۔ آپ اپنی عاجزی، اعتدال اور سخاوت کے لیے جانے جاتے تھے، اور باہمی احترام، پُرامن بقائے باہمی اور انسانی اقدار کے علمبردار تھے۔ آپ کی خدمات کو قومی اور بین الاقوامی سطح پر سراہا گیا، جن میں 1980 کا کنگ فیصل انٹرنیشنل ایوارڈ، 1999 میں برونائی اور یو اے ای ایوارڈز، اور 1981 میں کشمیر یونیورسٹی کی اعزازی ڈاکٹریٹ شامل ہیں۔
               </p>
 
               <blockquote class="mission-pullquote">
-                “پُرامن بقائے باہمی کا راستہ انسانیت کے پیغام کو نمایاں کرنے میں ہے۔”
+                ”پُرامن بقائے باہمی کا راستہ انسانیت کے پیغام کو نمایاں کرنے میں ہے۔“
               </blockquote>
 
               <p>
@@ -964,7 +969,7 @@
               >
             </div>
             <div class="mission-image-caption">
-              <strong>مولانا سید ابوالحسن علی ندوی المعروف “علی میاں” (1914-1999)</strong>
+              <strong>مولانا سید ابوالحسن علی ندوی المعروف ”علی میاں“ (1914-1999)</strong>
               ایک عظیم مفکر، مصنف، ماہرِ تعلیم، سماجی مصلح اور عالمی مسافر۔
             </div>
           </div>
@@ -1164,7 +1169,7 @@
           </div>
           <div class="story-mini reveal">
             <p class="story-mini-quote">
-              سیلاب کے دنوں میں ہمارے دروازے پر سب سے پہلے یہی لوگ پہنچے۔ ان کے پاس خشک کپڑے تھے، کھانا تھا، اور ایک سوال تھا: “آپ کو اور کیا چاہیے؟”
+              سیلاب کے دنوں میں ہمارے دروازے پر سب سے پہلے یہی لوگ پہنچے۔ ان کے پاس خشک کپڑے تھے، کھانا تھا، اور ایک سوال تھا: ”آپ کو اور کیا چاہیے؟“
             </p>
             <div class="story-mini-attr">
               <strong>لکشمی ریڈی</strong><br>
